@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Signup</title>
+        <link rel="stylesheet" href="./signup.css" />
+    </head>
+    <body>
+        <img class="hero" src="../hero.png" alt="background image" />
+        <div class="sign-up">
+            <form class="sign-up__form">
+                <img
+                    src="../xmark-solid.svg"
+                    alt="cross icon"
+                    class="xmark-icon"
+                />
+                <h1 class="sign-up__header">Sign Up</h1>
+                <p class="sign-up__description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been
+                </p>
+                <div class="sign-up__flexbox">
+                    <div class="sign-up__flexbox-item-wrapper">
+                        <label for="first-name" class="sign-up__label"
+                            >First Name</label
+                        >
+                        <input
+                            type="text"
+                            id="first-name"
+                            class="sign-up__input"
+                        />
+                    </div>
+                    <div class="sign-up__flexbox-item-wrapper">
+                        <label for="last-name" class="sign-up__label"
+                            >Last Name</label
+                        >
+                        <input
+                            type="text"
+                            id="last-name"
+                            class="sign-up__input"
+                        />
+                    </div>
+                </div>
+                <label for="email" class="sign-up__label">Last Name</label>
+                <input type="text" id="email" class="sign-up__input" />
+                <label for="password" class="sign-up__label">Password</label>
+                <input type="text" id="password" class="sign-up__input" />
+                <label for="password-confirm" class="sign-up__label"
+                    >Password Confirm</label
+                >
+                <input
+                    type="text"
+                    id="password-confirm"
+                    class="sign-up__input"
+                />
+                <div class="sign-up__term-of-use-container">
+                    <input type="checkbox" class="sign-up__checkbox" />
+                    <span
+                        >I agree the
+                        <a href="#" class="color">Term of use</a></span
+                    >
+                </div>
+                <button type="submit" class="sign-up__submit-btn">
+                    Sign up
+                </button>
+                <p class="sign-up__already-user">
+                    Already a user? <a href="#" class="color">Sign in</a>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
