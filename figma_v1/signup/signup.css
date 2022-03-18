@@ -87,6 +87,10 @@
   padding: 0 1em;
 }
 
+.sign-up__input--no-b-m {
+  margin-bottom: 0;
+}
+
 .sign-up__checkbox {
   width: 20px;
   height: 20px;
@@ -94,18 +98,30 @@
   cursor: pointer;
 }
 
-.sign-up__submit-btn {
+.sign-up__btn {
   background: #2D2D2D;
-  border-radius: 4px;
   border: none;
-  width: 100%;
   display: block;
   color: white;
-  padding: 1em 0;
   font-weight: 600;
   margin-bottom: 1.2em;
   cursor: pointer;
   font-size: 1rem;
+}
+
+.sign-up__btn--submit {
+  border-radius: 4px;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.sign-up__btn--send-code {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 1.4em;
+  border-radius: 0 4px 4px 0;
 }
 
 .sign-up__term-of-use-container {
@@ -118,6 +134,11 @@
 
 .sign-up__already-user {
   text-align: center;
+}
+
+.sign-up__email-verif-code-container {
+  margin-bottom: 1em;
+  position: relative;
 }
 
 .color {

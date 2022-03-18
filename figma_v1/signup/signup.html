@@ -43,15 +43,28 @@
                         />
                     </div>
                 </div>
-                <label for="email" class="sign-up__label">Last Name</label>
-                <input type="text" id="email" class="sign-up__input" />
+                <label for="email" class="sign-up__label">Email</label>
+                <input type="email" id="email" class="sign-up__input" />
+                <label for="email-verif" class="sign-up__label"
+                    >Email Verification Code</label
+                >
+                <div class="sign-up__email-verif-code-container">
+                    <input
+                        type="email"
+                        id="email-verif"
+                        class="sign-up__input sign-up__input--no-b-m"
+                    />
+                    <button class="sign-up__btn sign-up__btn--send-code">
+                        Send code
+                    </button>
+                </div>
                 <label for="password" class="sign-up__label">Password</label>
-                <input type="text" id="password" class="sign-up__input" />
+                <input type="password" id="password" class="sign-up__input" />
                 <label for="password-confirm" class="sign-up__label"
                     >Password Confirm</label
                 >
                 <input
-                    type="text"
+                    type="password"
                     id="password-confirm"
                     class="sign-up__input"
                 />
@@ -62,7 +75,7 @@
                         <a href="#" class="color">Term of use</a></span
                     >
                 </div>
-                <button type="submit" class="sign-up__submit-btn">
+                <button type="submit" class="sign-up__btn sign-up__btn--submit">
                     Sign up
                 </button>
                 <p class="sign-up__already-user">
