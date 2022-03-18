@@ -23,6 +23,7 @@ body
     background-color: rgba(#000, .2)
     color: #2D2D2D
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh
 
     @include breakpoint('small')
         padding: 3em 0
@@ -115,6 +116,15 @@ body
 
         > input 
             margin-bottom: 0
+
+    &__remember-me-container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 1em
+
+        .form__term-of-use-container
+            margin: 0;
 
 .color
     color: #4752AD
