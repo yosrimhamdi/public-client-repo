@@ -157,12 +157,31 @@ body {
 }
 
 .xmark-icon {
-  width: 16px;
   display: block;
+  width: 40%;
+}
+
+.xmark-container {
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 1em;
   right: 2em;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 50%;
+  border: 1px solid rgba(174, 174, 174, 0.2);
+  background: #F9F9F9;
 }
 
 .eye-icon {
