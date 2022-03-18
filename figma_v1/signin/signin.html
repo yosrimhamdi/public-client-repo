@@ -1,7 +1,52 @@
-<body>
-    <div class="test">
-        <h3>test</h3>
-    </div>
-    
-
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign in</title>
+        <link rel="stylesheet" href="./signin.css" />
+    </head>
+    <body>
+        <div class="sign-up">
+            <form class="sign-up__form">
+                <img
+                    src="../xmark-solid.svg"
+                    alt="cross icon"
+                    class="xmark-icon"
+                />
+                <h1 class="sign-up__header">Sign In</h1>
+                <p class="sign-up__description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been
+                </p>
+                <label for="email" class="sign-up__label">Email</label>
+                <input type="email" id="email" class="sign-up__input" />
+                <label for="password" class="sign-up__label">Password</label>
+                <div class="sign-up__input-container">
+                    <input
+                        type="password"
+                        id="password"
+                        class="sign-up__input"
+                    />
+                    <img
+                        src="../eye-solid.svg"
+                        alt="eye icon"
+                        class="eye-icon"
+                    />
+                </div>
+                <div class="sign-up__term-of-use-container">
+                    <input type="checkbox" class="sign-up__checkbox" />
+                    <span>Remember me</span>
+                </div>
+                <button type="submit" class="sign-up__btn sign-up__btn--submit">
+                    Sign in
+                </button>
+                <p class="sign-up__already-user">
+                    New here? <a href="#" class="color">Create an account</a>
+                </p>
+            </form>
+        </div>
+        <script src="./signin.js"></script>
+    </body>
+</html>
