@@ -4,12 +4,12 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Signup</title>
-        <link rel="stylesheet" href="./assets/css/signup.css" />
+        <title>Sign up page</title>
+        <link rel="stylesheet" href="./assets/css/form.css" />
     </head>
     <body>
-        <div class="sign-up">
-            <form class="sign-up__form">
+        <div class="form">
+            <form class="form__form">
                 <div class="xmark-container">
                     <img
                         src="./assets/images/xmark-solid.svg"
@@ -17,69 +17,57 @@
                         class="xmark-icon"
                     />
                 </div>
-                <h1 class="sign-up__header">Sign Up</h1>
-                <p class="sign-up__description">
+                <h1 class="form__header">Sign Up</h1>
+                <p class="form__description">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been
                 </p>
-                <div class="sign-up__flexbox">
-                    <div class="sign-up__flexbox-item-wrapper">
-                        <label for="first-name" class="sign-up__label"
+                <div class="form__flexbox">
+                    <div class="form__flexbox-item-wrapper">
+                        <label for="first-name" class="form__label"
                             >First Name</label
                         >
                         <input
                             type="text"
                             id="first-name"
-                            class="sign-up__input"
+                            class="form__input"
                         />
                     </div>
-                    <div class="sign-up__flexbox-item-wrapper">
-                        <label for="last-name" class="sign-up__label"
+                    <div class="form__flexbox-item-wrapper">
+                        <label for="last-name" class="form__label"
                             >Last Name</label
                         >
-                        <input
-                            type="text"
-                            id="last-name"
-                            class="sign-up__input"
-                        />
+                        <input type="text" id="last-name" class="form__input" />
                     </div>
                 </div>
-                <label for="email" class="sign-up__label">Email</label>
-                <input type="email" id="email" class="sign-up__input" />
-                <label for="email-verif" class="sign-up__label"
+                <label for="email" class="form__label">Email</label>
+                <input type="email" id="email" class="form__input" />
+                <label for="email-verif" class="form__label"
                     >Email Verification Code</label
                 >
-                <div class="sign-up__input-container">
-                    <input
-                        type="email"
-                        id="email-verif"
-                        class="sign-up__input"
-                    />
-                    <button class="sign-up__btn sign-up__btn--send-code">
+                <div class="form__input-container">
+                    <input type="email" id="email-verif" class="form__input" />
+                    <button class="form__btn form__btn--send-code">
                         Send code
                     </button>
                 </div>
-                <label for="password" class="sign-up__label">Password</label>
-                <div class="sign-up__input-container">
-                    <input
-                        type="password"
-                        id="password"
-                        class="sign-up__input"
-                    />
+                <label for="password" class="form__label">Password</label>
+                <div class="form__input-container">
+                    <input type="password" id="password" class="form__input" />
                     <img
                         src="./assets/images/eye-solid.svg"
                         alt="eye icon"
                         class="eye-icon"
                     />
                 </div>
-                <label for="password-confirm" class="sign-up__label"
+                <label for="password-confirm" class="form__label"
                     >Password Confirm</label
                 >
-                <div class="sign-up__input-container">
+                <div class="form__input-container">
                     <input
                         type="password"
                         id="password-confirm"
-                        class="sign-up__input"
+                        class="form__input"
                     />
                     <img
                         src="./assets/images/eye-solid.svg"
@@ -87,17 +75,17 @@
                         class="eye-icon"
                     />
                 </div>
-                <div class="sign-up__term-of-use-container">
-                    <input type="checkbox" class="sign-up__checkbox" />
+                <div class="form__term-of-use-container">
+                    <input type="checkbox" class="form__checkbox" />
                     <span
                         >I agree the
                         <a href="#" class="color">Term of use</a></span
                     >
                 </div>
-                <button type="submit" class="sign-up__btn sign-up__btn--submit">
+                <button type="submit" class="form__btn form__btn--submit">
                     Sign up
                 </button>
-                <p class="sign-up__already-user">
+                <p class="form__already-user">
                     Already a user? <a href="#" class="color">Sign in</a>
                 </p>
             </form>
