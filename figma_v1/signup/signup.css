@@ -4,7 +4,6 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-weight: 500;
 }
 
 body {
@@ -47,7 +46,6 @@ body {
 
 .sign-up__header {
   margin-bottom: .3em;
-  font-weight: 700;
 }
 
 .sign-up__description {
@@ -98,7 +96,7 @@ body {
   border: none;
   display: block;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1.2em;
   cursor: pointer;
   font-size: 1rem;
