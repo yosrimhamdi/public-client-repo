@@ -64,9 +64,6 @@
         margin-bottom: 1em
         padding: 0 1em
 
-        &--no-b-m
-            margin-bottom: 0
-
     &__checkbox
         width: 20px
         height: 20px
@@ -104,9 +101,12 @@
     &__already-user
         text-align: center
 
-    &__email-verif-code-container
+    &__input-container
         margin-bottom: 1em
         position: relative
+
+        > input 
+            margin-bottom: 0
 
 .color
     color: #4752AD
@@ -117,6 +117,14 @@
     position: absolute
     top: 1em
     right: 2em
+    cursor: pointer
+
+.eye-icon
+    width: 15px
+    position: absolute
+    top: 50%
+    right: 1em
+    transform: translateY(-50%)
     cursor: pointer
 
 a 

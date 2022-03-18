@@ -87,10 +87,6 @@
   padding: 0 1em;
 }
 
-.sign-up__input--no-b-m {
-  margin-bottom: 0;
-}
-
 .sign-up__checkbox {
   width: 20px;
   height: 20px;
@@ -136,9 +132,13 @@
   text-align: center;
 }
 
-.sign-up__email-verif-code-container {
+.sign-up__input-container {
   margin-bottom: 1em;
   position: relative;
+}
+
+.sign-up__input-container > input {
+  margin-bottom: 0;
 }
 
 .color {
@@ -151,6 +151,16 @@
   position: absolute;
   top: 1em;
   right: 2em;
+  cursor: pointer;
+}
+
+.eye-icon {
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   cursor: pointer;
 }
 
