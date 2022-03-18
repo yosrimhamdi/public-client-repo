@@ -1,3 +1,4 @@
+@import './_breakpoints';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 *
@@ -15,7 +16,6 @@ body
     position: absolute
     top: 0
     width: 100%
-    padding: 3em 0
     display: flex
     align-items: center
     justify-content: center
@@ -24,13 +24,19 @@ body
     color: #2D2D2D
     font-family: 'Montserrat', sans-serif;
 
+    @include breakpoint('small')
+        padding: 3em 0
+    
     &__form
         width: 500px
         background-color: white
         padding: 3em 2em
-        border-radius: 5px
         box-shadow: 0 0 10px 2px rgba(#000, .2)
         position: relative
+
+        @include breakpoint('small')
+            border-radius: 5px
+
     
     &__header
         margin-bottom: .3em
@@ -41,10 +47,12 @@ body
         margin-bottom: 2em
     
     &__flexbox
-        display: flex
+        @include breakpoint('small')
 
-        > div:first-child
-            margin-right: 1em
+            display: flex
+
+            > div:first-child
+                margin-right: 1em
 
     &__flexbox-item-wrapper
         flex-basis: 100%
