@@ -71,6 +71,7 @@ body {
 .sign-up__label {
   margin-bottom: .4em;
   display: block;
+  font-size: .95rem;
 }
 
 .sign-up__input {
