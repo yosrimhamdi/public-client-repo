@@ -16,9 +16,6 @@ body
     position: absolute
     top: 0
     width: 100%
-    display: flex
-    align-items: center
-    justify-content: center
     backdrop-filter: blur(5px)
     background-color: rgba(#000, .2)
     color: #2D2D2D
@@ -27,16 +24,22 @@ body
 
     @include breakpoint('small')
         padding: 3em 0
+        display: flex
+        align-items: center
+        justify-content: center
+
     
     &__form
-        width: 500px
+        max-width: 500px
         background-color: white
         padding: 3em 2em
         box-shadow: 0 0 8px rgba(#000, .15)
         position: relative
+        min-height: 100vh
 
         @include breakpoint('small')
             border-radius: 5px
+            min-height: auto
 
     
     &__header

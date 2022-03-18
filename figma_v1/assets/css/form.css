@@ -17,15 +17,6 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.2);
@@ -37,21 +28,32 @@ body {
 @media (min-width: 500px) {
   .form {
     padding: 3em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .form__form {
-  width: 500px;
+  max-width: 500px;
   background-color: white;
   padding: 3em 2em;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   position: relative;
+  min-height: 100vh;
 }
 
 @media (min-width: 500px) {
   .form__form {
     border-radius: 5px;
+    min-height: auto;
   }
 }
 
