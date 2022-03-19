@@ -1,3 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.form {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #2D2D2D;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+@media (min-width: 500px) {
+  .form {
+    padding: 3em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.form__form {
+  max-width: 500px;
+  background-color: white;
+  padding: 3.5em 2em 3em 2em;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  min-height: 100vh;
+}
+
+@media (min-width: 500px) {
+  .form__form {
+    border-radius: 5px;
+    min-height: auto;
+    min-width: 500px;
+  }
+}
+
+.form__header {
+  margin-bottom: .3em;
+  font-weight: 700;
+}
+
+.form__description {
+  color: #929292;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 500px) {
+  .form__flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form__flexbox > div:first-child {
+    margin-right: 1em;
+  }
+}
+
+.form__flexbox--space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__flexbox-item-wrapper {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.form__label {
+  margin-bottom: .4em;
+  display: block;
+  font-size: .95rem;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(174, 174, 174, 0.2);
+  background: #F9F9F9;
+  border-radius: 6px;
+  margin-bottom: 1em;
+  padding: 0 1em;
+  font-size: .95rem;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.form__btn {
+  background: #2D2D2D;
+  border: none;
+  display: block;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 1.2em;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form__btn--no-m-b {
+  margin-bottom: 0;
+}
+
+.form__btn--submit {
+  border-radius: 4px;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.form__btn--send-code {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 1.4em;
+  border-radius: 0 4px 4px 0;
+}
+
+.form__btn--red {
+  background-color: #DA2619;
+}
+
+.form__term-of-use-container {
+  margin-bottom: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+}
+
+.form__already-user {
+  text-align: center;
+}
+
+.form__input-container {
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.form__input-container > input {
+  margin-bottom: 0;
+}
+
+.form__remember-me-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.form__remember-me-container .form__term-of-use-container {
+  margin: 0;
+}
+
+.blue-color {
+  color: #4752AD;
+}
+
+.xmark-icon {
+  display: block;
+  width: 40%;
+}
+
+.xmark-container {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: .8em;
+  right: .8em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 50%;
+  border: 1px solid rgba(174, 174, 174, 0.2);
+  background: #F9F9F9;
+}
+
+.eye-icon {
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
 .mail-box {
   padding: 1em 2em 2em;
   text-align: center;
@@ -11,4 +246,3 @@
 .mail-box__text {
   font-size: 1.2rem;
 }
-/*# sourceMappingURL=check-mail.css.map */
