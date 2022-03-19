@@ -43,7 +43,7 @@ body {
 .form__form {
   max-width: 500px;
   background-color: white;
-  padding: 3em 2em;
+  padding: 3.5em 2em 3em 2em;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   position: relative;
@@ -54,6 +54,7 @@ body {
   .form__form {
     border-radius: 5px;
     min-height: auto;
+    min-width: 500px;
   }
 }
 
@@ -125,6 +126,10 @@ body {
   font-size: 1rem;
 }
 
+.form__btn--no-m-b {
+  margin-bottom: 0;
+}
+
 .form__btn--submit {
   border-radius: 4px;
   width: 100%;
@@ -191,8 +196,8 @@ body {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 1em;
-  right: 2em;
+  top: .8em;
+  right: .8em;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;

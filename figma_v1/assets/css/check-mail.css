@@ -1,0 +1,14 @@
+.mail-box {
+  padding: 1em 2em 2em;
+  text-align: center;
+}
+
+.mail-box__image {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.mail-box__text {
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=check-mail.css.map */
