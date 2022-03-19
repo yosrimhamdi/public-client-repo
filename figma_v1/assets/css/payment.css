@@ -234,7 +234,7 @@ a {
 }
 
 .payment {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   padding-bottom: 1em;
   border-bottom: 1px solid #E3DEDE;
 }
@@ -317,5 +317,6 @@ a {
 }
 
 .input-wrapper__exclamation-mark-icon {
+  cursor: pointer;
   width: 17px !important;
 }
