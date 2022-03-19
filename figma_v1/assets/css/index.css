@@ -11,6 +11,8 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  --red-button: #DA2619;
+  --black-button: #2D2D2D;
 }
 
 a {
@@ -120,7 +122,7 @@ a {
 }
 
 .form__btn {
-  background: #2D2D2D;
+  background-color: var(--black-button);
   border: none;
   display: block;
   color: white;
@@ -150,7 +152,7 @@ a {
 }
 
 .form__btn--red {
-  background-color: #DA2619;
+  background-color: var(--red-button);
 }
 
 .form__term-of-use-container {
