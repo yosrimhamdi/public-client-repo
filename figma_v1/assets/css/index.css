@@ -122,40 +122,6 @@ a {
   cursor: pointer;
 }
 
-.form__btn {
-  background-color: var(--black-button);
-  border: none;
-  display: block;
-  color: white;
-  font-weight: 500;
-  margin-bottom: 1.2em;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.form__btn--no-m-b {
-  margin-bottom: 0;
-}
-
-.form__btn--submit {
-  border-radius: 4px;
-  width: 100%;
-  padding: 1em 0;
-}
-
-.form__btn--send-code {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  padding: 0 1.4em;
-  border-radius: 0 4px 4px 0;
-}
-
-.form__btn--red {
-  background-color: var(--red-button);
-}
-
 .form__term-of-use-container {
   margin-bottom: 1.2em;
   display: -webkit-box;
@@ -336,6 +302,40 @@ a {
 .input-wrapper__exclamation-mark-icon {
   cursor: pointer;
   width: 17px !important;
+}
+
+.button {
+  background-color: var(--black-button);
+  border: none;
+  display: block;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 1.2em;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button--no-m-b {
+  margin-bottom: 0;
+}
+
+.button--submit {
+  border-radius: 4px;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.button--send-code {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 1.4em;
+  border-radius: 0 4px 4px 0;
+}
+
+.button--red {
+  background-color: var(--red-button);
 }
 
 @media (min-width: 500px) {
