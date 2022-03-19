@@ -17,20 +17,6 @@ a {
   text-decoration: none;
 }
 
-.mail-box {
-  padding: 1em 2em 2em;
-  text-align: center;
-}
-
-.mail-box__image {
-  display: inline-block;
-  margin-bottom: 1em;
-}
-
-.mail-box__text {
-  font-size: 1.2rem;
-}
-
 .form {
   position: absolute;
   top: 0;
@@ -247,6 +233,20 @@ a {
   cursor: pointer;
 }
 
+.mail-box {
+  padding: 1em 2em 2em;
+  text-align: center;
+}
+
+.mail-box__image {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.mail-box__text {
+  font-size: 1.2rem;
+}
+
 .payment {
   margin-bottom: 1em;
   padding-bottom: 1em;
@@ -333,4 +333,26 @@ a {
 .input-wrapper__exclamation-mark-icon {
   cursor: pointer;
   width: 17px !important;
+}
+
+@media (min-width: 500px) {
+  .flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .flexbox > div:first-child {
+    margin-right: 1em;
+  }
+}
+
+.flexbox--space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flexbox__full-width {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
