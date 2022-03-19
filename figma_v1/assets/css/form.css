@@ -85,7 +85,7 @@ body {
           justify-content: space-between;
 }
 
-.form__flexbox-item-wrapper {
+.form__flexbox-item-full-width {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
