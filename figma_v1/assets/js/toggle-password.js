@@ -4,9 +4,9 @@ const toggleIcon = eyeIcon => {
     const src = eyeIcon.getAttribute('src');
 
     if (src.endsWith('eye-solid.svg')) {
-        eyeIcon.setAttribute('src', './assets/images/eye-slash-solid.svg');
+        eyeIcon.setAttribute('src', '../assets/images/eye-slash-solid.svg');
     } else {
-        eyeIcon.setAttribute('src', './assets/images/eye-solid.svg');
+        eyeIcon.setAttribute('src', '../assets/images/eye-solid.svg');
     }
 };
 
