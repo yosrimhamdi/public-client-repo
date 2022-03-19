@@ -145,6 +145,10 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
+.form__btn--red {
+  background-color: #DA2619;
+}
+
 .form__term-of-use-container {
   margin-bottom: 1.2em;
   display: -webkit-box;
