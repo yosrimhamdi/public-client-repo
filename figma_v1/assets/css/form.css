@@ -78,6 +78,12 @@ body {
   }
 }
 
+.form__flexbox--space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .form__flexbox-item-wrapper {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -172,7 +178,7 @@ body {
   margin: 0;
 }
 
-.color {
+.blue-color {
   color: #4752AD;
 }
 
