@@ -1,8 +1,13 @@
+@import '../utils/breakpoints';
+
 .header
-    display: flex
+    display: none
     justify-content: space-between
     align-items: center
     padding: 1em 5%;
+
+    @include breakpoint('medium')
+        display: flex
 
     &__logo
         display: block
