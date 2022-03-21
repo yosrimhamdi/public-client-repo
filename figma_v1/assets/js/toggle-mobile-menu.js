@@ -10,10 +10,12 @@ class ToggleMobileMenu {
   setEvents() {
     this.openIcon.onclick = () => {
       this.menuOverlay.classList.add('menu-overlay--visible');
+      document.body.style.overflow = 'hidden';
     };
 
     this.closeIcon.onclick = () => {
       this.menuOverlay.classList.remove('menu-overlay--visible');
+      document.body.style.overflow = 'initial';
     };
   }
 }
