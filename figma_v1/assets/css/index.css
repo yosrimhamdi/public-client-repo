@@ -334,28 +334,6 @@ a {
   background-color: var(--red-button);
 }
 
-@media (min-width: 500px) {
-  .flexbox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .flexbox > div:first-child {
-    margin-right: 1em;
-  }
-}
-
-.flexbox--space-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.flexbox__full-width {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
