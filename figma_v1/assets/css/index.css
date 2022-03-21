@@ -10,6 +10,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   --red-button: #DA2619;
   --black-button: #2D2D2D;
+  --blue-color: #4752AD;
 }
 
 a {
@@ -158,7 +159,7 @@ a {
 }
 
 .blue-color {
-  color: #4752AD;
+  color: var(--blue-color);
 }
 
 .xmark-icon {
