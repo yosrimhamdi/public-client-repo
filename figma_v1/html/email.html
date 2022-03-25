@@ -9,47 +9,249 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
     <title>Email</title>
-    <link rel="stylesheet" href="../assets/css/email.css" />
+
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      /* client fixes */
+      #outlook a {
+        padding: 0;
+      }
+      body {
+        width: 100% !important;
+        size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width: 100%;
+      }
+      .backgroundTable {
+        margin: 0 auto;
+        padding: 0;
+        width: 100% !important;
+      }
+      table td {
+        border-collapse: collapse;
+      }
+      .ExternalClass * {
+        line-height: 115%;
+      }
+
+      @media screen and (max-width: 630px) {
+        /* Display block allows us to stack elements */
+        *[class='mobile-column'] {
+          display: block;
+        }
+
+        /* Some more stacking elements */
+        *[class='mob-column'] {
+          float: none !important;
+          width: 100% !important;
+        }
+
+        /* Hide stuff */
+        *[class='hide'] {
+          display: none !important;
+        }
+
+        /* This sets elements to 100% width and fixes the height issues too, a god send */
+        *[class='100p'] {
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        /* For the 2x2 stack */
+        *[class='condensed'] {
+          padding-bottom: 40px !important;
+          display: block;
+        }
+
+        /* Centers content on mobile */
+        *[class='center'] {
+          text-align: center !important;
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        /* 100percent width section with 20px padding */
+        *[class='100pad'] {
+          width: 100% !important;
+          padding: 20px;
+        }
+
+        /* 100percent width section with 20px padding left & right */
+        *[class='100padleftright'] {
+          width: 100% !important;
+          padding: 0 20px 0 20px;
+        }
+
+        /* 100percent width section with 20px padding top & bottom */
+        *[class='100padtopbottom'] {
+          width: 100% !important;
+          padding: 20px 0px 20px 0px;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <div class="email">
-      <div class="email__header">
-        <div>
-          <img src="../assets/images/logo.png" alt="website logo" />
-          <h1>mirrorbot</h1>
-        </div>
-        <h2>Email verification code</h2>
-        <div>81535</div>
-        <p>
-          Your subscription unlocks unlimited downloads and editing, plus all
-          apps and plugins this purchase supports
-        </p>
-        <div>Lorem Ipsum is simply: Click here</div>
-        <div>Lorem Ipsum: Click here</div>
-        <div>
-          <div>
-            <img src="../assets/images/logo.png" alt="website logo" />
-            <h1>mirrorbot</h1>
-          </div>
-          <div>
-            Follow us:
-            <img
-              src="../assets/images/social/instagram.svg"
-              alt="instagram icon"
-            />
-            <img
-              src="../assets/images/social/facebook.svg"
-              alt="facebook icon"
-            />
-            <img src="../assets/images/social/tweeter.svg" alt="tweeter icon" />
-          </div>
-        </div>
-      </div>
-      <p class="email__description">
-        Your subscription unlocks unlimited downloads and editing, plus all apps
-        and plugins this purchase supports
-      </p>
-    </div>
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      style="margin: 0; padding: 0"
+      width="100%"
+    >
+      <tr>
+        <td style="padding: 1em">
+          <table
+            width="640"
+            cellspacing="0"
+            cellpadding="0"
+            class="100p"
+            style="border-bottom: 1px solid #eaeaea"
+          >
+            <tr>
+              <td width="50" style="padding-right: 1em; padding-bottom: 1em">
+                <img
+                  src="../assets/images/logo.png"
+                  alt="website logo"
+                  width="50"
+                />
+              </td>
+              <td
+                style="font-size: 2rem; font-weight: 600; padding-bottom: 1rem"
+              >
+                <font face="'Montserrat', Arial, sans-serif">MIRROBOT</font>
+              </td>
+            </tr>
+          </table>
+          <table
+            width="640"
+            border="0"
+            cellspacing="0"
+            cellpadding="20"
+            bgcolor="#ffffff"
+            class="100p"
+          >
+            <tr>
+              <td>
+                <font face="'Montserrat', Arial, sans-serif"
+                  ><span style="font-size: 2rem; font-weight: 600"
+                    >Email Verification code</span
+                  ><br />
+                  <br />
+                  <span
+                    style="
+                      font-size: 20px;
+                      background-color: #f9f9f9;
+                      border: 1px solid #eaeaea;
+                      padding: 0.7em 1em;
+                      display: inline-block;
+                      border-radius: 4px;
+                    "
+                    >86542</span
+                  >
+                  <span
+                    style="
+                      color: #929292;
+                      display: block;
+                      margin-top: 1em;
+                      margin-bottom: 2em;
+                    "
+                    >Your subscription unlocks unlimited downloads and editing,
+                    plus all apps and plugins this purchase supports</span
+                  >
+                  <span style="color: #929292; display: block; margin-top: 1em"
+                    >Lorem Ipsum is simply:
+                    <a href="#" style="color: #443bad; font-weight: 500"
+                      >Click here</a
+                    ></span
+                  >
+                  <span
+                    style="
+                      color: #929292;
+                      display: block;
+                      margin-top: 1em;
+                      margin-bottom: 2em;
+                    "
+                    >Lorem Ipsum:
+                    <a href="#" style="color: #443bad; font-weight: 500"
+                      >Click here</a
+                    ></span
+                  >
+                </font>
+              </td>
+            </tr>
+          </table>
+          <table
+            width="640"
+            cellspacing="0"
+            cellpadding="0"
+            class="100p"
+            style="border-top: 1px solid #eaeaea"
+          >
+            <tr>
+              <td width="50" style="padding-right: 1em; padding-top: 1em">
+                <img
+                  src="../assets/images/logo.png"
+                  alt="website logo"
+                  width="50"
+                />
+              </td>
+              <td style="font-size: 2rem; font-weight: 600; padding-top: 1rem">
+                <font face="'Montserrat', Arial, sans-serif">MIRROBOT</font>
+              </td>
+              <td style="color: #929292; padding-right: 1em" align="right">
+                <font face="'Montserrat', Arial, sans-serif">Follow us:</font>
+              </td>
+              <td>
+                <img
+                  src="../assets/images/social/instagram.svg"
+                  alt="instagram icon"
+                />
+              </td>
+              <td>
+                <img
+                  src="../assets/images/social/facebook.svg"
+                  alt="facebook icon"
+                />
+              </td>
+              <td>
+                <img
+                  src="../assets/images/social/tweeter.svg"
+                  alt="tweeter icon"
+                />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table
+      width="640"
+      border="0"
+      cellspacing="0"
+      cellpadding="20"
+      bgcolor="#ffffff"
+      class="100p"
+    >
+      <tr>
+        <td align="center" style="font-size: 16px; color: #848484">
+          <font face="'Montserrat', Arial, sans-serif">
+            <br />
+            <span style="font-size: 16px"
+              >Your subscription unlocks unlimited downloads and editing, plus
+              all apps and plugins this purchase supports</span
+            ></font
+          >
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
