@@ -8,7 +8,7 @@
 .logo
     width: 35px
 
-    @include breakpoint('medium')
+    @include breakpoint('small')
         width: 50px
 
 
@@ -16,7 +16,7 @@
     padding-right: 1em
     width: 35px
 
-    @include breakpoint('medium')
+    @include breakpoint('small')
         width: 50px
 
 
@@ -25,7 +25,7 @@
     border-bottom: 1px solid #EAEAEA
     padding: .5em
 
-    @include breakpoint('medium')
+    @include breakpoint('small')
         padding: 1em
 
 
@@ -37,13 +37,13 @@
     font-weight: 600
     font-size: 1rem
 
-    @include breakpoint('medium')
+    @include breakpoint('small')
         font-size: 1.5rem
 
 .body-table
     padding: .5em
 
-    @include breakpoint('medium')
+    @include breakpoint('small')
         padding: 1em
 
 .body-header
@@ -51,7 +51,7 @@
     font-weight: 600
     padding-bottom: .7em
 
-    @include breakpoint('medium')
+    @include breakpoint('small')
         font-size: 1.5rem
 
 .code-td
@@ -66,7 +66,7 @@
     color: #929292
     padding-bottom: .7em
     
-    @include breakpoint('medium')
+    @include breakpoint('small')
         padding-bottom: 1em
     
 
@@ -81,15 +81,25 @@
 .second-link
     padding-bottom: 1em
     
-    @include breakpoint('medium')
+    @include breakpoint('small')
         padding-bottom: 1.7em
 
     
 
-// .follow-us
-//     width: 100%
-//     text-align: right
-//     padding-right: 1em
+.follow-us
+    display: none
 
-// .icon
-//     padding-right: .3em
+    @include breakpoint('small')
+        display: table-cell    
+        width: 100%
+        text-align: right
+        padding-right: 1em
+
+
+
+.icon
+    padding-right: .3em
+
+.icon-1
+    width: 100%
+    text-align: right

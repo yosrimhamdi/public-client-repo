@@ -8,7 +8,7 @@
   width: 35px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 500px) {
   .logo {
     width: 50px;
   }
@@ -19,7 +19,7 @@
   width: 35px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 500px) {
   .logo-td {
     width: 50px;
   }
@@ -31,7 +31,7 @@
   padding: .5em;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 500px) {
   .email-header-tr {
     padding: 1em;
   }
@@ -47,7 +47,7 @@
   font-size: 1rem;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 500px) {
   .site-title {
     font-size: 1.5rem;
   }
@@ -57,7 +57,7 @@
   padding: .5em;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 500px) {
   .body-table {
     padding: 1em;
   }
@@ -69,7 +69,7 @@
   padding-bottom: .7em;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 500px) {
   .body-header {
     font-size: 1.5rem;
   }
@@ -89,7 +89,7 @@
   padding-bottom: .7em;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 500px) {
   .description-td {
     padding-bottom: 1em;
   }
@@ -109,8 +109,30 @@
   padding-bottom: 1em;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 500px) {
   .second-link {
     padding-bottom: 1.7em;
   }
+}
+
+.follow-us {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .follow-us {
+    display: table-cell;
+    width: 100%;
+    text-align: right;
+    padding-right: 1em;
+  }
+}
+
+.icon {
+  padding-right: .3em;
+}
+
+.icon-1 {
+  width: 100%;
+  text-align: right;
 }
