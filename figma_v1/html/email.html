@@ -9,167 +9,32 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
     <title>Email</title>
-
-    <style type="text/css">
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-      /* client fixes */
-      #outlook a {
-        padding: 0;
-      }
-      body {
-        width: 100% !important;
-        size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      .ReadMsgBody {
-        width: 100%;
-      }
-      .ExternalClass {
-        width: 100%;
-      }
-      .backgroundTable {
-        margin: 0 auto;
-        padding: 0;
-        width: 100% !important;
-      }
-      table td {
-        border-collapse: collapse;
-      }
-      .ExternalClass * {
-        line-height: 115%;
-      }
-
-      @media screen and (max-width: 630px) {
-        /* Display block allows us to stack elements */
-        *[class='mobile-column'] {
-          display: block;
-        }
-
-        /* Some more stacking elements */
-        *[class='mob-column'] {
-          float: none !important;
-          width: 100% !important;
-        }
-
-        /* Hide stuff */
-        *[class='hide'] {
-          display: none !important;
-        }
-
-        /* This sets elements to 100% width and fixes the height issues too, a god send */
-        *[class='100p'] {
-          width: 100% !important;
-          height: auto !important;
-        }
-
-        /* For the 2x2 stack */
-        *[class='condensed'] {
-          padding-bottom: 40px !important;
-          display: block;
-        }
-
-        /* Centers content on mobile */
-        *[class='center'] {
-          text-align: center !important;
-          width: 100% !important;
-          height: auto !important;
-        }
-
-        /* 100percent width section with 20px padding */
-        *[class='100pad'] {
-          width: 100% !important;
-          padding: 20px;
-        }
-
-        /* 100percent width section with 20px padding left & right */
-        *[class='100padleftright'] {
-          width: 100% !important;
-          padding: 0 20px 0 20px;
-        }
-
-        /* 100percent width section with 20px padding top & bottom */
-        *[class='100padtopbottom'] {
-          width: 100% !important;
-          padding: 20px 0px 20px 0px;
-        }
-      }
-      .title {
-        font-size: 1.3rem;
-      }
-
-      @media screen and (min-width: 400px) {
-        .title {
-          font-size: 2rem;
-        }
-      }
-
-      .logo {
-        width: 45px;
-      }
-
-      @media screen and (min-width: 400px) {
-        .logo {
-          width: 50px;
-        }
-      }
-      .header {
-        font-size: 1.3rem;
-      }
-
-      @media screen and (min-width: 400px) {
-        .header {
-          font-size: 2rem;
-        }
-      }
-
-      .nbr {
-        font-size: 1.15rem;
-      }
-
-      @media screen and (min-width: 400px) {
-        .nbr {
-          font-size: 2rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="../assets/css/email.css" />
   </head>
 
   <body>
-    <table
-      border="0"
-      cellpadding="0"
-      cellspacing="0"
-      style="margin: 0; padding: 0"
-      width="100%"
-    >
-      <tr>
-        <td style="padding: 1em">
-          <table
-            width="640"
-            cellspacing="0"
-            cellpadding="0"
-            class="100p"
-            style="border-bottom: 1px solid #eaeaea; margin-bottom: 1em"
-          >
-            <tr>
-              <td width="50" style="padding-right: 1em; padding-bottom: 1em">
-                <svg
-                  version="1.0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="logo"
-                  viewBox="0 0 73.000000 70.000000"
-                  preserveAspectRatio="xMidYMid meet"
-                >
-                  <g
-                    transform="translate(0.000000,70.000000) scale(0.100000,-0.100000)"
-                    fill="#000000"
-                    stroke="none"
+    <font face="'Montserrat', Arial, sans-serif">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td>
+            <!-- email header -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr class="email-header-tr">
+                <td class="logo-td">
+                  <svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 73.000000 70.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                    class="logo"
                   >
-                    <path
-                      d="M244 683 c-148 -43 -254 -202 -241 -360 10 -127 86 -234 207 -292 47
+                    <g
+                      transform="translate(0.000000,70.000000) scale(0.100000,-0.100000)"
+                      fill="#000000"
+                      stroke="none"
+                    >
+                      <path
+                        d="M244 683 c-148 -43 -254 -202 -241 -360 10 -127 86 -234 207 -292 47
                         -22 68 -26 150 -26 88 0 101 3 162 33 74 36 132 95 169 170 20 39 24 63 24
                         142 0 86 -3 101 -30 153 -42 84 -119 151 -202 177 -76 23 -166 25 -239 3z m86
                         -134 c0 -27 -4 -49 -10 -49 -5 0 -10 14 -10 30 0 33 -2 35 -31 19 -41 -21 -42
@@ -205,125 +70,91 @@
                         c-23 -17 -36 -19 -36 -6 0 11 18 19 40 20 11 0 10 -3 -4 -14z m54 5 c8 -5 12
                         -12 9 -15 -8 -8 -39 5 -39 16 0 11 11 11 30 -1z m105 -68 c-7 -8 -35 7 -35 18
                         0 6 7 6 20 -2 10 -7 17 -14 15 -16z"
-                    />
-                    <path
-                      d="M498 524 c-38 -20 -36 -28 2 -9 17 9 30 18 30 20 0 7 -1 6 -32 -11z"
-                    />
-                    <path
-                      d="M215 523 c6 -6 33 -23 60 -38 28 -16 46 -24 40 -18 -5 6 -32 23 -60
-                        38 -27 16 -45 24 -40 18z"
-                    />
-                    <path
-                      d="M415 475 c-22 -13 -37 -25 -33 -25 9 0 78 41 78 46 0 6 -3 5 -45 -21z"
-                    />
-                    <path
-                      d="M340 450 c8 -5 20 -10 25 -10 6 0 3 5 -5 10 -8 5 -19 10 -25 10 -5 0
+                      />
+                      <path
+                        d="M498 524 c-38 -20 -36 -28 2 -9 17 9 30 18 30 20 0 7 -1 6 -32 -11z"
+                      />
+                      <path
+                        d="M215 523 c6 -6 33 -23 60 -38 28 -16 46 -24 40 -18 -5 6 -32 23 -60
+                            38 -27 16 -45 24 -40 18z"
+                      />
+                      <path
+                        d="M415 475 c-22 -13 -37 -25 -33 -25 9 0 78 41 78 46 0 6 -3 5 -45 -21z"
+                      />
+                      <path
+                        d="M340 450 c8 -5 20 -10 25 -10 6 0 3 5 -5 10 -8 5 -19 10 -25 10 -5 0
                           -3 -5 5 -10z"
-                    />
-                    <path
-                      d="M111 396 c2 -2 15 -9 29 -15 24 -11 24 -11 6 3 -16 13 -49 24 -35 12z"
-                    />
-                    <path
-                      d="M170 366 c0 -3 14 -12 30 -21 17 -9 30 -13 30 -11 0 3 -13 12 -30 21
-                        -16 9 -30 13 -30 11z"
-                    />
-                    <path
-                      d="M254 311 c21 -23 26 -26 26 -11 0 5 -10 15 -22 21 -23 12 -23 12 -4
-                        -10z"
-                    />
-                    <path
-                      d="M535 364 c-67 -40 -95 -63 -95 -77 0 -5 8 0 18 11 9 12 49 39 87 61
+                      />
+                      <path
+                        d="M111 396 c2 -2 15 -9 29 -15 24 -11 24 -11 6 3 -16 13 -49 24 -35 12z"
+                      />
+                      <path
+                        d="M170 366 c0 -3 14 -12 30 -21 17 -9 30 -13 30 -11 0 3 -13 12 -30 21
+                          -16 9 -30 13 -30 11z"
+                      />
+                      <path
+                        d="M254 311 c21 -23 26 -26 26 -11 0 5 -10 15 -22 21 -23 12 -23 12 -4
+                          -10z"
+                      />
+                      <path
+                        d="M535 364 c-67 -40 -95 -63 -95 -77 0 -5 8 0 18 11 9 12 49 39 87 61
                           39 23 66 41 60 40 -5 0 -37 -16 -70 -35z"
-                    />
-                  </g>
-                </svg>
-              </td>
-              <td style="font-weight: 600; padding-bottom: 1rem" class="title">
-                <font face="'Montserrat', Arial, sans-serif">MIRRORBOT</font>
-              </td>
-            </tr>
-          </table>
-          <table
-            width="640"
-            border="0"
-            cellspacing="0"
-            cellpadding="20"
-            bgcolor="#ffffff"
-            class="100p"
-          >
-            <tr>
-              <td style="padding: 0">
-                <font face="'Montserrat', Arial, sans-serif"
-                  ><span style="font-weight: 600" class="header"
-                    >Email Verification code</span
-                  ><br />
-                  <br />
-                  <span
-                    class="nbr"
-                    style="
-                      background-color: #f9f9f9;
-                      border: 1px solid #eaeaea;
-                      padding: 0.7em 1em;
-                      display: inline-block;
-                      border-radius: 4px;
-                    "
-                    >86542</span
+                      />
+                    </g>
+                  </svg>
+                </td>
+                <td class="site-title">MIRRORBOT</td>
+              </tr>
+            </table>
+            <!-- email body -->
+            <table
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              width="100%"
+              class="body-table"
+            >
+              <tr>
+                <td class="body-header">Email verification code</td>
+              </tr>
+              <tr>
+                <td class="code-td">86542</td>
+              </tr>
+              <tr>
+                <td class="description-td">
+                  Your subscription unlocks unlimited downloads and editing,
+                  plus all apps and plugins this purchase supports
+                </td>
+              </tr>
+              <tr>
+                <td class="link-td">
+                  Lorem Ipsum is simply:
+                  <a href="#" class="link-a">Click here</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="link-td second-link">
+                  Lorem Ipsum: <a href="#" class="link-a">Click here</a>
+                </td>
+              </tr>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr class="email-header-tr email-footer-tr">
+                <td class="logo-td">
+                  <svg
+                    version="1.0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 73.000000 70.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                    class="logo"
                   >
-                  <span
-                    style="
-                      color: #929292;
-                      display: block;
-                      margin-top: 1em;
-                      margin-bottom: 2em;
-                    "
-                    >Your subscription unlocks unlimited downloads and editing,
-                    plus all apps and plugins this purchase supports</span
-                  >
-                  <span style="color: #929292; display: block; margin-top: 1em"
-                    >Lorem Ipsum is simply:
-                    <a href="#" style="color: #443bad; font-weight: 500"
-                      >Click here</a
-                    ></span
-                  >
-                  <span
-                    style="
-                      color: #929292;
-                      display: block;
-                      margin-top: 1em;
-                      margin-bottom: 2em;
-                    "
-                    >Lorem Ipsum:
-                    <a href="#" style="color: #443bad; font-weight: 500"
-                      >Click here</a
-                    ></span
-                  >
-                </font>
-              </td>
-            </tr>
-          </table>
-          <table
-            width="640"
-            cellspacing="0"
-            cellpadding="0"
-            class="100p"
-            style="border-top: 1px solid #eaeaea; padding-top: 1em"
-          >
-            <tr>
-              <td width="50" style="padding-right: 1em">
-                <svg
-                  version="1.0"
-                  class="logo"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 73.000000 70.000000"
-                  preserveAspectRatio="xMidYMid meet"
-                >
-                  <g
-                    transform="translate(0.000000,70.000000) scale(0.100000,-0.100000)"
-                    fill="#000000"
-                    stroke="none"
-                  >
-                    <path
-                      d="M244 683 c-148 -43 -254 -202 -241 -360 10 -127 86 -234 207 -292 47
+                    <g
+                      transform="translate(0.000000,70.000000) scale(0.100000,-0.100000)"
+                      fill="#000000"
+                      stroke="none"
+                    >
+                      <path
+                        d="M244 683 c-148 -43 -254 -202 -241 -360 10 -127 86 -234 207 -292 47
                         -22 68 -26 150 -26 88 0 101 3 162 33 74 36 132 95 169 170 20 39 24 63 24
                         142 0 86 -3 101 -30 153 -42 84 -119 151 -202 177 -76 23 -166 25 -239 3z m86
                         -134 c0 -27 -4 -49 -10 -49 -5 0 -10 14 -10 30 0 33 -2 35 -31 19 -41 -21 -42
@@ -359,119 +190,99 @@
                         c-23 -17 -36 -19 -36 -6 0 11 18 19 40 20 11 0 10 -3 -4 -14z m54 5 c8 -5 12
                         -12 9 -15 -8 -8 -39 5 -39 16 0 11 11 11 30 -1z m105 -68 c-7 -8 -35 7 -35 18
                         0 6 7 6 20 -2 10 -7 17 -14 15 -16z"
-                    />
-                    <path
-                      d="M498 524 c-38 -20 -36 -28 2 -9 17 9 30 18 30 20 0 7 -1 6 -32 -11z"
-                    />
-                    <path
-                      d="M215 523 c6 -6 33 -23 60 -38 28 -16 46 -24 40 -18 -5 6 -32 23 -60
-                        38 -27 16 -45 24 -40 18z"
-                    />
-                    <path
-                      d="M415 475 c-22 -13 -37 -25 -33 -25 9 0 78 41 78 46 0 6 -3 5 -45 -21z"
-                    />
-                    <path
-                      d="M340 450 c8 -5 20 -10 25 -10 6 0 3 5 -5 10 -8 5 -19 10 -25 10 -5 0
+                      />
+                      <path
+                        d="M498 524 c-38 -20 -36 -28 2 -9 17 9 30 18 30 20 0 7 -1 6 -32 -11z"
+                      />
+                      <path
+                        d="M215 523 c6 -6 33 -23 60 -38 28 -16 46 -24 40 -18 -5 6 -32 23 -60
+                            38 -27 16 -45 24 -40 18z"
+                      />
+                      <path
+                        d="M415 475 c-22 -13 -37 -25 -33 -25 9 0 78 41 78 46 0 6 -3 5 -45 -21z"
+                      />
+                      <path
+                        d="M340 450 c8 -5 20 -10 25 -10 6 0 3 5 -5 10 -8 5 -19 10 -25 10 -5 0
                           -3 -5 5 -10z"
-                    />
-                    <path
-                      d="M111 396 c2 -2 15 -9 29 -15 24 -11 24 -11 6 3 -16 13 -49 24 -35 12z"
-                    />
-                    <path
-                      d="M170 366 c0 -3 14 -12 30 -21 17 -9 30 -13 30 -11 0 3 -13 12 -30 21
-                        -16 9 -30 13 -30 11z"
-                    />
-                    <path
-                      d="M254 311 c21 -23 26 -26 26 -11 0 5 -10 15 -22 21 -23 12 -23 12 -4
-                        -10z"
-                    />
-                    <path
-                      d="M535 364 c-67 -40 -95 -63 -95 -77 0 -5 8 0 18 11 9 12 49 39 87 61
+                      />
+                      <path
+                        d="M111 396 c2 -2 15 -9 29 -15 24 -11 24 -11 6 3 -16 13 -49 24 -35 12z"
+                      />
+                      <path
+                        d="M170 366 c0 -3 14 -12 30 -21 17 -9 30 -13 30 -11 0 3 -13 12 -30 21
+                          -16 9 -30 13 -30 11z"
+                      />
+                      <path
+                        d="M254 311 c21 -23 26 -26 26 -11 0 5 -10 15 -22 21 -23 12 -23 12 -4
+                          -10z"
+                      />
+                      <path
+                        d="M535 364 c-67 -40 -95 -63 -95 -77 0 -5 8 0 18 11 9 12 49 39 87 61
                           39 23 66 41 60 40 -5 0 -37 -16 -70 -35z"
+                      />
+                    </g>
+                  </svg>
+                </td>
+                <td class="site-title">MIRRORBOT</td>
+                <!-- <td class="follow-us">Follow us:</td>
+                <td>
+                  <svg
+                    class="icon"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.125 0H6.875C3.07863 0 0 3.07863 0 6.875V15.125C0 18.9214 3.07863 22 6.875 22H15.125C18.9214 22 22 18.9214 22 15.125V6.875C22 3.07863 18.9214 0 15.125 0ZM19.9375 15.125C19.9375 17.7787 17.7787 19.9375 15.125 19.9375H6.875C4.22125 19.9375 2.0625 17.7787 2.0625 15.125V6.875C2.0625 4.22125 4.22125 2.0625 6.875 2.0625H15.125C17.7787 2.0625 19.9375 4.22125 19.9375 6.875V15.125Z"
+                      fill="#231F20"
                     />
-                  </g>
-                </svg>
-              </td>
-              <td style="font-weight: 600" class="title">
-                <font face="'Montserrat', Arial, sans-serif">MIRRORBOT</font>
-              </td>
-              <td style="color: #929292; padding-right: 1em" align="right">
-                <font face="'Montserrat', Arial, sans-serif">Follow us:</font>
-              </td>
-              <td>
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 22 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15.125 0H6.875C3.07863 0 0 3.07863 0 6.875V15.125C0 18.9214 3.07863 22 6.875 22H15.125C18.9214 22 22 18.9214 22 15.125V6.875C22 3.07863 18.9214 0 15.125 0ZM19.9375 15.125C19.9375 17.7787 17.7787 19.9375 15.125 19.9375H6.875C4.22125 19.9375 2.0625 17.7787 2.0625 15.125V6.875C2.0625 4.22125 4.22125 2.0625 6.875 2.0625H15.125C17.7787 2.0625 19.9375 4.22125 19.9375 6.875V15.125Z"
-                    fill="#231F20"
-                  />
-                  <path
-                    d="M11.0039 5.5C7.96653 5.5 5.50391 7.96262 5.50391 11C5.50391 14.0374 7.96653 16.5 11.0039 16.5C14.0413 16.5 16.5039 14.0374 16.5039 11C16.5039 7.96262 14.0413 5.5 11.0039 5.5ZM11.0039 14.4375C9.10916 14.4375 7.56641 12.8948 7.56641 11C7.56641 9.10388 9.10916 7.5625 11.0039 7.5625C12.8987 7.5625 14.4414 9.10388 14.4414 11C14.4414 12.8948 12.8987 14.4375 11.0039 14.4375Z"
-                    fill="#231F20"
-                  />
-                  <path
-                    d="M16.9048 5.82024C17.3095 5.82024 17.6376 5.49212 17.6376 5.08737C17.6376 4.68261 17.3095 4.35449 16.9048 4.35449C16.5 4.35449 16.1719 4.68261 16.1719 5.08737C16.1719 5.49212 16.5 5.82024 16.9048 5.82024Z"
-                    fill="#231F20"
-                  />
-                </svg>
-              </td>
-              <td>
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 22 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11 0C4.9247 0 0 4.95468 0 11.067C0 16.5905 4.0227 21.1689 9.2818 22V14.2653H6.4878V11.067H9.2818V8.62891C9.2818 5.85553 10.923 4.32386 13.4365 4.32386C14.6399 4.32386 15.8983 4.53967 15.8983 4.53967V7.26214H14.5123C13.145 7.26214 12.7193 8.1154 12.7193 8.99079V11.067H15.7696L15.2823 14.2653H12.7193V22C17.9773 21.17 22 16.5894 22 11.067C22 4.95468 17.0753 0 11 0Z"
-                    fill="#231F20"
-                  />
-                </svg>
-              </td>
-              <td>
-                <svg
-                  width="24"
-                  height="20"
-                  viewBox="0 0 24 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M23.7037 2.35765C22.8161 2.76666 21.8744 3.03481 20.9101 3.15314C21.9243 2.52138 22.6826 1.52781 23.0435 0.357851C22.0897 0.948746 21.0454 1.36525 19.956 1.58926C19.2223 0.780381 18.2526 0.245072 17.1967 0.066054C16.1409 -0.112964 15.0577 0.074273 14.1146 0.598833C13.1714 1.12339 12.4208 1.95607 11.9787 2.96819C11.5366 3.98031 11.4277 5.11553 11.6687 6.19841C9.73503 6.09578 7.84371 5.57189 6.11749 4.66074C4.39127 3.74959 2.86873 2.47154 1.64867 0.90952C1.0283 2.02191 0.838638 3.33789 1.1182 4.59028C1.39777 5.84266 2.12561 6.93757 3.15394 7.65269C2.38048 7.62909 1.62372 7.41332 0.94701 7.02345C0.94701 7.04438 0.94701 7.06655 0.94701 7.08748C0.947863 8.25552 1.33794 9.38723 2.05095 10.2903C2.76396 11.1934 3.75594 11.8121 4.85832 12.0414C4.14211 12.2434 3.39104 12.2733 2.66206 12.1289C2.97261 13.1328 3.57752 14.0107 4.39213 14.6398C5.20675 15.2689 6.19029 15.6176 7.2051 15.6371C5.4813 17.0433 3.35198 17.8054 1.16035 17.8007C0.772555 17.8006 0.385099 17.7767 0 17.7293C2.22353 19.2145 4.81177 20.0028 7.45519 20C16.4002 20 21.2917 12.3012 21.2917 5.62334C21.2917 5.40415 21.2917 5.18619 21.2787 4.96946C22.2299 4.25541 23.0511 3.37099 23.7037 2.35765Z"
-                    fill="#231F20"
-                  />
-                </svg>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table
-      width="640"
-      border="0"
-      cellspacing="0"
-      cellpadding="20"
-      bgcolor="#E5E5E5"
-      class="100p"
-    >
-      <tr>
-        <td align="center" style="font-size: 16px; color: #848484">
-          <font face="'Montserrat', Arial, sans-serif">
-            <br />
-            <span style="font-size: 16px"
-              >Your subscription unlocks unlimited downloads and editing, plus
-              all apps and plugins this purchase supports</span
-            ></font
-          >
-        </td>
-      </tr>
-    </table>
+                    <path
+                      d="M11.0039 5.5C7.96653 5.5 5.50391 7.96262 5.50391 11C5.50391 14.0374 7.96653 16.5 11.0039 16.5C14.0413 16.5 16.5039 14.0374 16.5039 11C16.5039 7.96262 14.0413 5.5 11.0039 5.5ZM11.0039 14.4375C9.10916 14.4375 7.56641 12.8948 7.56641 11C7.56641 9.10388 9.10916 7.5625 11.0039 7.5625C12.8987 7.5625 14.4414 9.10388 14.4414 11C14.4414 12.8948 12.8987 14.4375 11.0039 14.4375Z"
+                      fill="#231F20"
+                    />
+                    <path
+                      d="M16.9048 5.82024C17.3095 5.82024 17.6376 5.49212 17.6376 5.08737C17.6376 4.68261 17.3095 4.35449 16.9048 4.35449C16.5 4.35449 16.1719 4.68261 16.1719 5.08737C16.1719 5.49212 16.5 5.82024 16.9048 5.82024Z"
+                      fill="#231F20"
+                    />
+                  </svg>
+                </td>
+                <td>
+                  <svg
+                    class="icon"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 0C4.9247 0 0 4.95468 0 11.067C0 16.5905 4.0227 21.1689 9.2818 22V14.2653H6.4878V11.067H9.2818V8.62891C9.2818 5.85553 10.923 4.32386 13.4365 4.32386C14.6399 4.32386 15.8983 4.53967 15.8983 4.53967V7.26214H14.5123C13.145 7.26214 12.7193 8.1154 12.7193 8.99079V11.067H15.7696L15.2823 14.2653H12.7193V22C17.9773 21.17 22 16.5894 22 11.067C22 4.95468 17.0753 0 11 0Z"
+                      fill="#231F20"
+                    />
+                  </svg>
+                </td>
+                <td>
+                  <svg
+                    class="icon"
+                    width="24"
+                    height="20"
+                    viewBox="0 0 24 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.7037 2.35765C22.8161 2.76666 21.8744 3.03481 20.9101 3.15314C21.9243 2.52138 22.6826 1.52781 23.0435 0.357851C22.0897 0.948746 21.0454 1.36525 19.956 1.58926C19.2223 0.780381 18.2526 0.245072 17.1967 0.066054C16.1409 -0.112964 15.0577 0.074273 14.1146 0.598833C13.1714 1.12339 12.4208 1.95607 11.9787 2.96819C11.5366 3.98031 11.4277 5.11553 11.6687 6.19841C9.73503 6.09578 7.84371 5.57189 6.11749 4.66074C4.39127 3.74959 2.86873 2.47154 1.64867 0.90952C1.0283 2.02191 0.838638 3.33789 1.1182 4.59028C1.39777 5.84266 2.12561 6.93757 3.15394 7.65269C2.38048 7.62909 1.62372 7.41332 0.94701 7.02345C0.94701 7.04438 0.94701 7.06655 0.94701 7.08748C0.947863 8.25552 1.33794 9.38723 2.05095 10.2903C2.76396 11.1934 3.75594 11.8121 4.85832 12.0414C4.14211 12.2434 3.39104 12.2733 2.66206 12.1289C2.97261 13.1328 3.57752 14.0107 4.39213 14.6398C5.20675 15.2689 6.19029 15.6176 7.2051 15.6371C5.4813 17.0433 3.35198 17.8054 1.16035 17.8007C0.772555 17.8006 0.385099 17.7767 0 17.7293C2.22353 19.2145 4.81177 20.0028 7.45519 20C16.4002 20 21.2917 12.3012 21.2917 5.62334C21.2917 5.40415 21.2917 5.18619 21.2787 4.96946C22.2299 4.25541 23.0511 3.37099 23.7037 2.35765Z"
+                      fill="#231F20"
+                    />
+                  </svg>
+                </td> -->
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </font>
   </body>
 </html>
