@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
 .container-table {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .logo {
@@ -19,7 +19,7 @@
 }
 
 .logo-td {
-  padding-right: 0.3em;
+  padding-right: .3em;
   width: 35px;
 }
 
@@ -32,8 +32,8 @@
 
 .email-header-tr {
   display: block;
-  border-bottom: 1px solid #eaeaea;
-  padding: 0.5em;
+  border-bottom: 1px solid #EAEAEA;
+  padding: .5em;
 }
 
 @media (min-width: 500px) {
@@ -44,7 +44,7 @@
 
 .email-footer-tr {
   border: none;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #EAEAEA;
 }
 
 .site-title {
@@ -59,7 +59,7 @@
 }
 
 .body-table {
-  padding: 0.5em;
+  padding: .5em;
 }
 
 @media (min-width: 500px) {
@@ -71,7 +71,7 @@
 .body-header {
   font-size: 1.2rem;
   font-weight: 600;
-  padding-bottom: 0.7em;
+  padding-bottom: .7em;
 }
 
 @media (min-width: 500px) {
@@ -81,9 +81,9 @@
 }
 
 .code-td {
-  background-color: #f9f9f9;
+  background-color: #F9F9F9;
   border: 1px solid #aeaeae80;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
   display: inline-table;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -91,7 +91,7 @@
 
 .description-td {
   color: #929292;
-  padding-bottom: 0.7em;
+  padding-bottom: .7em;
 }
 
 @media (min-width: 500px) {
@@ -102,11 +102,11 @@
 
 .link-td {
   color: #929292;
-  padding-block: 0.3em;
+  padding-block: .3em;
 }
 
 .link-a {
-  color: #443bad;
+  color: #443BAD;
   font-weight: 500;
 }
 
@@ -134,10 +134,15 @@
 }
 
 .icon {
-  padding-right: 0.3em;
+  padding-right: .3em;
 }
 
 .icon-1 {
   width: 100%;
   text-align: right;
+}
+
+.footer-description {
+  color: #929292;
+  padding: 1em;
 }
