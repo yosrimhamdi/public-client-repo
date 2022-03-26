@@ -15,13 +15,14 @@
 }
 
 .logo-td {
-  padding-right: 1em;
+  padding-right: .3em;
   width: 35px;
 }
 
 @media (min-width: 500px) {
   .logo-td {
     width: 50px;
+    padding-right: 1em;
   }
 }
 
