@@ -9,98 +9,100 @@
   </head>
   <body>
     <div class="form">
-      <form class="form__form">
-        <div class="xmark-container">
-          <img
-            src="../assets/images/xmark-solid.svg"
-            alt="cross icon"
-            class="xmark-icon"
-          />
-        </div>
-        <h1 class="form__header">Subscription</h1>
-        <p class="form__description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been
-        </p>
-        <div class="payment">
-          <div class="payment__black-cta">
-            <div class="payment__standard">
-              <h4 class="payment__standard-title">Standard</h4>
-              <h2 class="payment__amount">$99/Month</h2>
-              <p class="payment__description">
-                How much you would like to invest monthly?
-              </p>
-            </div>
-          </div>
-          <h3 class="payment__header">Payment information</h3>
-          <label for="name-card-holder" class="form__label"
-            >Name of card holder <span class="required">*</span></label
-          >
-          <input type="text" id="name-card-holder" class="form__input" />
-          <label for="credit-card-number" class="form__label"
-            >Credit card number <span class="required">*</span></label
-          >
-          <div class="input-wrapper">
-            <input
-              id="credit-card-number"
-              class="form__input input-wrapper__input"
-              placeholder="0000 0000 0000 0000"
-              type="number"
-              autocomplete="off"
+      <div class="form__container">
+        <form class="form__form">
+          <div class="xmark-container">
+            <img
+              src="../assets/images/xmark-solid.svg"
+              alt="cross icon"
+              class="xmark-icon"
             />
-            <div class="input-wrapper__icons-wrapper">
-              <img src="../assets/images/payment/amex.png" alt="amex icon" />
-              <img
-                src="../assets/images/payment/discover.png"
-                alt="discover icon"
-              />
-              <img
-                src="../assets/images/payment/mastercard.png"
-                alt="mastercard icon"
-              />
-              <img src="../assets/images/payment/visa.png" alt="visa icon" />
-            </div>
           </div>
-          <div class="form__flexbox">
-            <div class="form__flexbox-item-full-width">
-              <label for="first-name" class="form__label"
-                >Expiration date <span class="required">*</span></label
-              >
-              <input
-                type="text"
-                id="first-name"
-                class="form__input"
-                placeholder="MM/YY"
-              />
+          <h1 class="form__header">Subscription</h1>
+          <p class="form__description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been
+          </p>
+          <div class="payment">
+            <div class="payment__black-cta">
+              <div class="payment__standard">
+                <h4 class="payment__standard-title">Standard</h4>
+                <h2 class="payment__amount">$99/Month</h2>
+                <p class="payment__description">
+                  How much you would like to invest monthly?
+                </p>
+              </div>
             </div>
-            <div class="form__flexbox-item-full-width">
-              <label for="last-name" class="form__label"
-                >CVC <span class="required">*</span></label
-              >
-              <div class="input-wrapper">
-                <input
-                  placeholder="000"
-                  text="number"
-                  id="last-name"
-                  class="form__input input-wrapper__input"
+            <h3 class="payment__header">Payment information</h3>
+            <label for="name-card-holder" class="form__label"
+              >Name of card holder <span class="required">*</span></label
+            >
+            <input type="text" id="name-card-holder" class="form__input" />
+            <label for="credit-card-number" class="form__label"
+              >Credit card number <span class="required">*</span></label
+            >
+            <div class="input-wrapper">
+              <input
+                id="credit-card-number"
+                class="form__input input-wrapper__input"
+                placeholder="0000 0000 0000 0000"
+                type="number"
+                autocomplete="off"
+              />
+              <div class="input-wrapper__icons-wrapper">
+                <img src="../assets/images/payment/amex.png" alt="amex icon" />
+                <img
+                  src="../assets/images/payment/discover.png"
+                  alt="discover icon"
                 />
-                <div class="input-wrapper__icons-wrapper">
-                  <img
-                    src="../assets/images/payment/vector.png"
-                    alt="exclamation mark icon"
-                    class="input-wrapper__exclamation-mark-icon"
+                <img
+                  src="../assets/images/payment/mastercard.png"
+                  alt="mastercard icon"
+                />
+                <img src="../assets/images/payment/visa.png" alt="visa icon" />
+              </div>
+            </div>
+            <div class="form__flexbox">
+              <div class="form__flexbox-item-full-width">
+                <label for="first-name" class="form__label"
+                  >Expiration date <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  id="first-name"
+                  class="form__input"
+                  placeholder="MM/YY"
+                />
+              </div>
+              <div class="form__flexbox-item-full-width">
+                <label for="last-name" class="form__label"
+                  >CVC <span class="required">*</span></label
+                >
+                <div class="input-wrapper">
+                  <input
+                    placeholder="000"
+                    text="number"
+                    id="last-name"
+                    class="form__input input-wrapper__input"
                   />
+                  <div class="input-wrapper__icons-wrapper">
+                    <img
+                      src="../assets/images/payment/vector.png"
+                      alt="exclamation mark icon"
+                      class="input-wrapper__exclamation-mark-icon"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="payment__total-payable">
-          <p class="payment__total-payable-text">Total payable:</p>
-          <p class="payment__total-amount">$99/Month</p>
-        </div>
-        <button type="submit" class="button button--red">Subscription</button>
-      </form>
+          <div class="payment__total-payable">
+            <p class="payment__total-payable-text">Total payable:</p>
+            <p class="payment__total-amount">$99/Month</p>
+          </div>
+          <button type="submit" class="button button--red">Subscription</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
