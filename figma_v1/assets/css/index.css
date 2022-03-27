@@ -122,6 +122,10 @@ a {
   outline: none;
 }
 
+.form__input--extra-mb {
+  margin-bottom: 1.7em;
+}
+
 .form__checkbox {
   width: 20px;
   height: 20px;
@@ -148,6 +152,10 @@ a {
 
 .form__input-container > input {
   margin-bottom: 0;
+}
+
+.form__input-container--extra-mb {
+  margin-bottom: 1.7em;
 }
 
 .form__remember-me-container {
