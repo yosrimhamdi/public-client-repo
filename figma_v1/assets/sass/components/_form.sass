@@ -4,8 +4,6 @@
     position: absolute
     top: 0
     width: 100%
-    min-height: 100vh
-    height: 100%
     color: #2D2D2D
     background-image: url('../images/hero.png')
     background-size: cover
@@ -15,7 +13,7 @@
     &__container
         backdrop-filter: blur(5px)
         background-color: rgba(#000, .2)
-        height: 100%
+        min-height: 100vh
 
         @include breakpoint('small')
             padding: 3em 0
