@@ -18,6 +18,8 @@ table
     border-spacing: 0
     width: 100%
 
+table,tr, td
+    border-collapse: collapse
 
 .email
     min-height: 100vh
@@ -26,6 +28,7 @@ table
     display: flex
     align-items: center
     justify-content: center
+    padding: 3em 0
 
     &__container-table
         max-width: 500px
@@ -33,14 +36,16 @@ table
     &__main-content
         background-color: white
         border-radius: 10px
-        padding: 1em 1.4em
+        padding: 1em 2em
 
     &__header
-        display: block // to change!
+        display: block
         border-bottom: 1px solid #EAEAEA
+        padding-bottom: 1em
     
     &__logo
         width: 35px
+        padding-right: 1em
 
         @include breakpoint('small')
             width: 50px
@@ -52,18 +57,46 @@ table
         @include breakpoint('small')
             font-size: 1.5rem
 
-    &__code
-        background-color: #F9F9F9
-        border: 1px solid #aeaeae80
-        display: inline-table
-        border-radius: 4px
-
     &__verif-code-text
         font-size: 1.2rem
         font-weight: 600
+        padding: 1em 0 1em
 
         @include breakpoint('small')
             font-size: 1.5rem
+    
+    &__code
+        background-color: #F9F9F9
+        border: 1px solid #aeaeae80
+        border-radius: 4px
+        padding: 1em 2em
+        display: inline-block
+        margin-bottom: 2em
+        font-size: 1.1rem
+        font-weight: 500
+
+    &__code-wrapper
+        text-align: center
+
+    &__description
+        color: #929292
+        padding-bottom: 2em
+
+    &__link-description
+        color: #929292
+        padding-bottom: .5em
+
+        &--more-pb
+            padding-bottom: 2.5em
+
+    &__link
+        color: #443BAD
+        font-weight: 500
+
+    &__header-footer
+        border-top: 1px solid #EAEAEA
+        border-collapse: separate;
+        border-spacing: 0 1em;
 
     &__follow-us-text
         display: none
@@ -81,13 +114,4 @@ table
         background-color: transparent
         color: #929292
         text-align: center
-
-    &__description
-        color: #929292
-
-    &__link-description
-        color: #929292
-
-    &__link
-        color: #443BAD
-        font-weight: 500
+        padding: 2em 3em
