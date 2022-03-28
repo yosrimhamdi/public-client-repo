@@ -28,16 +28,21 @@ table, tr, td {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   background-color: rgba(32, 31, 31, 0.3);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 3em 0;
+}
+
+@media (min-width: 500px) {
+  .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 3em 0;
+  }
 }
 
 .email__container-table {
@@ -46,8 +51,14 @@ table, tr, td {
 
 .email__main-content {
   background-color: white;
-  border-radius: 10px;
-  padding: 1em 2em;
+  padding: 1em;
+}
+
+@media (min-width: 500px) {
+  .email__main-content {
+    border-radius: 10px;
+    padding: 1em 2em;
+  }
 }
 
 .email__header {
@@ -56,13 +67,24 @@ table, tr, td {
   padding-bottom: 1em;
 }
 
+.email__logo-container {
+  width: 35px;
+}
+
+@media (min-width: 500px) {
+  .email__logo-container {
+    width: 50px;
+  }
+}
+
 .email__logo {
   width: 35px;
-  padding-right: 1em;
+  padding-right: .5em;
 }
 
 @media (min-width: 500px) {
   .email__logo {
+    padding-right: 1em;
     width: 50px;
   }
 }
@@ -148,8 +170,14 @@ table, tr, td {
 }
 
 .email__footer {
-  background-color: transparent;
   color: #929292;
   text-align: center;
   padding: 2em 3em;
+  background-color: #f2f4f5;
+}
+
+@media (min-width: 500px) {
+  .email__footer {
+    background-color: transparent;
+  }
 }
