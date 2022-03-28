@@ -5,110 +5,81 @@
     margin: 0
     padding: 0
 
-.container-table
-    max-width: 600px
+body
+    background-image: url('../images/hero.png')
+    background-size: cover
+    background-position: center
+    background-attachment: fixed; 
+  
+.email
+    min-height: 100vh
+    backdrop-filter: blur(5px)
+    background-color: rgba(#201F1F, .3)
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &__container-table
+        max-width: 500px
+
+    &__main-content
+        background-color: white
+        border-radius: 10px
+        padding: 1em 1.4em
+
+    &__header
+        display: block // to change!
+        border-bottom: 1px solid #EAEAEA
     
-.logo
-    width: 35px
+    &__logo
+        width: 35px
 
-    @include breakpoint('small')
-        width: 50px
+        @include breakpoint('small')
+            width: 50px
 
+    &__site-title
+        font-weight: 600
+        font-size: 1rem
 
-.logo-td
-    padding-right: .3em
-    width: 35px
+        @include breakpoint('small')
+            font-size: 1.5rem
 
-    @include breakpoint('small')
-        width: 50px
-        padding-right: 1em
+    &__code
+        background-color: #F9F9F9
+        border: 1px solid #aeaeae80
+        display: inline-table
+        border-radius: 4px
 
+    &__verif-code-text
+        font-size: 1.2rem
+        font-weight: 600
 
-.email-header-tr
-    display: block
-    border-bottom: 1px solid #EAEAEA
-    padding: .5em
+        @include breakpoint('small')
+            font-size: 1.5rem
 
-    @include breakpoint('small')
-        padding: 1em
+    &__follow-us-text
+        display: none
 
+        @include breakpoint('small')
+            display: table-cell    
+            width: 100%
+            text-align: right
+            padding-right: 1em
 
-.email-footer-tr
-    border: none
-    border-top: 1px solid #EAEAEA
+    &__icon
+        padding-right: .3em
 
-.site-title
-    font-weight: 600
-    font-size: 1rem
+    &__footer
+        background-color: transparent
+        color: #929292
+        text-align: center
 
-    @include breakpoint('small')
-        font-size: 1.5rem
+    &__description
+        color: #929292
 
-.body-table
-    padding: .5em
+    &__link-description
+        color: #929292
 
-    @include breakpoint('small')
-        padding: 1em
-
-.body-header
-    font-size: 1.2rem
-    font-weight: 600
-    padding-bottom: .7em
-
-    @include breakpoint('small')
-        font-size: 1.5rem
-
-.code-td
-    background-color: #F9F9F9
-    border: 1px solid #aeaeae80
-    padding: .5em 1em
-    display: inline-table
-    border-radius: 4px
-    margin-bottom: 1em
-
-.description-td
-    color: #929292
-    padding-bottom: .7em
-    
-    @include breakpoint('small')
-        padding-bottom: 1em
-    
-
-.link-td
-    color: #929292
-    padding-block: .3em
-
-.link-a
-    color: #443BAD
-    font-weight: 500
-
-.second-link
-    padding-bottom: 1em
-    
-    @include breakpoint('small')
-        padding-bottom: 1.7em
-
-    
-
-.follow-us
-    display: none
-
-    @include breakpoint('small')
-        display: table-cell    
-        width: 100%
-        text-align: right
-        padding-right: 1em
-
-
-
-.icon
-    padding-right: .3em
-
-.icon-1
-    width: 100%
-    text-align: right
-
-.footer-description
-    color: #929292
-    padding: 1em
-    text-align: center
+    &__link
+        color: #443BAD
+        font-weight: 500

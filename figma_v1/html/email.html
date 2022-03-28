@@ -9,267 +9,118 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
     <title>Email</title>
-    <!-- <link rel="stylesheet" href="../assets/css/email.css" /> -->
-    <style type="text/css">
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      .container-table {
-        max-width: 600px;
-      }
-
-      .logo {
-        width: 35px;
-      }
-
-      @media (min-width: 500px) {
-        .logo {
-          width: 50px;
-        }
-      }
-
-      .logo-td {
-        padding-right: 0.3em;
-        width: 35px;
-      }
-
-      @media (min-width: 500px) {
-        .logo-td {
-          width: 50px;
-          padding-right: 1em;
-        }
-      }
-
-      .email-header-tr {
-        display: block;
-        border-bottom: 1px solid #eaeaea;
-        padding: 0.5em;
-      }
-
-      @media (min-width: 500px) {
-        .email-header-tr {
-          padding: 1em;
-        }
-      }
-
-      .email-footer-tr {
-        border: none;
-        border-top: 1px solid #eaeaea;
-      }
-
-      .site-title {
-        font-weight: 600;
-        font-size: 1rem;
-      }
-
-      @media (min-width: 500px) {
-        .site-title {
-          font-size: 1.5rem;
-        }
-      }
-
-      .body-table {
-        padding: 0.5em;
-      }
-
-      @media (min-width: 500px) {
-        .body-table {
-          padding: 1em;
-        }
-      }
-
-      .body-header {
-        font-size: 1.2rem;
-        font-weight: 600;
-        padding-bottom: 0.7em;
-      }
-
-      @media (min-width: 500px) {
-        .body-header {
-          font-size: 1.5rem;
-        }
-      }
-
-      .code-td {
-        background-color: #f9f9f9;
-        border: 1px solid #aeaeae80;
-        padding: 0.5em 1em;
-        display: inline-table;
-        border-radius: 4px;
-        margin-bottom: 1em;
-      }
-
-      .description-td {
-        color: #929292;
-        padding-bottom: 0.7em;
-      }
-
-      @media (min-width: 500px) {
-        .description-td {
-          padding-bottom: 1em;
-        }
-      }
-
-      .link-td {
-        color: #929292;
-        padding-block: 0.3em;
-      }
-
-      .link-a {
-        color: #443bad;
-        font-weight: 500;
-      }
-
-      .second-link {
-        padding-bottom: 1em;
-      }
-
-      @media (min-width: 500px) {
-        .second-link {
-          padding-bottom: 1.7em;
-        }
-      }
-
-      .follow-us {
-        display: none;
-      }
-
-      @media (min-width: 500px) {
-        .follow-us {
-          display: table-cell;
-          width: 100%;
-          text-align: right;
-          padding-right: 1em;
-        }
-      }
-
-      .icon {
-        padding-right: 0.3em;
-      }
-
-      .icon-1 {
-        width: 100%;
-        text-align: right;
-      }
-
-      .footer-description {
-        color: #929292;
-        padding: 1em;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="../assets/css/email.css" />
+    <!-- <style type="text/css"></style> -->
   </head>
 
   <body>
-    <font face="'Montserrat', Arial, sans-serif">
-      <table
-        border="0"
-        cellpadding="0"
-        cellspacing="0"
-        width="100%"
-        class="container-table"
-      >
-        <tr>
-          <td>
-            <!-- email header -->
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr class="email-header-tr">
-                <td class="logo-td">
-                  <img
-                    src="../assets/images/logo.png"
-                    alt="website logo"
-                    class="logo"
-                  />
-                </td>
-                <td class="site-title">MIRRORBOT</td>
-              </tr>
-            </table>
-            <!-- email body -->
-            <table
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              width="100%"
-              class="body-table"
-            >
-              <tr>
-                <td class="body-header">Email verification code</td>
-              </tr>
-              <tr>
-                <td class="code-td">86542</td>
-              </tr>
-              <tr>
-                <td class="description-td">
-                  Your subscription unlocks unlimited downloads and editing,
-                  plus all apps and plugins this purchase supports
-                </td>
-              </tr>
-              <tr>
-                <td class="link-td">
-                  Lorem Ipsum is simply:
-                  <a href="#" class="link-a">Click here</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="link-td second-link">
-                  Lorem Ipsum: <a href="#" class="link-a">Click here</a>
-                </td>
-              </tr>
-            </table>
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr class="email-header-tr email-footer-tr">
-                <td class="logo-td">
-                  <img
-                    src="../assets/images/logo.png"
-                    alt="website logo"
-                    class="logo"
-                  />
-                </td>
-                <td class="site-title">MIRRORBOT</td>
-                <td class="follow-us">Follow us:</td>
-                <td class="icon-1">
-                  <img
-                    src="../assets/images/social/instagram.png"
-                    alt="instagram icon"
-                    class="icon"
-                  />
-                </td>
-                <td>
-                  <img
-                    src="../assets/images/social/facebook.png"
-                    alt="facebook icon"
-                    class="icon"
-                  />
-                </td>
-                <td>
-                  <img
-                    src="../assets/images/social/twitter.png"
-                    alt="twitter icon"
-                    class="icon"
-                  />
-                </td>
-              </tr>
-            </table>
-            <table
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              width="100%"
-              bgcolor="#E5E5E5"
-            >
-              <tr>
-                <td class="footer-description">
-                  Your subscription unlocks unlimited downloads and editing,
-                  plus all apps and plugins this purchase supports
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </font>
+    <div class="email">
+      <font face="'Montserrat', Arial, sans-serif">
+        <table
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
+          width="100%"
+          class="email__container-table"
+        >
+          <tr>
+            <td>
+              <!-- email header -->
+              <div class="email__main-content">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr class="email__header">
+                    <td>
+                      <img
+                        src="../assets/images/logo.png"
+                        alt="website logo"
+                        class="email__logo"
+                      />
+                    </td>
+                    <td class="email__site-title">MIRRORBOT</td>
+                  </tr>
+                </table>
+                <!-- email body -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td class="email__verif-code-text">
+                      Email verification code
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="email__code">86542</td>
+                  </tr>
+                  <tr>
+                    <td class="email__description">
+                      Your subscription unlocks unlimited downloads and editing,
+                      plus all apps and plugins this purchase supports
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="email__link-description">
+                      Lorem Ipsum is simply:
+                      <a href="#" class="email__link">Click here</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="email__link-description">
+                      Lorem Ipsum:
+                      <a href="#" class="email__link">Click here</a>
+                    </td>
+                  </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td class="logo-td">
+                      <img
+                        src="../assets/images/logo.png"
+                        alt="website logo"
+                        class="email__logo"
+                      />
+                    </td>
+                    <td class="email__site-title">MIRRORBOT</td>
+                    <td class="email__follow-us-text">Follow us:</td>
+                    <td>
+                      <img
+                        src="../assets/images/social/instagram.png"
+                        alt="instagram icon"
+                        class="email__icon"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="../assets/images/social/facebook.png"
+                        alt="facebook icon"
+                        class="email__icon"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="../assets/images/social/twitter.png"
+                        alt="twitter icon"
+                        class="email__icon"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+                class="email__footer"
+              >
+                <tr>
+                  <td>
+                    Your subscription unlocks unlimited downloads and editing,
+                    plus all apps and plugins this purchase supports
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </font>
+    </div>
   </body>
 </html>
