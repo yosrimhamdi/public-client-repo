@@ -6,11 +6,14 @@
     padding: 0
 
 body
-    background-image: url('../images/hero.png')
-    background-size: cover
-    background-position: center
-    background-attachment: fixed; 
+    background-color: #f2f4f5
     font-family: 'Montserrat', Arial, sans-serif
+
+    @include breakpoint('small')
+        background-image: url('../images/hero.png')
+        background-size: cover
+        background-position: center
+        background-attachment: fixed; 
 
 table
     border: none
@@ -23,10 +26,10 @@ table,tr, td
 
 .email
     min-height: 100vh
-    backdrop-filter: blur(5px)
-    background-color: rgba(#201F1F, .3)
 
     @include breakpoint('small')
+        backdrop-filter: blur(5px)
+        background-color: rgba(#201F1F, .3)
         display: flex
         align-items: center
         justify-content: center
@@ -125,8 +128,9 @@ table,tr, td
     &__footer
         color: #929292
         text-align: center
-        padding: 2em 3em
+        padding: 1em
         background-color: #f2f4f5
     
         @include breakpoint('small')
+            padding: 2em 3em
             background-color: transparent
