@@ -1,0 +1,44 @@
+.nav
+    display: flex
+    flex-direction: column
+    padding: 1em 2em
+    height: 100vh
+    background-color: white
+
+    &__header
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 2em
+
+    &__logo
+        display: block
+        width: 40px
+        height: 40px
+        margin-right: 1em
+
+    &__links-wrapper
+        list-style: none;
+
+        &--top
+            flex-grow: 1
+
+    &__link
+        padding: .5em 1em
+        border-radius: 5px
+        margin-bottom: .3em
+        display: block
+
+        &--active
+            background-color: #F8F7F7
+
+        &:hover
+            cursor: pointer
+
+    &__icon
+        margin-right: .5em
+        font-size: 1.5rem
+        color: #EDA49F
+
+        &--active
+            color: #DA2619
