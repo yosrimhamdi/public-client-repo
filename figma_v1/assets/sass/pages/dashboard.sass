@@ -3,6 +3,10 @@
 @import '../components/dashboard/nav';
 @import '../components/dashboard/header';
 @import '../components/dashboard/card';
+@import '../components/dashboard/table';
+@import '../components/dashboard/icon';
+@import '../components/dashboard/button';
+@import '../components/dashboard/footer';
 
 .dashboard
     display: flex
@@ -11,37 +15,9 @@
     &__main-content
         flex-grow: 1
         background-color: #F9F8F8
+        padding: 1.5em 2em
 
-    &__button
-        padding: .5em 1em
-        background-color: white
-        border-radius: 20px
 
-        &--outlined
-            border: 1px solid #DA2619
-            margin-right: 1em
-
-    &__icon-wrapper
-        background-color: white
-        width: 40px
-        height: 40px
+    &__cards-wrapper
         display: flex
-        justify-content: center
-        align-items: center
-        border-radius: 50%
-
-        &:not(:last-child)
-            margin-right: .5em
-        
-        &--grey-bg
-            background-color: #2D2D2D
-
-    &__icon
-        color: #2D2D2D
-
-        &--white
-            color: white
-
-    &__cards
-        display: flex
-        padding: 1em 2em
+        padding: 2em 0
