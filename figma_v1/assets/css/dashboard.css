@@ -28,6 +28,10 @@ a {
   padding: 1.5em 2em;
   height: 100vh;
   background-color: white;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .nav__header {
@@ -265,10 +269,8 @@ tr td i {
 }
 
 .dashboard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #2D2D2D;
+  margin-left: 250px;
 }
 
 .dashboard__main-content {
