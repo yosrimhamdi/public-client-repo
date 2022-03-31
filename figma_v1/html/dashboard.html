@@ -68,8 +68,30 @@
             <div class="icon-wrapper">
               <i class="fa-solid fa-arrows-to-dot icon"></i>
             </div>
-            <div class="icon-wrapper icon-wrapper--black-bg">
-              <i class="fa-solid fa-user icon icon--white"></i>
+            <div style="position: relative">
+              <div class="icon-wrapper icon-wrapper--black-bg" id="user-icon">
+                <i class="fa-solid fa-user icon icon--white"></i>
+              </div>
+              <div class="drop-down">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-user"></i>
+                    <div>Personal Data</div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-credit-card"></i>
+                    <div>Payment method</div>
+                  </li>
+                  <li class="active">
+                    <i class="fa-solid fa-gear"></i>
+                    <div>Settings</div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-person-running red-color"></i>
+                    <div>Go out</div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -190,5 +212,6 @@
         </div>
       </div>
     </div>
+    <script src="../assets/js/drop-down.js"></script>
   </body>
 </html>

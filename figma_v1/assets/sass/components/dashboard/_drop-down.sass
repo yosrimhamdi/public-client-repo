@@ -1,0 +1,52 @@
+.drop-down
+    position: absolute
+    background-color: #2D2D2D
+    color: white
+    border-radius: 10px
+    bottom: 0
+    transform: translate(-84%, 105%)
+    padding: 1em 1em 
+    z-index: 1
+    box-shadow: -19px 19px 45px rgba(#000, .1)
+    display: none;
+    user-select: none
+
+    &--visible
+        display: block
+
+
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+        width: 20px
+        height: 20px
+        background-color: inherit
+        transform: translate(-50%, -30%) rotate(140deg)
+        border-radius: 5px
+
+    ul
+        list-style: none
+
+    li
+        display: flex
+        align-items: center
+        white-space: nowrap
+        font-weight: 500
+        padding: 1em 1em
+        cursor: pointer
+
+        &.active
+            background-color: rgba(#3e3e3e, .8)
+            border-radius: 10px
+
+
+    i
+        margin-right: .5em
+        font-size: 1.4rem
+        color: #9B9B9B
+
+        &.red-color
+            color: #DA2619
