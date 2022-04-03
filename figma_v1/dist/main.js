@@ -97,36 +97,36 @@ eval("\n\n/* eslint-disable */\n\n/**\n * @param {string[]} pathComponents\n * @
 
 /***/ }),
 
-/***/ "./assets/sass/pages/dashboard.sass":
-/*!******************************************!*\
-  !*** ./assets/sass/pages/dashboard.sass ***!
-  \******************************************/
+/***/ "./src/sass/pages/dashboard.sass":
+/*!***************************************!*\
+  !*** ./src/sass/pages/dashboard.sass ***!
+  \***************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1649027348787\n      var cssReload = __webpack_require__(/*! ../../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://figma_v1/./assets/sass/pages/dashboard.sass?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1649027860719\n      var cssReload = __webpack_require__(/*! ../../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://figma_v1/./src/sass/pages/dashboard.sass?");
 
 /***/ }),
 
-/***/ "./assets/sass/pages/email.sass":
-/*!**************************************!*\
-  !*** ./assets/sass/pages/email.sass ***!
-  \**************************************/
+/***/ "./src/sass/pages/email.sass":
+/*!***********************************!*\
+  !*** ./src/sass/pages/email.sass ***!
+  \***********************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1649027348819\n      var cssReload = __webpack_require__(/*! ../../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://figma_v1/./assets/sass/pages/email.sass?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1649027860733\n      var cssReload = __webpack_require__(/*! ../../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://figma_v1/./src/sass/pages/email.sass?");
 
 /***/ }),
 
-/***/ "./assets/sass/pages/index.sass":
-/*!**************************************!*\
-  !*** ./assets/sass/pages/index.sass ***!
-  \**************************************/
+/***/ "./src/sass/pages/index.sass":
+/*!***********************************!*\
+  !*** ./src/sass/pages/index.sass ***!
+  \***********************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1649027348825\n      var cssReload = __webpack_require__(/*! ../../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://figma_v1/./assets/sass/pages/index.sass?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1649027860738\n      var cssReload = __webpack_require__(/*! ../../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://figma_v1/./src/sass/pages/index.sass?");
 
 /***/ }),
 
@@ -394,7 +394,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("2dac5c95b19b9340c959")
+/******/ 		__webpack_require__.h = () => ("0b34dda1e94c3e9085e5")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1494,9 +1494,9 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /******/ 	// Load entry module and return exports
 /******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3000&pathname=%2Fws&logging=info&reconnect=10");
 /******/ 	__webpack_require__("./node_modules/webpack/hot/dev-server.js");
-/******/ 	__webpack_require__("./assets/sass/pages/index.sass");
-/******/ 	__webpack_require__("./assets/sass/pages/dashboard.sass");
-/******/ 	var __webpack_exports__ = __webpack_require__("./assets/sass/pages/email.sass");
+/******/ 	__webpack_require__("./src/sass/pages/index.sass");
+/******/ 	__webpack_require__("./src/sass/pages/dashboard.sass");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/sass/pages/email.sass");
 /******/ 	
 /******/ })()
 ;
