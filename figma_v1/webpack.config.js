@@ -1,14 +1,18 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: ['/assets/sass/pages/*.sass'],
+  entry: [
+    '/assets/sass/pages/index.sass',
+    '/assets/sass/pages/dashboard.sass',
+    '/assets/sass/pages/email.sass',
+  ],
   output: {
     path: __dirname + '/assets/css',
   },
   mode: 'development',
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'index.css',
+      filename: '[name].css',
     }),
   ],
   module: {
