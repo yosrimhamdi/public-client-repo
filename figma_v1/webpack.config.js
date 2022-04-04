@@ -1,7 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 
 module.exports = {
   entry: {
@@ -14,7 +13,6 @@ module.exports = {
   },
   mode: 'development',
   plugins: [
-    new FixStyleOnlyEntriesPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
