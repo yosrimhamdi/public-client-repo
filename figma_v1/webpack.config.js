@@ -1,6 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const RemovePlugin = require('remove-files-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -13,10 +12,21 @@ module.exports = {
   },
   mode: 'development',
   plugins: [
+    new RemovePlugin({
+      after: {
+        test: [
+          {
+            folder: 'dist/',
+            method: absoluteItemPath => {
+              return new RegExp(/\.js$/, 'm').test(absoluteItemPath);
+            },
+          },
+        ],
+      },
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-    new CleanWebpackPlugin(),
   ],
   module: {
     rules: [
@@ -27,8 +37,9 @@ module.exports = {
     ],
   },
   devServer: {
-    port: 3000,
-    static: { directory: path.join(__dirname, './') },
-    devMiddleware: { writeToDisk: true },
+    hot: false,
+    devMiddleware: {
+      writeToDisk: true,
+    },
   },
 };
