@@ -75,17 +75,6 @@ eval("Object.defineProperty(exports, \"__esModule\", ({value:true}));exports.fro
 
 /***/ }),
 
-/***/ "./src/sass/pages/index.sass":
-/*!***********************************!*\
-  !*** ./src/sass/pages/index.sass ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://figma_v1/./src/sass/pages/index.sass?");
-
-/***/ }),
-
 /***/ "./node_modules/webpack-dev-server/client/clients/WebSocketClient.js":
 /*!***************************************************************************!*\
   !*** ./node_modules/webpack-dev-server/client/clients/WebSocketClient.js ***!
@@ -234,6 +223,27 @@ eval("var EventEmitter = __webpack_require__(/*! events */ \"./node_modules/even
 
 eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(level) {\n\tvar shouldLog =\n\t\t(logLevel === \"info\" && level === \"info\") ||\n\t\t([\"info\", \"warning\"].indexOf(logLevel) >= 0 && level === \"warning\") ||\n\t\t([\"info\", \"warning\", \"error\"].indexOf(logLevel) >= 0 && level === \"error\");\n\treturn shouldLog;\n}\n\nfunction logGroup(logFn) {\n\treturn function (level, msg) {\n\t\tif (shouldLog(level)) {\n\t\t\tlogFn(msg);\n\t\t}\n\t};\n}\n\nmodule.exports = function (level, msg) {\n\tif (shouldLog(level)) {\n\t\tif (level === \"info\") {\n\t\t\tconsole.log(msg);\n\t\t} else if (level === \"warning\") {\n\t\t\tconsole.warn(msg);\n\t\t} else if (level === \"error\") {\n\t\t\tconsole.error(msg);\n\t\t}\n\t}\n};\n\n/* eslint-disable node/no-unsupported-features/node-builtins */\nvar group = console.group || dummy;\nvar groupCollapsed = console.groupCollapsed || dummy;\nvar groupEnd = console.groupEnd || dummy;\n/* eslint-enable node/no-unsupported-features/node-builtins */\n\nmodule.exports.group = logGroup(group);\n\nmodule.exports.groupCollapsed = logGroup(groupCollapsed);\n\nmodule.exports.groupEnd = logGroup(groupEnd);\n\nmodule.exports.setLogLevel = function (level) {\n\tlogLevel = level;\n};\n\nmodule.exports.formatError = function (err) {\n\tvar message = err.message;\n\tvar stack = err.stack;\n\tif (!stack) {\n\t\treturn message;\n\t} else if (stack.indexOf(message) < 0) {\n\t\treturn message + \"\\n\" + stack;\n\t} else {\n\t\treturn stack;\n\t}\n};\n\n\n//# sourceURL=webpack://figma_v1/./node_modules/webpack/hot/log.js?");
 
+/***/ }),
+
+/***/ "./src/js/home.js":
+/*!************************!*\
+  !*** ./src/js/home.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _toggle_mobile_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./toggle-mobile-menu */ \"./src/js/toggle-mobile-menu.js\");\n/* harmony import */ var _toggle_mobile_menu__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_toggle_mobile_menu__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\n//# sourceURL=webpack://figma_v1/./src/js/home.js?");
+
+/***/ }),
+
+/***/ "./src/js/toggle-mobile-menu.js":
+/*!**************************************!*\
+  !*** ./src/js/toggle-mobile-menu.js ***!
+  \**************************************/
+/***/ (() => {
+
+eval("class ToggleMobileMenu {\n  constructor() {\n    this.openIcon = document.querySelector('.mobile-header__bars');\n    this.closeIcon = document.querySelector('.menu-overlay__close-icon');\n    this.menuOverlay = document.querySelector('.menu-overlay');\n\n    this.setEvents();\n  }\n\n  setEvents() {\n    this.openIcon.onclick = () => {\n      this.menuOverlay.classList.add('menu-overlay--visible');\n      document.body.style.overflow = 'hidden';\n    };\n\n    this.closeIcon.onclick = () => {\n      this.menuOverlay.classList.remove('menu-overlay--visible');\n      document.body.style.overflow = 'initial';\n    };\n  }\n}\n\nnew ToggleMobileMenu();\n\n\n//# sourceURL=webpack://figma_v1/./src/js/toggle-mobile-menu.js?");
+
 /***/ })
 
 /******/ 	});
@@ -314,7 +324,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=8080&pathname=%2Fws&logging=info&reconnect=10");
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/sass/pages/index.sass");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/js/home.js");
 /******/ 	
 /******/ })()
 ;

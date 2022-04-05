@@ -75,14 +75,14 @@ eval("Object.defineProperty(exports, \"__esModule\", ({value:true}));exports.fro
 
 /***/ }),
 
-/***/ "./src/sass/pages/index.sass":
+/***/ "./src/sass/pages/email.sass":
 /*!***********************************!*\
-  !*** ./src/sass/pages/index.sass ***!
+  !*** ./src/sass/pages/email.sass ***!
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://figma_v1/./src/sass/pages/index.sass?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://figma_v1/./src/sass/pages/email.sass?");
 
 /***/ }),
 
@@ -314,7 +314,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=8080&pathname=%2Fws&logging=info&reconnect=10");
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/sass/pages/index.sass");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/sass/pages/email.sass");
 /******/ 	
 /******/ })()
 ;
