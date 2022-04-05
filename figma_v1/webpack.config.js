@@ -4,6 +4,7 @@ module.exports = {
   entry: {
     index: '/src/sass/pages/index.sass',
     dashboard: '/src/sass/pages/dashboard.sass',
+    'privacy-policy': '/src/sass/pages/privacy-policy.sass',
     email: '/src/sass/pages/email.sass',
     charts: '/src/js/charts.js',
   },
