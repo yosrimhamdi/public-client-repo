@@ -21,3 +21,4 @@ class ToggleMobileMenu {
 }
 
 new ToggleMobileMenu();
+console.log('hello');
