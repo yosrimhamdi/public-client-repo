@@ -87,13 +87,13 @@ a {
 }
 
 .card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -19px 19px 45px rgba(0, 0, 0, 0.1);
+  padding: 1.5em 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5em 2em;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: -19px 19px 45px rgba(0, 0, 0, 0.1);
   flex-grow: 1;
 }
 .card__description {
@@ -194,8 +194,9 @@ tr td i {
 .footer {
   background-color: white;
   border-radius: 10px;
-  padding: 1em 2em;
   box-shadow: -19px 19px 45px rgba(0, 0, 0, 0.1);
+  padding: 1.5em 1em;
+  padding: 1em 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -269,8 +270,8 @@ tr td i {
 .dashboard__table {
   background-color: white;
   border-radius: 10px;
-  padding: 2em;
   box-shadow: -19px 19px 45px rgba(0, 0, 0, 0.1);
+  padding: 1.5em 1em;
   margin-bottom: 2em;
 }
 .dashboard__table-header {
@@ -284,4 +285,18 @@ tr td i {
 }
 .dashboard__table-summary-text {
   margin-right: 2em;
+}
+.dashboard__chart-wrapper {
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -19px 19px 45px rgba(0, 0, 0, 0.1);
+  padding: 1.5em 1em;
+}
+.dashboard__chart-wrapper:first-child {
+  margin-right: 1em;
+}
+.dashboard__charts {
+  display: flex;
+  margin-bottom: 2em;
 }

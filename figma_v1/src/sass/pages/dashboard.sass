@@ -8,6 +8,7 @@
 @import '../components/dashboard/button'
 @import '../components/dashboard/footer'
 @import '../components/dashboard/drop-down'
+@import '../utils/mixins'
 
 .dashboard
     color: #2D2D2D
@@ -24,10 +25,7 @@
         margin-bottom: 2em
 
     &__table
-        background-color: white
-        border-radius: 10px
-        padding: 2em
-        box-shadow: -19px 19px 45px rgba(#000, .1)
+        @include card
         margin-bottom: 2em
 
 
@@ -43,3 +41,13 @@
     &__table-summary-text
         margin-right: 2em
         
+    &__chart-wrapper
+        width: 50%
+        @include card
+
+        &:first-child
+            margin-right: 1em
+
+    &__charts
+        display: flex
+        margin-bottom: 2em
