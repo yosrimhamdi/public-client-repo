@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack serve"
+    "start": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +18,10 @@
     "sass-loader": "^12.6.0",
     "webpack": "^5.71.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
+    "webpack-dev-server": "^4.7.4",
+    "webpack-remove-empty-scripts": "^0.8.0"
   },
   "dependencies": {
-    "-": "^0.0.1",
-    "chart.js": "^3.7.1",
-    "g": "^2.0.1"
+    "chart.js": "^3.7.1"
   }
 }
