@@ -1,0 +1,47 @@
+@use '../../utils/mixins'
+
+.work
+    padding: 200px 0
+
+    &__content-wrapper
+        @include mixins.content-wrapper
+
+    &__headline
+        color: #2D2D2D
+        font-size: 3.75rem
+        margin-bottom: 1rem
+
+        &--small
+            font-weight: 500
+            font-size: 2.8rem
+
+    &__paragraph
+        color: #2F2F2F
+        font-size: 1.2rem
+
+        &--mid-width
+            width: 50%
+
+    &__items
+        display: flex
+        margin-top: 200px
+    
+    &__item
+        flex-basis: 400px
+
+    &__item-image-wrapper
+        display: inline-block
+        position: relative
+        border: 1px solid red
+
+    &__item-image
+        display: block
+        margin-bottom: .9em
+
+    &__item-num
+        border: 1px solid blue
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+        transform: translate(0, -70%)
