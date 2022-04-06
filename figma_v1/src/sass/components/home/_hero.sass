@@ -1,0 +1,85 @@
+.hero
+    // background-image: url('../../images/home/background.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position-y: -50px
+
+    &__content-wrapper
+        width: 90%
+        margin: 0 auto
+        padding-top: 3.5em
+        height: calc(100vh - 76px)
+        position: relative
+        text-align: center
+        display: flex
+
+        > div
+            flex-basis: 50%
+
+    &__header
+        font-size: 3rem
+
+        &--red
+            color: var(--main-red)
+        
+        &--mb
+            margin-bottom: .6em
+    
+    &__description
+        margin-bottom: 2em
+
+    &__red-circle
+        border: 20px solid var(--main-red)
+        border-radius: 50%
+        width: 50%
+        margin: 0 auto
+        aspect-ratio: 1
+        position: relative
+        margin-top: 100px
+
+    &__girl-image
+        display: block
+        width: 100%
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+    
+    &__video-player-image
+        position: absolute
+        bottom: 30px
+        width: 150px
+        right: -50px
+
+    &__circle-1-image
+        position: absolute
+        width: 80px
+        right: -70px
+        top: 50%
+        transform: translateY(-60%)
+        z-index: -1
+
+    &__circle-2-image
+
+        position: absolute
+        width: 80px
+        left: -100px
+
+    &__bottom-images-wrapper
+        position: absolute
+        display: flex
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        z-index: -1
+
+        > div
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+
+        img
+            display: block
+
+    &__toro-image
+        width: 400px

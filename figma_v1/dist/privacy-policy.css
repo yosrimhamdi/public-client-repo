@@ -13,7 +13,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  --red-button: #DA2619;
+  --main-red: #DA2619;
   --black-button: #2D2D2D;
   --blue-color: #4752AD;
 }
@@ -45,16 +45,24 @@ a {
   border-radius: 0 4px 4px 0;
 }
 .button--red {
-  background-color: var(--red-button);
+  background-color: var(--main-red);
 }
 .button--not-full-width {
   width: auto;
+  display: inline-block;
 }
 .button--long {
   padding: 0.8em 1.3em;
 }
 .button--rounded {
   border-radius: 20px;
+}
+.button--uppercase {
+  text-transform: uppercase;
+}
+.button--more-rl-p {
+  padding-right: 2.4em;
+  padding-left: 2.4em;
 }
 
 .menu-overlay {

@@ -3,7 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: '/src/sass/pages/index.sass',
+    index: '/src/sass/pages/home.sass',
     home: '/src/js/home.js',
     dashboard: '/src/sass/pages/dashboard.sass',
     'privacy-policy': '/src/sass/pages/privacy-policy.sass',

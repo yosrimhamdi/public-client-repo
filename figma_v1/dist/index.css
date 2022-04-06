@@ -1,10 +1,95 @@
-/*!********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/pages/index.sass ***!
-  \********************************************************************************************************************/
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/pages/home.sass ***!
+  \*******************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-/*!************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/pages/index.sass (1) ***!
-  \************************************************************************************************************************/
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/pages/home.sass (1) ***!
+  \***********************************************************************************************************************/
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -50px;
+}
+.hero__content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3.5em;
+  height: calc(100vh - 76px);
+  position: relative;
+  text-align: center;
+  display: flex;
+}
+.hero__content-wrapper > div {
+  flex-basis: 50%;
+}
+.hero__header {
+  font-size: 3rem;
+}
+.hero__header--red {
+  color: var(--main-red);
+}
+.hero__header--mb {
+  margin-bottom: 0.6em;
+}
+.hero__description {
+  margin-bottom: 2em;
+}
+.hero__red-circle {
+  border: 20px solid var(--main-red);
+  border-radius: 50%;
+  width: 50%;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  position: relative;
+  margin-top: 100px;
+}
+.hero__girl-image {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero__video-player-image {
+  position: absolute;
+  bottom: 30px;
+  width: 150px;
+  right: -50px;
+}
+.hero__circle-1-image {
+  position: absolute;
+  width: 80px;
+  right: -70px;
+  top: 50%;
+  transform: translateY(-60%);
+  z-index: -1;
+}
+.hero__circle-2-image {
+  position: absolute;
+  width: 80px;
+  left: -100px;
+}
+.hero__bottom-images-wrapper {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.hero__bottom-images-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.hero__bottom-images-wrapper img {
+  display: block;
+}
+.hero__toro-image {
+  width: 400px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +98,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  --red-button: #DA2619;
+  --main-red: #DA2619;
   --black-button: #2D2D2D;
   --blue-color: #4752AD;
 }
@@ -280,16 +365,24 @@ a {
   border-radius: 0 4px 4px 0;
 }
 .button--red {
-  background-color: var(--red-button);
+  background-color: var(--main-red);
 }
 .button--not-full-width {
   width: auto;
+  display: inline-block;
 }
 .button--long {
   padding: 0.8em 1.3em;
 }
 .button--rounded {
   border-radius: 20px;
+}
+.button--uppercase {
+  text-transform: uppercase;
+}
+.button--more-rl-p {
+  padding-right: 2.4em;
+  padding-left: 2.4em;
 }
 
 .menu-overlay {
