@@ -28,9 +28,7 @@
     &__description
         margin-bottom: 2em
 
-    &__red-circle
-        border: 20px solid var(--main-red)
-        border-radius: 50%
+    &__girl-image-wrapper
         width: 50%
         margin: 0 auto
         aspect-ratio: 1
@@ -45,25 +43,39 @@
         left: 50%
         transform: translateX(-50%)
     
-    &__video-player-image
+    &__video-player-button
         position: absolute
         bottom: 30px
         width: 150px
         right: -50px
+        background-color: #000
+        color: white
+        text-transform: uppercase
+        border-radius: 0 20px 20px 20px
+        border: none
+        padding: .9em .2em
+        cursor: pointer
 
-    &__circle-1-image
-        position: absolute
+    &__play-icon
+        font-size: .8rem
+        margin-right: 1em
+
+    &__right-circle-image,
+    &__left-circle-image
         width: 80px
+
+
+    &__right-circle-image
+        position: absolute
         right: -70px
         top: 50%
         transform: translateY(-60%)
         z-index: -1
 
-    &__circle-2-image
-
+    &__left-circle-image
         position: absolute
-        width: 80px
-        left: -100px
+        left: -70px
+        top: 20px
 
     &__bottom-images-wrapper
         position: absolute
