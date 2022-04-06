@@ -488,3 +488,20 @@ a {
   cursor: pointer;
   width: 17px !important;
 }
+
+.bar {
+  background-color: #F9F8F8;
+  padding: 2em 0;
+}
+.bar__content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bar__content-wrapper img {
+  width: 200px;
+  display: block;
+}
+.bar__content-wrapper img:not(:last-child) {
+  margin-right: 2em;
+}
