@@ -506,18 +506,6 @@ a {
   margin-right: 2em;
 }
 
-.work {
-  padding: 200px 0;
-}
-.work__content-wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-.work__items {
-  display: flex;
-  margin-top: 200px;
-}
-
 .headline {
   color: #2D2D2D;
   font-size: 3.75rem;
@@ -555,4 +543,16 @@ a {
   top: 0;
   right: 0;
   transform: translate(0, -70%);
+}
+
+.home__work {
+  padding: 200px 0;
+}
+.home__work-content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.home__work-items {
+  display: flex;
+  margin-top: 200px;
 }

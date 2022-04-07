@@ -1,3 +1,4 @@
+@use '../utils/mixins'
 @forward '../base/typography'
 @forward '../base/global'
 @forward '../components/header'
@@ -7,7 +8,17 @@
 @forward '../components/home/check-mail'
 @forward '../components/home/payment'
 @forward '../components/home/bar'
-@forward '../components/home/work'
 @forward '../components/home/headline'
 @forward '../components/home/paragraph'
 @forward '../components/home/box'
+
+.home
+    &__work
+        padding: 200px 0
+
+    &__work-content-wrapper
+        @include mixins.content-wrapper
+
+    &__work-items
+        display: flex
+        margin-top: 200px
