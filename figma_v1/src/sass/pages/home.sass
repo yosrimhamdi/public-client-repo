@@ -10,8 +10,12 @@
 @forward '../components/home/headline'
 @forward '../components/home/paragraph'
 @forward '../components/home/box'
+@forward '../components/home/price-plan-card'
 
 .home
+    &__section
+        width: var(--content-wrapper-width)
+        margin: 0 auto
 
     &__bar-section
         background-color: #F9F8F8
@@ -30,12 +34,25 @@
                 margin-right: 2em
 
     &__work
-        padding: 100px 0
-
-    &__work-content-wrapper
-        @include mixins.content-wrapper
+        @include mixins.section
 
     &__work-items
         display: flex
         margin-top: 100px
-        justify-content: space-between
+        justify-content: center
+
+        > div:not(:last-child)
+            margin-right: 3em
+
+    &__pricing-plan
+        @include mixins.section
+        background-color: #F9F8F8
+
+    &__pricing-plan-cards
+        display: flex
+        justify-content: center
+        margin-top: 5em
+
+        > div:not(:last-child)
+            margin-right: 3em
+

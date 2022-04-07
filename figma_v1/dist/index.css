@@ -16,6 +16,7 @@ body {
   --main-red: #DA2619;
   --black-button: #2D2D2D;
   --blue-color: #4752AD;
+  --content-wrapper-width: 80%;
 }
 
 a {
@@ -91,12 +92,21 @@ a {
 .header {
   display: none;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 5%;
 }
 @media (min-width: 720px) {
   .header {
+    display: block;
+  }
+}
+.header__content-wrapper {
+  width: var(--content-wrapper-width);
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+@media (min-width: 720px) {
+  .header__content-wrapper {
     display: flex;
   }
 }
@@ -158,15 +168,9 @@ a {
   padding-left: 2.4em;
 }
 
-.hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -50px;
-}
 .hero__content-wrapper {
-  width: 90%;
+  width: var(--content-wrapper-width);
   margin: 0 auto;
-  padding-top: 3.5em;
   height: calc(100vh - 76px);
   position: relative;
   text-align: center;
@@ -187,26 +191,25 @@ a {
 .hero__description {
   margin-bottom: 2em;
 }
-.hero__girl-image-wrapper {
-  width: 50%;
-  margin: 0 auto;
-  aspect-ratio: 1;
+.hero__right-column {
   position: relative;
-  margin-top: 100px;
+}
+.hero__girl-image-wrapper {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .hero__girl-image {
   display: block;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .hero__video-player-button {
   position: absolute;
-  bottom: 30px;
+  bottom: 100px;
   width: 150px;
-  right: -50px;
+  right: 20px;
   background-color: #000;
   color: white;
   text-transform: uppercase;
@@ -219,20 +222,15 @@ a {
   font-size: 0.8rem;
   margin-right: 1em;
 }
-.hero__right-circle-image, .hero__left-circle-image {
-  width: 80px;
+.hero__left-column {
+  position: relative;
 }
-.hero__right-circle-image {
+.hero__left-column-content {
+  width: 100%;
   position: absolute;
-  right: -70px;
-  top: 50%;
-  transform: translateY(-60%);
-  z-index: -1;
-}
-.hero__left-circle-image {
-  position: absolute;
-  left: -70px;
-  top: 20px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .hero__bottom-images-wrapper {
   position: absolute;
@@ -494,11 +492,18 @@ a {
   font-size: 3.75rem;
   margin-bottom: 1rem;
 }
+.headline--centered {
+  text-align: center;
+}
 
 .paragraph {
   color: #2F2F2F;
   font-size: 1.2rem;
   width: 50%;
+}
+.paragraph--centered {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .box {
@@ -529,7 +534,7 @@ a {
 .box__num--3 {
   position: absolute;
   right: 0;
-  transform: translate(100%, -20px);
+  transform: translate(50%, -20px);
 }
 .box__headline {
   color: #2D2D2D;
@@ -545,6 +550,50 @@ a {
   margin-bottom: 1rem;
 }
 
+.price-plan-card {
+  flex-basis: 400px;
+  padding: 3em;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 19px 45px 7px rgba(84, 84, 84, 0.1);
+  border-radius: 10px;
+}
+.price-plan-card--standard {
+  background-color: #201F1F;
+  flex-basis: 550px;
+  box-shadow: 0 19px 50px 10px rgba(84, 84, 84, 0.5);
+}
+.price-plan-card__title {
+  color: var(--main-red);
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+.price-plan-card__price {
+  font-weight: 500;
+  margin-bottom: 1em;
+  font-size: 2.1rem;
+}
+.price-plan-card__price--white {
+  color: white;
+}
+.price-plan-card__description {
+  color: #2D2D2D;
+  line-height: 2;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+.price-plan-card__description--white {
+  color: #d2d2d2;
+}
+.price-plan-card__button {
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.home__section {
+  width: var(--content-wrapper-width);
+  margin: 0 auto;
+}
 .home__bar-section {
   background-color: #F9F8F8;
   padding: 2em 0;
@@ -564,12 +613,23 @@ a {
 .home__work {
   padding: 100px 0;
 }
-.home__work-content-wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
 .home__work-items {
   display: flex;
   margin-top: 100px;
-  justify-content: space-between;
+  justify-content: center;
+}
+.home__work-items > div:not(:last-child) {
+  margin-right: 3em;
+}
+.home__pricing-plan {
+  padding: 100px 0;
+  background-color: #F9F8F8;
+}
+.home__pricing-plan-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+.home__pricing-plan-cards > div:not(:last-child) {
+  margin-right: 3em;
 }

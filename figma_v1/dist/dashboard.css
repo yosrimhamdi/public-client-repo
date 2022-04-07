@@ -16,6 +16,7 @@ body {
   --main-red: #DA2619;
   --black-button: #2D2D2D;
   --blue-color: #4752AD;
+  --content-wrapper-width: 80%;
 }
 
 a {

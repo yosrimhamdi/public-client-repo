@@ -30,61 +30,57 @@
       </svg>
     </header>
     <header class="header">
-      <img
-        src="../src/images/logo.png"
-        alt="website logo"
-        class="header__logo"
-      />
-      <ul class="header__links">
-        <li>how it works</li>
-        <li>pricing</li>
-        <li>faps</li>
-        <li>testimonials</li>
-        <li>contact us</li>
-      </ul>
-      <button class="button button--red button--not-full-width button--rounded">
-        JOIN NOW
-      </button>
+      <div class="header__content-wrapper">
+        <img
+          src="../src/images/logo.png"
+          alt="website logo"
+          class="header__logo"
+        />
+        <ul class="header__links">
+          <li>how it works</li>
+          <li>pricing</li>
+          <li>faps</li>
+          <li>testimonials</li>
+          <li>contact us</li>
+        </ul>
+        <button
+          class="button button--red button--not-full-width button--rounded"
+        >
+          JOIN NOW
+        </button>
+      </div>
     </header>
-    <!-- home page content here: -->
+    <!-- home page content -->
     <div class="hero">
       <div class="hero__content-wrapper">
-        <div>
-          <h1 class="hero__header">Mirror professional</h1>
-          <h1 class="hero__header hero__header--red hero__header--mb">
-            Traders
-          </h1>
-          <p class="hero__description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem . Ipsum has been the industry's standard dummy text
-            ever
-          </p>
-          <button
-            class="button button--red button--not-full-width button--rounded button--uppercase button--more-rl-p"
-          >
-            Start your free trial today!
-          </button>
+        <div class="hero__left-column">
+          <div class="hero__left-column-content">
+            <h1 class="hero__header">Mirror professional</h1>
+            <h1 class="hero__header hero__header--red hero__header--mb">
+              Traders
+            </h1>
+            <p class="hero__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem . Ipsum has been the industry's standard dummy
+              text ever
+            </p>
+            <button
+              class="button button--red button--not-full-width button--rounded button--uppercase button--more-rl-p"
+            >
+              Start your free trial today!
+            </button>
+          </div>
         </div>
-        <div>
+        <div class="hero__right-column">
           <div class="hero__girl-image-wrapper">
             <img
-              src="src/images/home/girl.png"
+              src="src/images/home/girl-all-in-one.png"
               alt="girl holding phone and credit card."
               class="hero__girl-image"
             />
             <button class="hero__video-player-button">
               <i class="fa-solid fa-play hero__play-icon"></i> Play Video
             </button>
-            <img
-              class="hero__right-circle-image"
-              src="src/images/home/right-circle.png"
-              alt="circle image"
-            />
-            <img
-              class="hero__left-circle-image"
-              src="src/images/home/left-circle.png"
-              alt="circle image"
-            />
           </div>
         </div>
         <div class="hero__bottom-images-wrapper">
@@ -108,7 +104,7 @@
       </div>
     </div>
     <div class="home__work">
-      <div class="home__work-content-wrapper">
+      <div class="home__section">
         <h1 class="headline">How it works?</h1>
         <p class="paragraph">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -178,6 +174,70 @@
         </div>
       </div>
     </div>
+    <div class="home__pricing-plan">
+      <div class="home__section">
+        <h1 class="headline headline--centered">Our Pricing Plans</h1>
+        <p class="paragraph paragraph--centered">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s,
+        </p>
+        <div class="home__pricing-plan-cards">
+          <div class="price-plan-card">
+            <h2 class="price-plan-card__title">Basic</h2>
+            <h2 class="price-plan-card__price">Free</h2>
+            <p class="price-plan-card__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              perferendis in, possimus non similique accusamus exercitationem
+              nulla.
+            </p>
+            <button
+              class="button button--not-full-width button--red price-plan-card__button"
+            >
+              Start Free Trial
+            </button>
+          </div>
+          <div class="price-plan-card price-plan-card--standard">
+            <h2 class="price-plan-card__title">Standard</h2>
+            <h2 class="price-plan-card__price price-plan-card__price--white">
+              $99/month
+            </h2>
+            <p
+              class="price-plan-card__description price-plan-card__description--white"
+            >
+              How much you would like to invest monthly?
+            </p>
+            <p
+              class="price-plan-card__description price-plan-card__description--white"
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              perferendis in, possimus non similique accusamus exercitationem
+              nulla.
+            </p>
+            <button
+              class="button button--not-full-width button--red price-plan-card__button"
+            >
+              Purchase Subscription
+            </button>
+          </div>
+          <div class="price-plan-card">
+            <h2 class="price-plan-card__title">Entreprise</h2>
+            <h2 class="price-plan-card__price">Let's talk</h2>
+            <p class="price-plan-card__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              perferendis in, possimus non similique accusamus exercitationem
+              nulla.
+            </p>
+            <button
+              class="button button--not-full-width button--red price-plan-card__button"
+            >
+              Schedule a Meeting
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu overlay: triggered on hamburger icon click -->
     <div class="menu-overlay">
       <svg
         class="menu-overlay__close-icon"

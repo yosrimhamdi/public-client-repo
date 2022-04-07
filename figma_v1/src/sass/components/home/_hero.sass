@@ -1,14 +1,8 @@
 @use '../../utils/mixins'
 
 .hero
-    // background-image: url('../../images/home/background.png')
-    background-repeat: no-repeat
-    background-size: cover
-    background-position-y: -50px
-
     &__content-wrapper
         @include mixins.content-wrapper        
-        padding-top: 3.5em
         height: calc(100vh - 76px)
         position: relative
         text-align: center
@@ -29,26 +23,25 @@
     &__description
         margin-bottom: 2em
 
-    &__girl-image-wrapper
-        width: 50%
-        margin: 0 auto
-        aspect-ratio: 1
+    &__right-column
         position: relative
-        margin-top: 100px
+
+    &__girl-image-wrapper
+        width: 80% 
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
 
     &__girl-image
         display: block
         width: 100%
-        position: absolute
-        bottom: 0
-        left: 50%
-        transform: translateX(-50%)
     
     &__video-player-button
         position: absolute
-        bottom: 30px
+        bottom: 100px
         width: 150px
-        right: -50px
+        right: 20px
         background-color: #000
         color: white
         text-transform: uppercase
@@ -61,22 +54,17 @@
         font-size: .8rem
         margin-right: 1em
 
-    &__right-circle-image,
-    &__left-circle-image
-        width: 80px
 
+    &__left-column
+        position: relative
 
-    &__right-circle-image
+    &__left-column-content
+        width: 100%
         position: absolute
-        right: -70px
-        top: 50%
-        transform: translateY(-60%)
-        z-index: -1
+        top: 40%
+        left: 50%
+        transform: translate(-50%, -50%)
 
-    &__left-circle-image
-        position: absolute
-        left: -70px
-        top: 20px
 
     &__bottom-images-wrapper
         position: absolute

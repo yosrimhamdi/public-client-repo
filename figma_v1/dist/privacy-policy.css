@@ -16,6 +16,7 @@ body {
   --main-red: #DA2619;
   --black-button: #2D2D2D;
   --blue-color: #4752AD;
+  --content-wrapper-width: 80%;
 }
 
 a {
@@ -134,12 +135,21 @@ a {
 .header {
   display: none;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 5%;
 }
 @media (min-width: 720px) {
   .header {
+    display: block;
+  }
+}
+.header__content-wrapper {
+  width: var(--content-wrapper-width);
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+@media (min-width: 720px) {
+  .header__content-wrapper {
     display: flex;
   }
 }
