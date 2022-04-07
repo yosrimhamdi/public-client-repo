@@ -1,19 +1,42 @@
 .box
     flex-basis: 400px
 
+    &__image-wrapper-container
+        text-align: center
+
     &__image-wrapper
         display: inline-block
         position: relative
-        border: 1px solid red
+        margin-bottom: .9em
+
+        &--no-mb
+            margin-bottom: 0
 
     &__image
         display: block
-        margin-bottom: .9em
 
     &__num
-        border: 1px solid blue
         display: block
-        position: absolute
-        top: 0
-        right: 0
-        transform: translate(0, -70%)
+        margin-left: auto
+
+        &--2
+            margin-left: 0
+            transform: translate(-40px, -20px)
+
+        &--3
+            position: absolute
+            right: 0
+            transform: translate(100%, -20px)
+
+    &__headline
+        color: #2D2D2D
+        margin-bottom: .5rem
+        font-weight: 500
+        font-size: 2.8rem
+
+    &__description
+        color: #2F2F2F
+        font-size: 1.2rem
+
+        &--mb
+            margin-bottom: 1rem
