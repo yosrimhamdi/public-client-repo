@@ -7,12 +7,28 @@
 @forward '../components/home/form'
 @forward '../components/home/check-mail'
 @forward '../components/home/payment'
-@forward '../components/home/bar'
 @forward '../components/home/headline'
 @forward '../components/home/paragraph'
 @forward '../components/home/box'
 
 .home
+
+    &__bar-section
+        background-color: #F9F8F8
+        padding: 2em 0
+
+    &__bar-section-content-wrapper
+        display: flex
+        align-items: center
+        justify-content: center
+
+        img
+            width: 200px
+            display: block
+
+            &:not(:last-child)
+                margin-right: 2em
+
     &__work
         padding: 200px 0
 
