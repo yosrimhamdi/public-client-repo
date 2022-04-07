@@ -513,22 +513,6 @@ a {
   width: 90%;
   margin: 0 auto;
 }
-.work__headline {
-  color: #2D2D2D;
-  font-size: 3.75rem;
-  margin-bottom: 1rem;
-}
-.work__headline--small {
-  font-weight: 500;
-  font-size: 2.8rem;
-}
-.work__paragraph {
-  color: #2F2F2F;
-  font-size: 1.2rem;
-}
-.work__paragraph--mid-width {
-  width: 50%;
-}
 .work__items {
   display: flex;
   margin-top: 200px;
@@ -552,4 +536,22 @@ a {
   top: 0;
   right: 0;
   transform: translate(0, -70%);
+}
+
+.headline {
+  color: #2D2D2D;
+  font-size: 3.75rem;
+  margin-bottom: 1rem;
+}
+.headline--small {
+  font-weight: 500;
+  font-size: 2.8rem;
+}
+
+.paragraph {
+  color: #2F2F2F;
+  font-size: 1.2rem;
+}
+.paragraph--mid-width {
+  width: 50%;
 }
