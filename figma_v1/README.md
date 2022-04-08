@@ -1,4 +1,4 @@
-# how to installation?:
+# how to installa?:
 
 _run in terminal:_
 
