@@ -4,8 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "webpack": "webpack serve",
-    "start": "nodemon"
+    "start": "webpack serve",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",

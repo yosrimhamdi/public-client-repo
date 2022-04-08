@@ -1,4 +1,0 @@
-{
-  "watch": "webpack.config.js",
-  "exec": "npm run webpack"
-}
