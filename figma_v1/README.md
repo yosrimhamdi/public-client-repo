@@ -1,6 +1,5 @@
-# how to installation?:
+# how to install?:
 
 _run in terminal:_
 
-1- `npm install`
-2- `npm run build`
+`npm install && npm run build`
