@@ -2,6 +2,11 @@
 @use '../../utils/breakpoint' as *
 
 .hero
+    background-image: url('../../../src/images/home/bg.svg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position-y: -50px
+
     &__content-wrapper
         @include mixins.content-wrapper        
         height: calc(100vh - 76px)
@@ -34,6 +39,7 @@
         position: relative
         text-align: center
         flex-basis: 50%
+        z-index: 1
 
     &__column-content
         width: 100%
@@ -78,7 +84,6 @@
         bottom: 0
         left: 50%
         transform: translateX(-50%)
-        z-index: -1
 
         > div
             display: flex
