@@ -1,3 +1,4 @@
+@use '../../utils/mixins'
 @import '../../utils/breakpoint'
 
 .header
@@ -9,8 +10,7 @@
 
 
     &__content-wrapper
-        width: var(--content-wrapper-width)
-        margin: 0 auto
+        @include mixins.content-wrapper
         justify-content: space-between
         align-items: center
         padding: 1em 0
