@@ -1,5 +1,11 @@
+@use '../../utils/breakpoint' as *
+
 .headline
     color: var(--main-black)
-    font-size: 3.75rem
     margin-bottom: 1rem
+    font-size: 3rem
     text-align: center
+
+    @include breakpoint('laptop-l')
+        font-size: 3.75rem
+
