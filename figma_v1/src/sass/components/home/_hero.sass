@@ -5,14 +5,10 @@
         @include mixins.content-wrapper        
         height: calc(100vh - 76px)
         position: relative
-        text-align: center
         display: flex
 
-        > div
-            flex-basis: 50%
-
     &__header
-        font-size: 3rem
+        font-size: 2.5rem
 
         &--red
             color: var(--main-red)
@@ -23,15 +19,23 @@
     &__description
         margin-bottom: 2em
 
-    &__right-column
+    &__column
         position: relative
+        text-align: center
+        flex-basis: 50%
 
-    &__girl-image-wrapper
-        width: 80% 
+    &__column-content
+        width: 100%
         position: absolute
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
+
+    &__girl-image-wrapper
+        width: 80%
+
+    &__text-wrapper
+        top: 40%
 
     &__girl-image
         display: block
@@ -39,7 +43,7 @@
     
     &__video-player-button
         position: absolute
-        bottom: 100px
+        bottom: 40px
         width: 150px
         right: 20px
         background-color: #000
@@ -53,18 +57,6 @@
     &__play-icon
         font-size: .8rem
         margin-right: 1em
-
-
-    &__left-column
-        position: relative
-
-    &__left-column-content
-        width: 100%
-        position: absolute
-        top: 40%
-        left: 50%
-        transform: translate(-50%, -50%)
-
 
     &__bottom-images-wrapper
         position: absolute
@@ -81,6 +73,12 @@
 
         img
             display: block
+            flex-basis: 50%
+            object-fit: cover
+       
 
     &__bull-image
-        width: 400px
+        width: 300px
+
+    &__bear-image
+        width: 200px
