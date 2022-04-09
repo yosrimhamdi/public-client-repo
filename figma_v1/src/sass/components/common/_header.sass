@@ -1,0 +1,94 @@
+@import '../../utils/breakpoint'
+
+.header
+    display: none
+    box-shadow: 1px 1px 2px rgba(#000, .2 )
+
+    @include breakpoint('medium')
+        display: block
+
+
+    &__content-wrapper
+        width: var(--content-wrapper-width)
+        margin: 0 auto
+        justify-content: space-between
+        align-items: center
+        padding: 1em 0
+
+        @include breakpoint('medium')
+            display: flex
+
+    &__logo
+        display: block
+        width: 40px
+    
+    &__links
+        color: #373F41
+        list-style: none
+        display: flex
+        align-items: center
+        text-transform: uppercase
+
+        > li:not(:last-child)
+            margin-right: 1em
+
+.mobile-header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: .5em 1em
+    box-shadow: 0 1px 2px rgba(#000, .2 )
+    
+    @include breakpoint('medium')
+        display: none
+
+    &__logo
+        display: block
+        width: 35px
+
+    &__bars
+        width: 25px
+        cursor: pointer
+        
+
+.menu-overlay
+    position: absolute
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
+    background-color: white
+    display: none
+
+    &--visible
+        display: block
+
+    @include breakpoint('medium')
+        display: none
+
+    &__content-wrapper
+        position: absolute
+        top: 35%
+        left: 50%
+        transform: translate(-50%, -50%)
+        padding: 1em
+
+    &__logo
+        display: block
+        margin-right: auto
+        margin-left: auto
+        margin-bottom: 1.2em
+
+    &__links
+        list-style: none
+        text-transform: uppercase
+        margin-bottom: 1em
+        line-height: 1.5
+    
+    &__close-icon
+        position: absolute
+        right: 2em
+        top: .5em
+        width: 20px
+        z-index: 2
+        cursor: pointer
