@@ -1,4 +1,5 @@
 @use '../utils/mixins'
+@use '../utils/breakpoint' as *
 @forward '../base/typography'
 @forward '../base/global'
 @forward '../base/colors'
@@ -41,7 +42,10 @@
         justify-content: center
 
         > div:not(:last-child)
-            margin-right: 4.5em
+            margin-right: 3rem
+
+            @include breakpoint('asus')
+                margin-right: 4rem
 
     &__pricing-plan
         @include mixins.section

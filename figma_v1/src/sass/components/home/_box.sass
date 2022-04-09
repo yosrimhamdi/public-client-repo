@@ -1,7 +1,13 @@
 @use '../../utils/breakpoint' as *
 
 .box
-    flex-basis: 350px
+    flex-basis: 270px
+
+    @include breakpoint('laptop-l')
+        flex-basis: 300px
+
+    @include breakpoint('4k')
+        flex-basis: 600px
 
     &__image-wrapper
         position: relative
@@ -35,9 +41,6 @@
         margin-bottom: .3em
         font-weight: 500
         font-size: 2rem
-
-        @include breakpoint('laptop-l')
-            font-size: 2.3rem
 
     &__description
         color: #2F2F2F
