@@ -21,6 +21,15 @@
         font-family: 'Montserrat', Arial, sans-serif;
       }
 
+      @media (min-width: 500px) {
+        body {
+          background-image: url('../../src/images/hero.png');
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+        }
+      }
+
       table {
         border: none;
         padding: 0;
@@ -40,6 +49,9 @@
 
       @media (min-width: 500px) {
         .email {
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+          background-color: rgba(32, 31, 31, 0.3);
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -204,7 +216,7 @@
                 <tr class="email__header">
                   <td class="email__logo-container">
                     <img
-                      src="../src/images/logo.png"
+                      src="../../src/images/logo.png"
                       alt="website logo"
                       class="email__logo"
                     />
@@ -247,7 +259,7 @@
                 <tr>
                   <td class="email__logo-container">
                     <img
-                      src="../src/images/logo.png"
+                      src="../../src/images/logo.png"
                       alt="website logo"
                       class="email__logo"
                     />
@@ -256,21 +268,21 @@
                   <td class="email__follow-us-text">Follow us:</td>
                   <td>
                     <img
-                      src="../src/images/social/instagram.png"
+                      src="../../src/images/social/instagram.png"
                       alt="instagram icon"
                       class="email__icon"
                     />
                   </td>
                   <td>
                     <img
-                      src="../src/images/social/facebook.png"
+                      src="../../src/images/social/facebook.png"
                       alt="facebook icon"
                       class="email__icon"
                     />
                   </td>
                   <td>
                     <img
-                      src="../src/images/social/twitter.png"
+                      src="../../src/images/social/twitter.png"
                       alt="twitter icon"
                       class="email__icon"
                     />
