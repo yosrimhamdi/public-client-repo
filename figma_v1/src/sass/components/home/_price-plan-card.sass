@@ -26,7 +26,7 @@
     &__description
         color: #2D2D2D
         line-height: 2
-        margin-bottom: 3rem
+        margin-bottom: 1rem
         font-size: .9rem
 
         &--white
@@ -42,3 +42,59 @@
 
         @include breakpoint('laptop-l')
             font-size: 1rem
+
+    &__indicator
+        color: #d2d2d2
+        display: flex
+        align-items: center
+        position: relative
+        margin-bottom: 4em
+
+    &__line
+        height: 4px
+        flex-grow: 1
+        border-radius: 3px
+        background-color: #4d4d4d
+        margin: 0 10px
+        position: relative
+
+        &::after
+            content: ''
+            display: block
+            background-color: white
+            border-radius: 3px
+            width: 30%
+            height: 100%
+
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 50%
+            left: 30%
+            height: 20px
+            aspect-ratio: 1
+            border-radius: 50%
+            background-color: var(--main-red)
+            transform: translate(0, -50%)
+
+    &__hint
+        position: absolute
+        top: 0
+        background-color: white
+        color: black
+        padding: .5em
+        border-radius: 10px
+        left: 30%
+        transform: translate(6px, 30px)
+        
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            transform: translate(0, calc(-50% + 5px)) rotate(135deg)
+            width: 15px
+            aspect-ratio: 1
+            background-color: inherit
+            
