@@ -30,14 +30,18 @@
         position: relative
         min-height: 100vh
 
-        &--test
-            padding: 2em 2em !important
-
         @include breakpoint('small')
             padding: 3.5em 2em 3em 2em
             border-radius: 5px
             min-height: auto
             min-width: 500px
+
+        &--reset
+            padding: 2em 2em !important
+            max-width: 100% !important
+            min-width: 100% !important
+            min-height: auto
+            width: 100% !important
 
     
     &__header
