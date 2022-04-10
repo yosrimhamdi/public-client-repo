@@ -30,6 +30,9 @@
         position: relative
         min-height: 100vh
 
+        &--test
+            padding: 2em 2em !important
+
         @include breakpoint('small')
             padding: 3.5em 2em 3em 2em
             border-radius: 5px
@@ -77,6 +80,13 @@
 
         &--extra-mb
             margin-bottom: 1.7em
+
+        &--large-mb
+            margin-bottom: 2.5em
+
+        &--auto-height
+            height: 100px !important
+            padding: 1em
 
     &__checkbox
         width: 20px
