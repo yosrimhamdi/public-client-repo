@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: __dirname + '/dist/',
   },
-  mode: 'development',
+  mode: process.env.NODE_ENV,
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
