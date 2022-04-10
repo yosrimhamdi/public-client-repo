@@ -13,8 +13,12 @@
 @forward '../components/home/paragraph'
 @forward '../components/home/box'
 @forward '../components/home/price-plan-card'
+@forward '../components/home/question'
 
 .home
+    &__section
+        @include mixins.section
+
     &__content-wrapper
         @include mixins.content-wrapper
 
