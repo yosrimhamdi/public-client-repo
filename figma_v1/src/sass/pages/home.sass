@@ -14,10 +14,14 @@
 @forward '../components/home/box'
 @forward '../components/home/price-plan-card'
 @forward '../components/home/question'
+@forward '../components/home/testimonial'
 
 .home
     &__section
         @include mixins.section
+
+        &--no-pt
+            padding-top: 0
 
     &__content-wrapper
         @include mixins.content-wrapper
@@ -58,4 +62,25 @@
 
         > div:not(:last-child)
             margin-right: 1em
+
+    &__testimonials-section
+        display: flex
+        align-items: center
+        
+        > div
+            flex-basis: 50%
+    
+    &__testimonials-wrapper
+        margin-right: 2em
+    
+    &__stars-wrapper
+        margin-bottom: 1em
+        
+        i
+            font-size: 2rem
+    
+    &__testimonials-headline,
+    &__testimonials-paragraph
+        margin-bottom: 1em
+        
 
