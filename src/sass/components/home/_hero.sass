@@ -7,11 +7,20 @@
     background-repeat: no-repeat
     background-position-y: -50px
 
+    padding-top: 30px
+    padding-bottom: 30px
+
+    @include breakpoint('small')
+        padding-top: 0
+        padding-bottom: 0
+
     &__content-wrapper
         @include mixins.content-wrapper        
-        height: calc(100vh - 76px)
         position: relative
         display: flex
+
+        @include breakpoint('small')
+            height: calc(100vh - 76px)
 
     &__header
         font-size: 2.5rem
@@ -28,15 +37,26 @@
     &__column
         position: relative
         text-align: center
-        flex-basis: 50%
         z-index: 1
+        
+        @include breakpoint('small')
+            flex-basis: 50%
+
+    &__left-column
+
+    &__right-column
+        display: none
+
+        @include breakpoint('small')
+            display: block    
 
     &__column-content
-        width: 100%
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
+        @include breakpoint('small')
+            width: 100%
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
 
     &__girl-image-wrapper
         width: 80%
@@ -54,10 +74,13 @@
 
     &__bottom-images-wrapper
         position: absolute
-        display: flex
         bottom: 0
         left: 50%
         transform: translateX(-50%)
+        display: none
+
+        @include breakpoint('small')
+            display: flex
 
         > div
             display: flex
