@@ -16,6 +16,7 @@
 @forward '../components/home/question'
 @forward '../components/home/testimonial'
 @forward '../components/home/footer'
+@forward '../components/common/icon'
 
 .home
     &__section
@@ -54,7 +55,10 @@
             margin-right: 3rem
 
             @include breakpoint('laptop-m')
-                margin-right: 4rem
+                margin-right: 6rem
+
+            @include breakpoint('laptop-l')
+                margin-right: 200px 
 
     &__pricing-plan
         background-color: #F9F8F8
