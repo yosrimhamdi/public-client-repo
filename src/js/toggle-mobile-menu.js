@@ -1,7 +1,7 @@
 class ToggleMobileMenu {
   constructor() {
     this.openIcon = document.querySelector('.mobile-header__bars');
-    this.closeIcon = document.querySelector('.menu-overlay__close-icon');
+    this.blurArea = document.querySelector('.menu-overlay__blur-area');
     this.menuOverlay = document.querySelector('.menu-overlay');
 
     this.setEvents();
@@ -13,7 +13,7 @@ class ToggleMobileMenu {
       document.body.style.overflow = 'hidden';
     };
 
-    this.closeIcon.onclick = () => {
+    this.blurArea.onclick = () => {
       this.menuOverlay.classList.remove('menu-overlay--visible');
       document.body.style.overflow = 'initial';
     };
