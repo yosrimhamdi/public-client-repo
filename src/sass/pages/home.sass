@@ -32,10 +32,7 @@
         @include mixins.content-wrapper
 
     &__work-items
-        display: flex
-        justify-content: center
-        align-content: center
-        flex-wrap: wrap
+        @include mixins.flex-container
 
         > div:not(:last-child)
             @include breakpoint('small')
@@ -51,14 +48,11 @@
         background-color: #F9F8F8
 
     &__pricing-plan-cards
-        display: flex
-        justify-content: center
-        align-content: center
-        flex-wrap: wrap
+        @include mixins.flex-container
 
         > div:not(:last-child)
             @include breakpoint('small')
-                margin-right: 1em
+                margin-right: 2em
 
     &__testimonials-section
         display: flex

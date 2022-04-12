@@ -10,7 +10,7 @@
     padding-top: 30px
     padding-bottom: 30px
 
-    @include breakpoint('small')
+    @include breakpoint('medium')
         padding-top: 0
         padding-bottom: 0
 
@@ -19,7 +19,7 @@
         position: relative
         display: flex
 
-        @include breakpoint('small')
+        @include breakpoint('medium')
             height: calc(100vh - 76px)
 
     &__header
@@ -38,8 +38,9 @@
         position: relative
         text-align: center
         z-index: 1
+        flex-basis: 100%
         
-        @include breakpoint('small')
+        @include breakpoint('medium')
             flex-basis: 50%
 
     &__left-column
@@ -47,11 +48,11 @@
     &__right-column
         display: none
 
-        @include breakpoint('small')
+        @include breakpoint('medium')
             display: block    
 
     &__column-content
-        @include breakpoint('small')
+        @include breakpoint('medium')
             width: 100%
             position: absolute
             top: 50%
@@ -59,7 +60,13 @@
             transform: translate(-50%, -50%)
 
     &__girl-image-wrapper
-        width: 80%
+        width: 90%
+
+        @include breakpoint('medium')
+            top: 40%
+
+        @include breakpoint('laptop')
+            width: 65%
 
     &__text-wrapper
         top: 40%
@@ -79,7 +86,7 @@
         transform: translateX(-50%)
         display: none
 
-        @include breakpoint('small')
+        @include breakpoint('medium')
             display: flex
 
         > div
@@ -94,7 +101,13 @@
        
 
     &__bull-image
-        width: 18.75rem
+        width: 14rem
+
+        @include breakpoint('laptop')
+            width: 18.75rem
 
     &__bear-image
-        width: 12.5rem
+        width: 10rem
+
+        @include breakpoint('laptop')
+            width: 12.5rem

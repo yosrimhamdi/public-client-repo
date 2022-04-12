@@ -8,6 +8,7 @@ $('.brands').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1024,
