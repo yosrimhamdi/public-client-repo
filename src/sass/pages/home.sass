@@ -64,21 +64,51 @@
                 margin-left: 1em
 
     &__testimonials-section
-        display: flex
-        align-items: center
-        
-        > div
-            flex-basis: 50%
+        @include breakpoint('medium')
+            display: flex
+            align-items: center
+
+            > div
+                flex-basis: 50%  
     
-    &__testimonials-wrapper
-        margin-right: 2em
+    &__testimonials-wrapper    
+        margin-bottom: 3.5em !important
+
+        @include breakpoint('medium')
+            margin-right: 2em
+            margin-bottom: 0
+
+        &--visible-on-mobile
+            @include breakpoint('medium')
+                display: none
+
+        &--hidden-on-mobile
+            display: none
+
+            @include breakpoint('medium')
+                display: block
     
     &__stars-wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
         margin-bottom: 1em
+
+        @include breakpoint('medium')
+            justify-content: flex-start
         
         i
-            font-size: 2rem
+            font-size: 2.4rem
+
+            @include breakpoint('medium')
+                font-size: 2rem
     
     &__testimonials-headline,
     &__testimonials-paragraph
         margin-bottom: 1em
+    
+    &__testimonials-headline
+        text-align: center
+
+        @include breakpoint('medium')
+            text-align: left

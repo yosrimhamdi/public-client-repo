@@ -1,7 +1,7 @@
 import 'slick-carousel';
 import $ from 'jquery';
 
-$('.brands').slick({
+$('.carousel').slick({
   dots: true,
   infinite: false,
   speed: 300,

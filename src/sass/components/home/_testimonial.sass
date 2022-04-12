@@ -1,11 +1,18 @@
+@use '../../utils/breakpoint' as *
+
 .testimonial
     display: flex
     align-items: center
     justify-content: flex-start
-    padding: 1em 2em
+    padding: 1em 1em
     border-radius: 5px
     box-shadow: -5px 5px 10px -5px rgba(#000, .3)
-    margin-bottom: .7em
+    margin: 5px
+
+    @include breakpoint('medium')
+        margin-right: 0
+        margin-bottom: .7em
+        padding: 1em 2em        
 
     &__user-image
         margin-right: 1em
