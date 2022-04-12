@@ -34,9 +34,12 @@
     &__work-items
         display: flex
         justify-content: center
+        align-content: center
+        flex-wrap: wrap
 
         > div:not(:last-child)
-            margin-right: 3rem
+            @include breakpoint('small')
+                margin-right: 3rem
 
             @include breakpoint('laptop-m')
                 margin-right: 6rem

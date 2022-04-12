@@ -1,7 +1,12 @@
 @use '../../utils/breakpoint' as *
 
 .box
-    flex-basis: 270px
+    margin-bottom: 2em
+
+    @include breakpoint('small')
+        flex-basis: 270px
+        margin-bottom: 0
+        
 
     @include breakpoint('laptop-l')
         flex-basis: 300px

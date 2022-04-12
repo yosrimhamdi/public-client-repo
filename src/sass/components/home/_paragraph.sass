@@ -1,7 +1,13 @@
+@use '../../utils/breakpoint' as *
+
 .paragraph
     color: #2F2F2F
     font-size: 1rem
-    width: 80%
-    margin: 0 auto
+    margin-bottom: 1.5em
     text-align: center
-    margin-bottom: 4em
+
+    @include breakpoint('small')
+        width: 80%
+        margin: 0 auto
+        margin-bottom: 4em
+
