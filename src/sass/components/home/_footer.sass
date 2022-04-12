@@ -1,22 +1,47 @@
+@use '../../utils/breakpoint' as *
+
 .footer
-    background-image: url('../../images/home/bg-footer.png')
-    background-size: cover
-    background-repeat: no-repeat
+    border: 1px solid red
+    background-color: var(--main-black)
+    
+    @include breakpoint('medium')    
+        background-color: transparent
+        background-image: url('../../images/home/bg-footer.png')
+        background-size: cover
+        background-repeat: no-repeat
 
     &__content-wrapper
         display: flex
-        align-items: center
+        flex-direction: column
+        
+        @include breakpoint('medium')            
+            align-items: center
+            flex-direction: row
 
-    &__left
+    &__left-column
         color: white
-        margin-right: 2em
-        flex-basis: 50%
 
-    &__right
-        flex-basis: 50%
+        @include breakpoint('medium')
+            flex-basis: 50%
+            margin-right: 2em
+
+    &__right-column
+        order: -1
+        margin-bottom: 2em
+
+        @include breakpoint('medium')
+            flex-basis: 50%
+            order: 1
+            margin-bottom: 0
+
+        .form__form
+            width: 100%
 
     &__headline
-        margin-bottom: 1em
+        margin-bottom: .3em
+
+        @include breakpoint('medium')
+            margin-bottom: 1em
     
     &__paragraph
         color: #a3a3a3
@@ -40,8 +65,14 @@
         display: flex
         justify-content: space-between
         color: white
-        padding: 2em 0
+        padding: 1.4em 0
         margin-top: 1em
+        font-weight: 500
+        font-size: .9rem
+
+        @include breakpoint('medium')
+            padding: 2em 0
+            font-weight: normal
 
     &__footer-links
         display: flex
