@@ -24,7 +24,10 @@
     "webpack-remove-empty-scripts": "^0.8.0"
   },
   "dependencies": {
+    "carousel": "^0.0.3",
     "chart.js": "^3.7.1",
-    "flickity": "^3.0.0"
+    "flickity": "^3.0.0",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
   }
 }

@@ -15,9 +15,9 @@
 @forward '../components/home/price-plan-card'
 @forward '../components/home/question'
 @forward '../components/home/testimonial'
+@forward '../components/home/brands'
 @forward '../components/home/footer'
 @forward '../components/common/icon'
-
 .home
     &__section
         @include mixins.section
@@ -30,22 +30,6 @@
 
     &__content-wrapper
         @include mixins.content-wrapper
-
-    &__bar-section
-        background-color: #F9F8F8
-        padding: 2em 0
-
-    &__bar-section-content-wrapper
-        display: flex
-        align-items: center
-        justify-content: center
-
-        img
-            width: 200px
-            display: block
-
-            &:not(:last-child)
-                margin-right: 2em
 
     &__work-items
         display: flex
@@ -90,5 +74,3 @@
     &__testimonials-headline,
     &__testimonials-paragraph
         margin-bottom: 1em
-        
-

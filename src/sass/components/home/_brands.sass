@@ -1,0 +1,24 @@
+@use '../../utils/breakpoint' as *
+@import url('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css')
+@import url('//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css')
+
+.slick-track 
+    display: flex !important
+
+.slick-track .slick-slide 
+    display: flex !important
+    height: auto !important
+    align-items: center !important
+    justify-content: center !important
+
+.brands
+    background-color: #F9F8F8
+    padding: .5em 1em
+
+    @include breakpoint('small')
+        padding: 2em 1em
+
+    img
+        display: block
+        width: 100%
+        object-fit: cover
