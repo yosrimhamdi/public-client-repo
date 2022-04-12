@@ -53,10 +53,12 @@
     &__pricing-plan-cards
         display: flex
         justify-content: center
-        align-items: center
+        align-content: center
+        flex-wrap: wrap
 
         > div:not(:last-child)
-            margin-right: 1em
+            @include breakpoint('small')
+                margin-right: 1em
 
     &__testimonials-section
         display: flex
