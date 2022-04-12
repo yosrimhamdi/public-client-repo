@@ -34,15 +34,18 @@
     &__work-items
         @include mixins.flex-container
 
-        > div:not(:last-child)
+        > div
             @include breakpoint('small')
-                margin-right: 3rem
+                margin-right: 1.5rem
+                margin-left: 1.5rem
 
             @include breakpoint('laptop-m')
-                margin-right: 6rem
+                margin-right: 3rem
+                margin-left: 3rem
 
             @include breakpoint('laptop-l')
-                margin-right: 200px 
+                margin-right: 100px 
+                margin-left: 100px 
 
     &__pricing-plan
         background-color: #F9F8F8
@@ -50,9 +53,10 @@
     &__pricing-plan-cards
         @include mixins.flex-container
 
-        > div:not(:last-child)
+        > div
             @include breakpoint('small')
-                margin-right: 2em
+                margin-right: 1em
+                margin-left: 1em
 
     &__testimonials-section
         display: flex
