@@ -20,7 +20,12 @@
 @forward '../components/common/icon'
 .home
     &__section
-        @include mixins.section
+        padding-top: 30px
+        padding-bottom: 30px
+
+        @include breakpoint('small')
+            padding-top: 80px
+            padding-bottom: 80px
 
         &--no-pt
             padding-top: 0
