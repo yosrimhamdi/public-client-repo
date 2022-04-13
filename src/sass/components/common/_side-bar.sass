@@ -1,5 +1,7 @@
+@use '../../utils/breakpoint' as *
+
 .side-bar
-    display: flex
+    display: none
     flex-direction: column
     padding: 1.5em 2em
     height: 100vh
@@ -8,6 +10,10 @@
     position: fixed
     top: 0
     left: 0
+
+
+    @include breakpoint('laptop')
+        display: flex
 
     &__header
         display: flex

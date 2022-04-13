@@ -58,169 +58,167 @@
       </ul>
     </nav>
     <div class="dashboard">
-      <div class="dashboard__main-content">
-        <div class="header">
+      <div class="header">
+        <div>
+          <h1 class="header__dashboard-text">Dashboard</h1>
+          <div class="button button--outlined">Recolor</div>
+          <div class="button">These?</div>
+        </div>
+        <div>
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+          </div>
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-arrows-to-dot icon"></i>
+          </div>
+          <div style="position: relative">
+            <div class="icon-wrapper icon-wrapper--black-bg" id="user-icon">
+              <i class="fa-solid fa-user icon icon--white"></i>
+            </div>
+            <div class="drop-down">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-user"></i>
+                  <div>Personal Data</div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-credit-card"></i>
+                  <div>Payment method</div>
+                </li>
+                <li class="active">
+                  <i class="fa-solid fa-gear"></i>
+                  <div>Settings</div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-person-running red-color"></i>
+                  <div>Go out</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard__cards-wrapper">
+        <div class="card">
+          <div class="card__description">
+            <p class="card__title">Total orders</p>
+            <p>Last year expeses</p>
+          </div>
+          <div class="card__price">2648</div>
+        </div>
+        <div class="card">
+          <div class="card__description">
+            <p class="card__title">Total orders</p>
+            <p>Last year expeses</p>
+          </div>
+          <div class="card__price">2648</div>
+        </div>
+        <div class="card">
+          <div class="card__description">
+            <p class="card__title">Total orders</p>
+            <p>Last year expeses</p>
+          </div>
+          <div class="card__price">2648</div>
+        </div>
+      </div>
+      <div class="dashboard__charts">
+        <div class="dashboard__chart-wrapper">
+          <canvas id="bar-chart"></canvas>
+        </div>
+        <div class="dashboard__chart-wrapper">
+          <canvas id="line-chart"></canvas>
+        </div>
+      </div>
+      <div class="dashboard__table">
+        <div class="dashboard__table-header">
           <div>
-            <h1 class="header__dashboard-text">Dashboard</h1>
-            <div class="button button--outlined">Recolor</div>
-            <div class="button">These?</div>
+            <h3 class="dashboard__table-summary-text">Summery</h3>
+            <div class="button button--outlined button--grey-bg">List</div>
+            <div class="button button--grey-bg">Current</div>
           </div>
           <div>
-            <div class="icon-wrapper">
-              <i class="fa-solid fa-magnifying-glass icon"></i>
+            <div class="icon-wrapper icon-wrapper--grey-bg">
+              <i class="fa-solid fa-arrow-rotate-right icon"></i>
             </div>
-            <div class="icon-wrapper">
-              <i class="fa-solid fa-arrows-to-dot icon"></i>
-            </div>
-            <div style="position: relative">
-              <div class="icon-wrapper icon-wrapper--black-bg" id="user-icon">
-                <i class="fa-solid fa-user icon icon--white"></i>
-              </div>
-              <div class="drop-down">
-                <ul>
-                  <li>
-                    <i class="fa-solid fa-user"></i>
-                    <div>Personal Data</div>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-credit-card"></i>
-                    <div>Payment method</div>
-                  </li>
-                  <li class="active">
-                    <i class="fa-solid fa-gear"></i>
-                    <div>Settings</div>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-person-running red-color"></i>
-                    <div>Go out</div>
-                  </li>
-                </ul>
-              </div>
+            <div class="icon-wrapper icon-wrapper--grey-bg">
+              <i class="fa-solid fa-plus icon"></i>
             </div>
           </div>
         </div>
-        <div class="dashboard__cards-wrapper">
-          <div class="card">
-            <div class="card__description">
-              <p class="card__title">Total orders</p>
-              <p>Last year expeses</p>
-            </div>
-            <div class="card__price">2648</div>
-          </div>
-          <div class="card">
-            <div class="card__description">
-              <p class="card__title">Total orders</p>
-              <p>Last year expeses</p>
-            </div>
-            <div class="card__price">2648</div>
-          </div>
-          <div class="card">
-            <div class="card__description">
-              <p class="card__title">Total orders</p>
-              <p>Last year expeses</p>
-            </div>
-            <div class="card__price">2648</div>
-          </div>
-        </div>
-        <div class="dashboard__charts">
-          <div class="dashboard__chart-wrapper">
-            <canvas id="bar-chart"></canvas>
-          </div>
-          <div class="dashboard__chart-wrapper">
-            <canvas id="line-chart"></canvas>
-          </div>
-        </div>
-        <div class="dashboard__table">
-          <div class="dashboard__table-header">
-            <div>
-              <h3 class="dashboard__table-summary-text">Summery</h3>
-              <div class="button button--outlined button--grey-bg">List</div>
-              <div class="button button--grey-bg">Current</div>
-            </div>
-            <div>
-              <div class="icon-wrapper icon-wrapper--grey-bg">
-                <i class="fa-solid fa-arrow-rotate-right icon"></i>
-              </div>
-              <div class="icon-wrapper icon-wrapper--grey-bg">
-                <i class="fa-solid fa-plus icon"></i>
-              </div>
-            </div>
-          </div>
-          <table class="table">
-            <tr class="table__headers-row">
-              <th>Total Orders</th>
-              <th>Total Orders</th>
-              <th>Total Orders</th>
-              <th>Total Orders</th>
-              <th></th>
-            </tr>
-            <tr>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>
-                <i
-                  class="fa-solid fa-arrow-rotate-right icon icon--mr icon--grey"
-                ></i>
-                <i class="fa-solid fa-plus icon icon--grey"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>
-                <i
-                  class="fa-solid fa-arrow-rotate-right icon icon--mr icon--grey"
-                ></i>
-                <i class="fa-solid fa-plus icon icon--grey"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>
-                <i
-                  class="fa-solid fa-arrow-rotate-right icon icon--mr icon--grey"
-                ></i>
-                <i class="fa-solid fa-plus icon icon--red"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>
-                <i
-                  class="fa-solid fa-arrow-rotate-right icon icon--mr icon--grey"
-                ></i>
-                <i class="fa-solid fa-plus icon icon--grey"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>Last year expeses</td>
-              <td>
-                <i
-                  class="fa-solid fa-arrow-rotate-right icon icon--mr icon--red"
-                ></i>
-                <i class="fa-solid fa-plus icon icon--red"></i>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="footer">
-          <h3 class="table-container__summary-text">Summery</h3>
-          <div class="icon-wrapper icon-wrapper--grey-bg">
-            <i class="fa-solid fa-plus icon"></i>
-          </div>
+        <table class="table">
+          <tr class="table__headers-row">
+            <th>Total Orders</th>
+            <th>Total Orders</th>
+            <th>Total Orders</th>
+            <th>Total Orders</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>
+              <i
+                class="fa-solid fa-arrow-rotate-right icon icon--mr icon--grey"
+              ></i>
+              <i class="fa-solid fa-plus icon icon--grey"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>
+              <i
+                class="fa-solid fa-arrow-rotate-right icon icon--mr icon--grey"
+              ></i>
+              <i class="fa-solid fa-plus icon icon--grey"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>
+              <i
+                class="fa-solid fa-arrow-rotate-right icon icon--mr icon--grey"
+              ></i>
+              <i class="fa-solid fa-plus icon icon--red"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>
+              <i
+                class="fa-solid fa-arrow-rotate-right icon icon--mr icon--grey"
+              ></i>
+              <i class="fa-solid fa-plus icon icon--grey"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>Last year expeses</td>
+            <td>
+              <i
+                class="fa-solid fa-arrow-rotate-right icon icon--mr icon--red"
+              ></i>
+              <i class="fa-solid fa-plus icon icon--red"></i>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="footer">
+        <h3 class="table-container__summary-text">Summery</h3>
+        <div class="icon-wrapper icon-wrapper--grey-bg">
+          <i class="fa-solid fa-plus icon"></i>
         </div>
       </div>
     </div>
