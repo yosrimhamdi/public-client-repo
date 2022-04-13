@@ -1,9 +1,10 @@
-@import '../base/typography'
-@import '../base/global'
-@import '../base/colors'
-@import '../utils/breakpoint'
-@import '../components/common/button'
-@import '../components/common/header'
+@use '../utils/breakpoint' as *
+@forward '../base/typography'
+@forward '../base/global'
+@forward '../base/colors'
+@forward '../components/common/button'
+@forward '../components/common/header'
+@forward '../components/common/mobile-side-bar-overlay'
 
 .privacy-policy
     max-width: 700px
