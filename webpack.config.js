@@ -3,12 +3,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: '/src/sass/pages/home.sass',
-    homejs: '/src/js/index.js',
-    dashboard: '/src/sass/pages/dashboard.sass',
-    dashboardjs: '/src/js/dashboard.js',
-    'privacy-policy': '/src/sass/pages/privacy-policy.sass',
-    'privacy-policy-js': '/src/js/privacy-policy.js',
+    index: ['/src/sass/pages/home.sass', '/src/js/index.js'],
+    dashboard: ['/src/sass/pages/dashboard.sass', '/src/js/dashboard.js'],
+    'privacy-policy': [
+      '/src/sass/pages/privacy-policy.sass',
+      '/src/js/privacy-policy.js',
+    ],
     email: '/src/sass/pages/email.sass',
   },
   output: {
