@@ -1,4 +1,5 @@
 @use '../../utils/mixins' as *
+@use '../../utils/breakpoint' as *
 
 .card
     @include white-shadowed-box
@@ -6,9 +7,16 @@
     align-items: center
     justify-content: space-between
     flex-grow: 1
+    margin-bottom: 1em
+
+    @include breakpoint('laptop')
+        margin-bottom: 0
 
     &__description
         margin-right: 1em
+
+        p:nth-child(2)
+            color: #929292
 
     &__title
         font-weight: 700
@@ -17,11 +25,11 @@
     &__date
         color: #929292
 
-    
     &__price
         font-size: 2em
         font-weight: 500
     
     &:not(:last-child)
-        margin-right: 1em
+        @include breakpoint('laptop')
+            margin-right: 1em
         

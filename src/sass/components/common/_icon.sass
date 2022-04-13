@@ -1,6 +1,6 @@
 .icon
     border-radius: 50%
-    background-color: #f8f7f7
+    background-color: white
     border: 1px solid #EAEAEA
     color: var(--main-black)
     width: 40px
@@ -9,3 +9,11 @@
     align-items: center
     justify-content: center
     cursor: pointer
+    
+    &:not(:last-child):not(#user-icon)
+        margin-right: 5px
+
+    &--black
+        background-color: var(--main-black)
+        color: white
+        border: none

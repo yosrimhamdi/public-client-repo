@@ -1,12 +1,30 @@
-.header
-    display: flex
-    flex-grow: 1
-    justify-content: space-between
-    margin-bottom: 2em
+@use '../../utils/breakpoint' as *
 
-    > div
+.header
+    margin-bottom: 1.5em
+    
+    @include breakpoint('laptop')
         display: flex
-        align-items: center    
+        flex-grow: 1
+        justify-content: space-between
+        margin-bottom: 2em
+        
+
+    &__left-content
+        display: flex
+        align-items: center
+
+    &__right-content
+        display: none
+
+        @include breakpoint('laptop')            
+            display: flex
+            align-items: center    
+
     
     &__dashboard-text
-        margin-right: 1em
+        display: none
+        
+        @include breakpoint('laptop')            
+            margin-right: 1em
+            display: block

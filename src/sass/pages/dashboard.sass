@@ -2,26 +2,30 @@
 @use '../utils/breakpoint' as *
 @forward '../base/typography'
 @forward '../base/global'
+@forward '../base/colors'
 @forward '../components/common/side-bar'
 @forward '../components/dashboard/header'
 @forward '../components/dashboard/card'
 @forward '../components/dashboard/table'
-@forward '../components/dashboard/icon'
 @forward '../components/dashboard/button'
 @forward '../components/dashboard/footer'
 @forward '../components/dashboard/drop-down'
+@forward '../components/common/mobile-header'
+@forward '../components/common/icon'
 
 .dashboard
     color: #2D2D2D
     background-color: #F9F8F8
-    padding: 1.5em 2em 3em
+    padding: 0 1em
 
     @include breakpoint('laptop')
         margin-left: 250px
+        padding: 1.5em 2em 3em
 
     &__cards-wrapper
-        display: flex
-        margin-bottom: 2em
+        @include breakpoint('small')
+            display: flex
+            margin-bottom: 2em
 
     &__table
         @include white-shadowed-box
@@ -39,14 +43,21 @@
 
     &__table-summary-text
         margin-right: 2em
-        
-    &__chart-wrapper
-        width: 50%
-        @include white-shadowed-box
-
-        &:first-child
-            margin-right: 1em
 
     &__charts
-        display: flex
         margin-bottom: 2em
+
+        @include breakpoint('laptop')
+            display: flex
+        
+    &__chart-wrapper
+        @include white-shadowed-box
+        margin-bottom: 1em
+
+        @include breakpoint('laptop')    
+            width: 50%
+            margin-bottom: 0
+
+        &:first-child
+            @include breakpoint('laptop')
+                margin-right: 1em
