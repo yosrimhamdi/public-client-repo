@@ -4,11 +4,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   entry: {
     index: '/src/sass/pages/home.sass',
-    home: '/src/js/home.js',
+    homejs: '/src/js/index.js',
     dashboard: '/src/sass/pages/dashboard.sass',
+    dashboardjs: '/src/js/dashboard.js',
     'privacy-policy': '/src/sass/pages/privacy-policy.sass',
+    'privacy-policy-js': '/src/js/privacy-policy.js',
     email: '/src/sass/pages/email.sass',
-    charts: '/src/js/charts.js',
   },
   output: {
     path: __dirname + '/dist/',
