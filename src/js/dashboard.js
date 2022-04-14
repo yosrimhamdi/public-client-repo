@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNav.offsetHeight + 'px'
   );
 
-  scrollDirection({ dir: 'up', thresholdPixels: mobileNav.offsetHeight });
+  scrollDirection({ dir: 'up', thresholdPixels: mobileNav.offsetHeight * 2 });
 });
