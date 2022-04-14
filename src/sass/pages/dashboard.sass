@@ -10,17 +10,18 @@
 @forward '../components/dashboard/button'
 @forward '../components/dashboard/footer'
 @forward '../components/dashboard/drop-down'
-@forward '../components/common/mobile-header'
 @forward '../components/common/icon'
+@forward '../components/common/mobile-header'
+@forward '../components/common/mobile-fixed-bottom-nav'
 
 .dashboard
     color: #2D2D2D
     background-color: #F9F8F8
-    padding: 0 1em 1em
+    padding: 0 1em
 
     @include breakpoint('laptop')
         margin-left: 250px
-        padding: 1.5em 2em 3em
+        padding: 1.5em 2em
 
     &__cards-wrapper
         @include breakpoint('small')
@@ -29,8 +30,11 @@
 
     &__table
         @include white-shadowed-box
-        margin-bottom: 2em
+        margin-bottom: 1em
         overflow-x: auto
+
+        @include breakpoint('laptop')
+            margin-bottom: 2em
 
     &__table-header
         display: flex
@@ -48,6 +52,7 @@
         margin-bottom: 2em
 
         @include breakpoint('laptop')
+            margin-bottom: 2em
             display: flex
 
     &__chart-wrapper

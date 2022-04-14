@@ -1,0 +1,21 @@
+@use '../../utils/breakpoint' as *
+
+.mobile-fixed-bottom-nav
+    background-color: var(--main-black)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: .8em 1em
+    position: fixed
+    bottom: 0
+    width: 100vw
+
+    @include breakpoint('laptop')
+        display: none
+
+    i
+        color: var(--light-red)
+        font-size: 1.2rem
+
+    i.active
+        color: var(--main-red)
