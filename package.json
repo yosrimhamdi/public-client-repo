@@ -4,7 +4,9 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "NODE_ENV=development webpack serve",
+    "bs": "browser-sync start --server --files src/** --no-notify",
+    "webpack": "NODE_ENV=development webpack serve",
+    "start": "npm-run-all -p bs webpack",
     "build": "NODE_ENV=production webpack"
   },
   "keywords": [],
@@ -16,6 +18,7 @@
     "eslint": "^8.12.0",
     "mini-css-extract-plugin": "^2.6.0",
     "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.49.11",
     "sass-loader": "^12.6.0",
     "webpack": "^5.71.0",
@@ -24,9 +27,8 @@
     "webpack-remove-empty-scripts": "^0.8.0"
   },
   "dependencies": {
-    "carousel": "^0.0.3",
+    "browser-sync": "^2.27.9",
     "chart.js": "^3.7.1",
-    "flickity": "^3.0.0",
     "jquery": "^3.6.0",
     "slick-carousel": "^1.8.1"
   }
