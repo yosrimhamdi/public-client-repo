@@ -27,9 +27,10 @@
     "webpack-remove-empty-scripts": "^0.8.0"
   },
   "dependencies": {
-    "browser-sync": "^2.27.9",
+    "browser-sync": "^1.9.2",
     "chart.js": "^3.7.1",
     "jquery": "^3.6.0",
+    "scrolldir": "^1.5.2",
     "slick-carousel": "^1.8.1"
   }
 }

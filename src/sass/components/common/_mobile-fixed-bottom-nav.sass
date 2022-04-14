@@ -9,6 +9,11 @@
     position: fixed
     bottom: 0
     width: 100vw
+    transition: transform 300ms
+    transform: translateY(-100%)
+
+    [data-scrolldir="up"] &
+        transform: translateY(100%)
 
     @include breakpoint('laptop')
         display: none
