@@ -57,13 +57,21 @@
     </nav>
     <div class="dashboard">
       <div class="mobile-header">
-        <img src="../images/dashboard/four-dots.png" alt="four dots" />
         <img
-          class="mobile-header__logo"
-          src="../images/logo.png"
+          id="open-left"
+          src="../images/dashboard/four-dots.png"
           alt="four dots"
         />
-        <div class="icon icon--black"><i class="fa-solid fa-user"></i></div>
+        <a href="./index.html">
+          <img
+            class="mobile-header__logo"
+            src="../images/logo.png"
+            alt="four dots"
+          />
+        </a>
+        <div class="icon icon--black" id="open-right">
+          <i class="fa-solid fa-user"></i>
+        </div>
       </div>
       <div class="header">
         <div class="header__left-content">
@@ -217,6 +225,49 @@
         <div class="icon">
           <i class="fa-solid fa-plus"></i>
         </div>
+      </div>
+    </div>
+    <div class="mobile-side-bar-overlay" id="left-side-bar">
+      <div class="mobile-side-bar-overlay__blur-area"></div>
+      <div
+        class="mobile-side-bar-overlay__content-wrapper mobile-side-bar-overlay__content-wrapper--to-left"
+      >
+        <div class="mobile-side-bar-overlay__header">
+          <img
+            src="../images/logo.png"
+            alt="website logo"
+            class="mobile-side-bar-overlay__logo"
+          />
+          <h4>MIRRORBOT</h4>
+        </div>
+        <ul class="mobile-side-bar-overlay__links">
+          <li>home</li>
+          <li>how it works</li>
+          <li>pricing</li>
+          <li>faps</li>
+          <li>testimonials</li>
+          <li>contact us</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mobile-side-bar-overlay" id="right-side-bar">
+      <div class="mobile-side-bar-overlay__blur-area"></div>
+      <div class="mobile-side-bar-overlay__content-wrapper">
+        <div class="mobile-side-bar-overlay__header">
+          <img
+            src="../images/logo.png"
+            alt="website logo"
+            class="mobile-side-bar-overlay__logo"
+          />
+          <h4>MIRRORBOT</h4>
+        </div>
+        <ul class="mobile-side-bar-overlay__links">
+          <li><i class="fa-solid fa-user"></i> Personal Data</li>
+          <li><i class="fa-solid fa-credit-card"></i> Payment method</li>
+          <li class="mobile-side-bar-overlay__active-link">
+            <i class="fa-solid fa-gear"></i> Settings
+          </li>
+        </ul>
       </div>
     </div>
     <nav class="mobile-fixed-bottom-nav">

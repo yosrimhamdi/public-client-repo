@@ -19,7 +19,6 @@
     &__blur-area
         flex-grow: 1
 
-
     &__content-wrapper
         padding: 2em 1em
         height: 100%
@@ -29,6 +28,9 @@
         background-color: var(--main-black)
         color: white
         position: relative
+
+        &--to-left
+            order: -1
 
     &__header
         display: flex
@@ -47,16 +49,24 @@
         list-style: none
         text-transform: capitalize
         margin-bottom: 1em
-        
+
         li
-            margin-bottom: 1em
+            margin-bottom: 1.2em
             font-weight: 500
+            display: flex
+            align-items: center
+            justify-content: center
+
+        i
+            color: #9B9B9B
+            margin-right: .5em
+            font-size: 1.2rem
 
     &__active-link
-        padding: .8em 2em
+        padding: .6em 2em
         border-radius: 8px
         background-color: #575757
-    
+
     &__button
         position: absolute
         left: 50%
@@ -70,4 +80,3 @@
         padding: .9em 0
         width: calc(100% - 3em)
         border-radius: 10px
-

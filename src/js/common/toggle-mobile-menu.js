@@ -1,10 +1,10 @@
 class ToggleMobileMenu {
-  constructor() {
-    this.openIcon = document.querySelector('.mobile-header__bars');
+  constructor(open, overlay) {
+    this.openIcon = document.querySelector(open);
     this.blurArea = document.querySelector(
-      '.mobile-side-bar-overlay__blur-area'
+      `${overlay} .mobile-side-bar-overlay__blur-area`
     );
-    this.menuOverlay = document.querySelector('.mobile-side-bar-overlay');
+    this.menuOverlay = document.querySelector(overlay);
 
     this.setEvents();
   }
@@ -22,4 +22,4 @@ class ToggleMobileMenu {
   }
 }
 
-new ToggleMobileMenu();
+export default ToggleMobileMenu;
