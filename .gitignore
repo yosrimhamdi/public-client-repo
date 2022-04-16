@@ -4,3 +4,10 @@ node_modules/
 dist/
 .eslintrc.json
 makefile
+
+ztodo_Figma.swift
+xFigma_Notes.swift
+checkChanges.py 
+figma_v1_prev
+previous_v*
+x_*
