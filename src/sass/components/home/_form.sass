@@ -5,7 +5,7 @@
     top: 0
     width: 100%
     color: #2D2D2D
-    background-image: url('../../images/hero.png')
+    background-image: url('/src/images/hero.png')
     background-size: cover
     background-position: center
     background-attachment: fixed
@@ -21,7 +21,6 @@
             align-items: center
             justify-content: center
 
-   
     &__form
         max-width: 500px
         padding: 3.5em 1em 2em 1em
@@ -43,15 +42,14 @@
             min-height: auto
             width: 100% !important
 
-    
     &__header
         margin-bottom: .3em
         font-weight: 700
-    
+
     &__description
         color: #929292
         margin-bottom: 2em
-    
+
     &__flexbox
         @include breakpoint('small')
             display: flex
@@ -64,12 +62,12 @@
 
     &__flexbox-item-full-width
         flex-basis: 100%
-    
+
     &__label
         margin-bottom: .4em
         display: block
         font-size: .95rem
-        
+
     &__input
         display: block
         width: 100%
@@ -110,12 +108,11 @@
         margin-bottom: 1em
         position: relative
 
-        > input 
+        > input
             margin-bottom: 0
 
         &--extra-mb
             margin-bottom: 1.7em
-
 
     &__remember-me-container
         display: flex
@@ -129,7 +126,7 @@
 .blue-color
     color: var(--main-blue)
 
-.xmark-icon 
+.xmark-icon
     display: block
     width: 40%
 
@@ -155,4 +152,3 @@
     right: 1em
     transform: translateY(-50%)
     cursor: pointer
-    

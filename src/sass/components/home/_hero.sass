@@ -2,7 +2,7 @@
 @use '../../utils/breakpoint' as *
 
 .hero
-    background-image: url('../../../src/images/home/bg-hero.png')
+    background-image: url('/src/images/home/bg-hero.png')
     background-size: cover
     background-repeat: no-repeat
     background-position-y: -50px
@@ -15,7 +15,7 @@
         padding-bottom: 0
 
     &__content-wrapper
-        @include mixins.content-wrapper        
+        @include mixins.content-wrapper
         position: relative
         display: flex
 
@@ -27,10 +27,10 @@
 
         &--red
             color: var(--main-red)
-        
+
         &--mb
             margin-bottom: .6em
-    
+
     &__description
         margin-bottom: 2em
 
@@ -39,7 +39,7 @@
         text-align: center
         z-index: 1
         flex-basis: 100%
-        
+
         @include breakpoint('medium')
             flex-basis: 50%
 
@@ -49,7 +49,7 @@
         display: none
 
         @include breakpoint('medium')
-            display: block    
+            display: block
 
     &__column-content
         @include breakpoint('medium')
@@ -74,7 +74,7 @@
     &__girl-image
         display: block
         width: 100%
-    
+
     &__play-icon
         font-size: .8rem
         margin-right: 1em
@@ -98,7 +98,6 @@
             display: block
             flex-basis: 50%
             object-fit: cover
-       
 
     &__bull-image
         width: 14rem
