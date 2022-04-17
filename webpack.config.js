@@ -10,6 +10,7 @@ module.exports = {
       '/src/js/privacy-policy.js',
     ],
     email: '/src/sass/pages/email.sass',
+    'toggle-password': '/src/js/common/toggle-password.js',
   },
   output: {
     path: __dirname + '/dist/',
