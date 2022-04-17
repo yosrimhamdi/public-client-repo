@@ -1,3 +1,3 @@
-import ToggleMobileMenu from './common/toggle-mobile-menu';
+import ShowMenuOverlay from './components/ShowMenuOverlay';
 
-new ToggleMobileMenu('#open', '.mobile-side-bar-overlay');
+new ShowMenuOverlay('#open', '.mobile-side-bar-overlay');

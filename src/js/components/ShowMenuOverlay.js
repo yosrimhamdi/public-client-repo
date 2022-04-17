@@ -1,4 +1,4 @@
-class ToggleMobileMenu {
+class ShowMenuOverlay {
   constructor(open, overlay) {
     this.openIcon = document.querySelector(open);
     this.blurArea = document.querySelector(
@@ -22,4 +22,4 @@ class ToggleMobileMenu {
   }
 }
 
-export default ToggleMobileMenu;
+export default ShowMenuOverlay;

@@ -10,7 +10,7 @@ module.exports = {
       '/src/js/privacy-policy.js',
     ],
     email: '/src/sass/pages/email.sass',
-    'toggle-password': '/src/js/common/toggle-password.js',
+    'toggle-password': '/src/js/components/toggle-password.js',
     'plan-and-pricing': [
       '/src/sass/pages/plan-and-pricing.sass',
       '/src/js/plan-and-pricing.js',
