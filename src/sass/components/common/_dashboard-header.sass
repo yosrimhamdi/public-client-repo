@@ -1,14 +1,13 @@
 @use '../../utils/breakpoint' as *
 
-.header
+.dashboard-header
     margin-bottom: 1.5em
-    
+
     @include breakpoint('laptop')
         display: flex
         flex-grow: 1
         justify-content: space-between
         margin-bottom: 2em
-        
 
     &__left-content
         display: flex
@@ -17,14 +16,13 @@
     &__right-content
         display: none
 
-        @include breakpoint('laptop')            
+        @include breakpoint('laptop')
             display: flex
-            align-items: center    
+            align-items: center
 
-    
     &__dashboard-text
         display: none
-        
-        @include breakpoint('laptop')            
+
+        @include breakpoint('laptop')
             margin-right: 1em
             display: block

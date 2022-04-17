@@ -1,0 +1,48 @@
+@use '../utils/mixins'
+@use '../utils/breakpoint' as *
+@forward '../base/typography'
+@forward '../base/global'
+@forward '../base/variables'
+@forward '../components/common/side-bar'
+@forward '../components/common/dashboard-header'
+@forward '../components/common/mobile-header'
+@forward '../components/common/mobile-fixed-bottom-nav'
+@forward '../components/common/mobile-side-bar-overlay'
+@forward '../components/common/drop-down'
+@forward '../components/common/icon'
+@forward '../components/common/price-plan-card'
+@forward '../components/common/button'
+@forward '../components/common/carousel'
+
+.plan-and-pricing
+    @include mixins.dashboard-container
+
+    &__buttons-wrapper
+        margin-bottom: 2em
+
+    &__button
+        border: 1px solid var(--main-black)
+        background-color: transparent
+        padding: .8em 2em
+        border-radius: 8px
+        cursor: pointer
+        font-size: .9rem
+        display: block
+
+        &:not(:last-child)
+            margin-right: 1em
+
+        &--black
+            background-color: var(--main-black)
+            color: white
+
+    &__info-wrapper
+        margin-bottom: 2em
+
+    &__cards-wrapper
+        @include mixins.flex-container
+
+        > div
+            @include breakpoint('small')
+                margin-right: .5em
+                margin-left: .5em

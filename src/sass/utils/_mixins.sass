@@ -9,11 +9,11 @@
 @mixin content-wrapper
     padding-right: 1em
     padding-left: 1em
-    
+
     @include breakpoint('small')
         width: 90%
         margin: 0 auto
-    
+
 @mixin flex-container
     display: flex
     justify-content: center
@@ -23,4 +23,11 @@
         align-items: center
         flex-wrap: nowrap
 
-        
+@mixin dashboard-container
+    color: #2D2D2D
+    background-color: #F9F8F8
+    padding: 0 1em
+
+    @include breakpoint('laptop')
+        margin-left: var(--side-bar-width)
+        padding: 1.5em 2em

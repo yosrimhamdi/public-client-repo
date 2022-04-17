@@ -1,7 +1,7 @@
 @use '../utils/breakpoint' as *
 @forward '../base/typography'
 @forward '../base/global'
-@forward '../base/colors'
+@forward '../base/variables'
 @forward '../components/common/button'
 @forward '../components/common/header'
 @forward '../components/common/mobile-side-bar-overlay'
@@ -25,15 +25,15 @@
         color: #2D2D2D
         margin-bottom: .4em
         font-size: 1.7rem
-        
+
         @include breakpoint('small')
             font-size: 2rem
-    
+
     &__para
         color: #929292
         line-height: 1.8
         margin-bottom: 2em
-    
+
     &__counter
         color: #4E4E4E
         font-weight: 600
