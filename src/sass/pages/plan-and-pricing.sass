@@ -18,7 +18,8 @@
     @include mixins.dashboard-container
 
     &__buttons-wrapper
-        margin-bottom: 2em
+        margin-bottom: 3em !important
+        display: flex
 
     &__button
         border: 1px solid var(--main-black)
@@ -28,6 +29,8 @@
         cursor: pointer
         font-size: .9rem
         display: block
+        text-align: center
+        margin: 0 .5em
 
         &:not(:last-child)
             margin-right: 1em
