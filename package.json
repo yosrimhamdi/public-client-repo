@@ -1,8 +1,7 @@
 {
-  "name": "figma_v1",
+  "name": "mirrorbot",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
   "scripts": {
     "bs": "browser-sync start --config bs.js",
     "webpack": "NODE_ENV=development webpack serve",
@@ -20,14 +19,12 @@
     "css-loader": "^6.7.1",
     "eslint": "^8.12.0",
     "mini-css-extract-plugin": "^2.6.0",
-    "nodemon": "^2.0.15",
     "npm-run-all": "^4.1.5",
     "sass": "^1.49.11",
     "sass-loader": "^12.6.0",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4",
-    "webpack-remove-empty-scripts": "^0.8.0"
+    "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
     "browser-sync": "^1.9.2",
