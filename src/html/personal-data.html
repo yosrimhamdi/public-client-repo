@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Data</title>
+    <link rel="stylesheet" href="/dist/personal-data.css" />
+    <script
+      src="https://kit.fontawesome.com/1e9792cac1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="side-bar">
+      <div class="side-bar__header">
+        <img
+          class="side-bar__logo"
+          src="../../src/images/logo.png"
+          alt="website logo"
+        />
+        <h3>MIRRORBOT</h3>
+      </div>
+      <ul class="side-bar__links-wrapper side-bar__links-wrapper--top">
+        <li class="side-bar__link side-bar__link--active">
+          <i class="fa-solid fa-box side-bar__icon side-bar__icon--active"></i>
+          Dashboard
+        </li>
+        <li class="side-bar__link">
+          <i class="side-bar__icon fas fa-folder"></i> Section 2
+        </li>
+        <li class="side-bar__link">
+          <i class="side-bar__icon fa-solid fa-database"></i> Section 3
+        </li>
+        <li class="side-bar__link">
+          <i class="side-bar__icon fas fa-folder"></i> Section 4
+        </li>
+        <li class="side-bar__link">
+          <i class="side-bar__icon fa-solid fa-shield"></i> Section 5
+        </li>
+        <li class="side-bar__link">
+          <i class="side-bar__icon fas fa-folder"></i> Section 6
+        </li>
+      </ul>
+      <ul class="side-bar__links-wrapper">
+        <li class="side-bar__link">
+          <i class="side-bar__icon side-bar__icon--active fa-solid fa-gear"></i>
+          Settings
+        </li>
+        <li class="side-bar__link">
+          <i
+            class="side-bar__icon side-bar__icon--active fa-solid fa-person-running"
+          ></i>
+          Go Out
+        </li>
+      </ul>
+    </nav>
+    <div class="personal-data">
+      <div class="mobile-header">
+        <img
+          id="open-left"
+          src="../images/dashboard/four-dots.png"
+          alt="four dots"
+        />
+        <a href="./index.html">
+          <img
+            class="mobile-header__logo"
+            src="../images/logo.png"
+            alt="four dots"
+          />
+        </a>
+        <div class="icon icon--black" id="open-right">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+      <div class="dashboard-header">
+        <div class="dashboard-header__left-content">
+          <h1 class="dashboard-header__dashboard-text">Personal Data</h1>
+        </div>
+        <div class="dashboard-header__right-content">
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-solid fa-arrows-to-dot"></i>
+          </div>
+          <div style="position: relative">
+            <div class="icon icon--black" id="user-icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="drop-down">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-user"></i>
+                  <div>Personal Data</div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-credit-card"></i>
+                  <div>Payment method</div>
+                </li>
+                <li class="active">
+                  <i class="fa-solid fa-gear"></i>
+                  <div>Settings</div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-person-running red-color"></i>
+                  <div>Go out</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="personal-data__user-info">
+        <div class="personal-data__image-wrapper">
+          <img
+            class="personal-data__image"
+            src="/src/images/personal-data/avatar.png"
+            alt="avatar image"
+          />
+          <div class="personal-data__plus-icon">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="personal-data__user-info-col-2">
+          <label class="personal-data__label" for="first-name"
+            >First Name</label
+          >
+          <input
+            type="text"
+            placeholder="Andrew"
+            id="first-name"
+            class="personal-data__input"
+          />
+          <button class="personal-data__button">Save</button>
+        </div>
+        <div class="personal-data__user-info-col-3">
+          <label class="personal-data__label" for="first-name"
+            >First Name</label
+          >
+          <input
+            type="text"
+            placeholder="Smith"
+            id="first-name"
+            class="personal-data__input"
+          />
+        </div>
+      </div>
+      <div class="personal-data__address">
+        <h4 class="personal-data__headline">Physical Address</h4>
+        <div class="personal-data__flex">
+          <div>
+            <label class="personal-data__label" for="country">Country</label>
+            <select id="city" class="personal-data__input">
+              <option value="USA">USA</option>
+              <option value="Uganda">Uganda</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="United Arab Emirates">United Arab Emirates</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Uzbekistan">Uzbekistan</option>
+            </select>
+          </div>
+          <div>
+            <label class="personal-data__label" for="city">City</label>
+            <select id="city" class="personal-data__input">
+              <option value="nyc">New York</option>
+              <option value="ver">Vermont</option>
+            </select>
+          </div>
+          <div>
+            <label class="personal-data__label" for="zip-code">Zip Code</label>
+            <input
+              type="text"
+              placeholder="USA"
+              id="zip-code"
+              class="personal-data__input"
+            />
+          </div>
+        </div>
+        <div class="personal-data__flex">
+          <div>
+            <label class="personal-data__label" for="address">Address</label>
+            <input
+              type="text"
+              placeholder="12395 Green Garden st."
+              id="address"
+              class="personal-data__input"
+            />
+          </div>
+          <div>
+            <label class="personal-data__label" for="phone">Phone Number</label>
+            <input
+              type="text"
+              placeholder="234 - 344 - 344"
+              id="phone"
+              class="personal-data__input"
+            />
+          </div>
+        </div>
+        <h4 class="personal-data__headline">Language &amp; Currency</h4>
+        <div class="personal-data__flex">
+          <div>
+            <label class="personal-data__label" for="language">Language</label>
+            <select id="language" class="personal-data__input">
+              <option value="eng">English</option>
+              <option value="fr">French</option>
+            </select>
+          </div>
+          <div>
+            <label class="personal-data__label" for="phone"
+              >Default Currency</label
+            >
+            <select id="city" class="personal-data__input">
+              <option value="usd">USD</option>
+              <option value="euro">Euro</option>
+            </select>
+          </div>
+        </div>
+        <h4 class="personal-data__headline">Email &amp; Password</h4>
+        <div class="personal-data__flex">
+          <div>
+            <label class="personal-data__label" for="email">Email</label>
+            <input
+              type="email"
+              placeholder="12395 Green Garden st."
+              id="email"
+              class="personal-data__input"
+            />
+          </div>
+          <div>
+            <label class="personal-data__label" for="password">Password</label>
+            <input type="password" id="password" class="personal-data__input" />
+          </div>
+        </div>
+        <button class="personal-data__button personal-data__button--half">
+          Save
+        </button>
+      </div>
+    </div>
+    <div class="mobile-side-bar-overlay" id="left-side-bar">
+      <div class="mobile-side-bar-overlay__blur-area"></div>
+      <div
+        class="mobile-side-bar-overlay__content-wrapper mobile-side-bar-overlay__content-wrapper--to-left"
+      >
+        <div class="mobile-side-bar-overlay__header">
+          <img
+            src="../images/logo.png"
+            alt="website logo"
+            class="mobile-side-bar-overlay__logo"
+          />
+          <h4>MIRRORBOT</h4>
+        </div>
+        <ul class="mobile-side-bar-overlay__links">
+          <li>home</li>
+          <li>how it works</li>
+          <li>pricing</li>
+          <li>faps</li>
+          <li>testimonials</li>
+          <li>contact us</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mobile-side-bar-overlay" id="right-side-bar">
+      <div class="mobile-side-bar-overlay__blur-area"></div>
+      <div class="mobile-side-bar-overlay__content-wrapper">
+        <div class="mobile-side-bar-overlay__header">
+          <img
+            src="../images/logo.png"
+            alt="website logo"
+            class="mobile-side-bar-overlay__logo"
+          />
+          <h4>MIRRORBOT</h4>
+        </div>
+        <ul class="mobile-side-bar-overlay__links">
+          <li><i class="fa-solid fa-user"></i> Personal Data</li>
+          <li><i class="fa-solid fa-credit-card"></i> Payment method</li>
+          <li class="mobile-side-bar-overlay__active-link">
+            <i class="fa-solid fa-gear"></i> Settings
+          </li>
+        </ul>
+        <a
+          class="mobile-side-bar-overlay__go-out mobile-side-bar-overlay__to-bottom"
+        >
+          <i class="fa-solid fa-person-running"></i>
+          Sign In
+        </a>
+      </div>
+    </div>
+    <nav class="mobile-fixed-bottom-nav">
+      <i class="fa-solid fa-box active"></i>
+      <i class="fas fa-folder"></i>
+      <i class="fa-solid fa-database"></i>
+      <i class="fas fa-folder"></i>
+    </nav>
+    <script src="/dist/personal-data.js"></script>
+  </body>
+</html>

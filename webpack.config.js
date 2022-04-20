@@ -15,6 +15,10 @@ module.exports = {
       '/src/sass/plan-and-pricing.sass',
       '/src/js/plan-and-pricing.js',
     ],
+    'personal-data': [
+      '/src/sass/personal-data.sass',
+      '/src/js/personal-data.js',
+    ],
   },
   output: {
     path: __dirname + '/dist/',
