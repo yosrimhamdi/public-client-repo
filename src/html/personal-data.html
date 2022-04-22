@@ -122,7 +122,7 @@
             <i class="fa-solid fa-plus"></i>
           </div>
         </div>
-        <div class="personal-data__user-info-col-2">
+        <div class="personal-data__first-name-wrapper">
           <label class="personal-data__label" for="first-name"
             >First Name</label
           >
@@ -130,18 +130,16 @@
             type="text"
             placeholder="Andrew"
             id="first-name"
-            class="personal-data__input"
+            class="personal-data__input personal-data__input--last-name"
           />
           <button class="personal-data__button">Save</button>
         </div>
-        <div class="personal-data__user-info-col-3">
-          <label class="personal-data__label" for="first-name"
-            >First Name</label
-          >
+        <div class="personal-data__last-name-wrapper">
+          <label class="personal-data__label" for="last-name">First Name</label>
           <input
             type="text"
             placeholder="Smith"
-            id="first-name"
+            id="last-name"
             class="personal-data__input"
           />
         </div>
@@ -151,7 +149,10 @@
         <div class="personal-data__flex">
           <div>
             <label class="personal-data__label" for="country">Country</label>
-            <select id="city" class="personal-data__input">
+            <select
+              id="city"
+              class="personal-data__input personal-data__select"
+            >
               <option value="USA">USA</option>
               <option value="Uganda">Uganda</option>
               <option value="Ukraine">Ukraine</option>

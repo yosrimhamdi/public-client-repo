@@ -49,7 +49,6 @@ module.exports = {
     ],
   },
   devServer: {
-    hot: false,
     devMiddleware: {
       writeToDisk: true,
     },

@@ -18,18 +18,30 @@
         @include mixins.white-shadowed-box
         margin-bottom: 1em
         display: flex
+        flex-direction: column
 
-    &__user-info-col-2
-        margin-right: 1em
+        @include breakpoint('medium')
+            flex-direction: row
+
+    &__first-name-wrapper
         flex-grow: 1
+        order: 1
 
-    &__user-info-col-3
+        @include breakpoint('medium')
+            order: initial
+            margin-right: 1em
+
+    &__last-name-wrapper
         flex-grow: 1
 
     &__image-wrapper
-        display: inline-block
         position: relative
-        margin-right: 2em
+        text-align: center
+        margin-bottom: 2em
+
+        @include breakpoint('medium')
+            margin-right: 2em
+            margin-bottom: 0
 
     &__image
         border-radius: 50%
@@ -65,6 +77,11 @@
         width: 100%
         outline: none
 
+        margin-bottom: 2em
+
+        @include breakpoint('medium')
+            margin-bottom: 1em
+
     &__button
         display: block
         width: 100%
@@ -77,7 +94,8 @@
         cursor: pointer
 
         &--half
-            width: calc(50% - .5em)
+            @include breakpoint('medium')
+                width: calc(50% - .5em)
 
     &__address
         @include mixins.white-shadowed-box
@@ -86,11 +104,14 @@
         margin-bottom: 1.3em
 
     &__flex
-        display: flex
         margin-bottom: 1em
 
-        > div
-            flex-grow: 1
+        @include breakpoint('medium')
+            display: flex
 
-            &:not(:last-child)
-                margin-right: 1em
+        > div
+            @include breakpoint('medium')
+                flex-grow: 1
+
+                &:not(:last-child)
+                    margin-right: 1em
