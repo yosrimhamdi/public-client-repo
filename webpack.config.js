@@ -23,6 +23,10 @@ module.exports = {
       '/src/sass/notifications.sass',
       '/src/js/notifications.js',
     ],
+    'payment-method': [
+      '/src/sass/payment-method.sass',
+      '/src/js/payment-method.js',
+    ],
   },
   output: {
     path: __dirname + '/dist/',
