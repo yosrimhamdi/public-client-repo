@@ -19,6 +19,10 @@ module.exports = {
       '/src/sass/personal-data.sass',
       '/src/js/personal-data.js',
     ],
+    'notifications': [
+      '/src/sass/notifications.sass',
+      '/src/js/notifications.js',
+    ],
   },
   output: {
     path: __dirname + '/dist/',

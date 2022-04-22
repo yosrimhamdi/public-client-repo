@@ -1,0 +1,80 @@
+@use './utils/mixins'
+@use './utils/breakpoint' as *
+@forward './base/typography'
+@forward './base/global'
+@forward './base/variables'
+@forward './components/common/side-bar'
+@forward './components/common/dashboard-header'
+@forward './components/common/mobile-header'
+@forward './components/common/mobile-fixed-bottom-nav'
+@forward './components/common/mobile-side-bar-overlay'
+@forward './components/common/drop-down'
+@forward './components/common/icon'
+@forward './components/common/carousel'
+@forward './components/common/dashboard-button'
+
+.notifications
+    @include mixins.dashboard-container
+
+    &__content
+        @include mixins.white-shadowed-box
+
+    &__headline
+        margin-bottom: .8em
+
+        &--small-mb
+            margin-bottom: .5em
+
+    &__paragraph
+        color: #929292
+        margin-bottom: 1em
+
+        &--large-mb
+            margin-bottom: 2em
+            @include breakpoint('medium')
+                margin-bottom: 3em
+
+    &__group
+        margin-bottom: 1.8em
+
+        @include breakpoint('medium')
+            margin-bottom: 1em
+            display: flex
+
+        > div:first-child
+            margin-right: 1em
+            flex-basis: 40%
+
+    &__toggle-switch-wrapper
+        display: flex
+        align-items: center
+        margin-bottom: 1em
+
+    &__toggle-switch
+        margin-right: .5em
+        width: 44px
+        height: 24px
+        border-radius: 30px
+        background-color: #34C759
+        position: relative
+        cursor: pointer
+        transition: background-color 200ms
+
+        &--off
+            background-color: rgba(#787880,.16)
+
+            &::after
+                transform: translate(2px, -50%) !important
+
+        &::after
+            content: ''
+            position: absolute
+            height: calc(100% - 4px)
+            aspect-ratio: 1
+            border-radius: 50%
+            background-color: #fff
+            display: block
+            top: 50%
+            box-shadow: 0 0 4px 1px rgba(#000, .2)
+            transform: translate(calc(100% + 2px), -50%)
+            transition: transform 200ms
