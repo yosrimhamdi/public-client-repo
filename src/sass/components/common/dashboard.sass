@@ -1,0 +1,28 @@
+@use '../../utils/breakpoint' as *
+
+.dashboard
+    &__headline
+        margin-bottom: .8em
+
+        &--small-mb
+            margin-bottom: .5em
+
+    &__paragraph
+        color: #929292
+        margin-bottom: 1em
+
+        &--large-mb
+            margin-bottom: 2em
+            @include breakpoint('medium')
+                margin-bottom: 3em
+
+    &__row
+        margin-bottom: 1.8em
+
+        @include breakpoint('medium')
+            margin-bottom: 1em
+            display: flex
+
+        > div:first-child
+            margin-right: 3em
+            flex-basis: 40%
