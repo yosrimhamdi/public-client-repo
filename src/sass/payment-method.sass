@@ -4,14 +4,117 @@
 @forward './base/global'
 @forward './base/variables'
 @forward './components/common/side-bar'
-@forward './components/common/dashboard-header'
 @forward './components/common/mobile-header'
 @forward './components/common/mobile-fixed-bottom-nav'
 @forward './components/common/mobile-side-bar-overlay'
 @forward './components/common/drop-down'
 @forward './components/common/icon'
 @forward './components/common/carousel'
+@forward './components/common/dashboard-header'
 @forward './components/common/dashboard-button'
+@forward './components/common/dashboard'
 
 .payment-method
     @include mixins.dashboard-container
+
+    &__content
+        @include mixins.white-shadowed-box
+
+    &__flex
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 1em
+
+    &__label
+        width: 24px
+        aspect-ratio: 1
+        border-radius: 50%
+        border: 1px solid #DA2619
+        position: relative
+        display: block
+        margin-right: 1em
+        cursor: pointer
+
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            background-color: #DA2619
+            width: calc(100% - 8px) !important
+            aspect-ratio: 1
+            border-radius: 50%
+
+        &--disabled
+            border-color: #A8A8A8
+
+            &::after
+                background-color: transparent
+
+    &__radio
+        display: none
+
+    &__input
+        width: 100%
+        border: 1px solid rgba(#AEAEAE, .2)
+        background-color: #F9F9F9
+        border-radius: 6px
+        padding: 1em .5em
+        margin-top: .6em
+        outline: none
+        font-size: .9em
+
+        &:checked
+            display: block
+
+    &__card
+        border-radius: 10px
+        border: 1px solid #D2DAE6
+        padding: 1em 1em
+        display: flex
+        flex-grow: 1 !important
+        width: 100% !important
+        align-items: flex-start
+        margin-bottom: 1em
+
+        &--active
+            background-color: #F1F6FF
+
+            .payment-method__card-select
+                background-color: #1877F2
+                border-color: #1877F2
+
+    &__flex
+        display: flex
+        justify-content: flex-start
+
+    &__card-img
+        margin-right: 1em
+
+    &__card-select
+        width: 27px
+        aspect-ratio: 1
+        border-radius: 50%
+        margin-left: auto
+        border: 1px solid #AEAEAE
+
+    &__card-name
+        margin-bottom: .2em
+
+    &__expires
+        margin-bottom: 1em
+
+    &__set-default
+        margin-right: .5em
+
+    &__edit-button
+        color: inherit
+        font-weight: 500
+
+    &__add-new
+        color: inherit
+        text-align: right
+        font-weight: 500

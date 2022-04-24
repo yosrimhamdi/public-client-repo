@@ -22,3 +22,15 @@ $('.carousel').slick({
     },
   ],
 });
+
+const radios = document.querySelectorAll('.payment-method__label');
+
+radios.forEach(radio => {
+  radio.addEventListener('click', () => {
+    radios.forEach(radio => {
+      radio.classList.add('payment-method__label--disabled');
+    });
+
+    radio.classList.remove('payment-method__label--disabled');
+  });
+});

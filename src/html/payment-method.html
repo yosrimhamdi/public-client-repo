@@ -118,7 +118,107 @@
           Plans &amp; Pricing
         </a>
       </div>
+      <div class="payment-method__content">
+        <div class="notifications__content">
+          <h3 class="dashboard__headline">Payment Method</h3>
+          <p class="dashboard__paragraph dashboard__paragraph--large-mb">
+            Update your billing details and address
+          </p>
+          <div class="dashboard__row">
+            <div>
+              <h4 class="dashboard__headline dashboard__headline--small-mb">
+                Contact Email
+              </h4>
+              <p class="dashboard__paragraph">Where should invoices be sent?</p>
+            </div>
+            <div>
+              <div class="payment-method__flex">
+                <label
+                  for="r1"
+                  class="payment-method__label payment-method__label--disabled"
+                ></label>
+                <input
+                  type="radio"
+                  name=""
+                  id="r1"
+                  class="payment-method__radio"
+                />
+                <div>
+                  <h4 class="payment__headline">Send to my account Email</h4>
+                  <p>ogonika@gmail.com</p>
+                </div>
+              </div>
+              <div class="payment-method__flex">
+                <label for="r2" class="payment-method__label"></label>
+                <input
+                  type="radio"
+                  name=""
+                  id="r2"
+                  class="payment-method__radio"
+                />
+                <div>
+                  <h4>Send to an alternative Email</h4>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="payment-method__input"
+                    placeholder="email@example.com"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__row">
+            <div>
+              <h4 class="dashboard__headline dashboard__headline--small-mb">
+                Card details
+              </h4>
+              <p class="dashboard__paragraph">Select default payment method</p>
+            </div>
+            <div class="dashboard__column-full-width">
+              <div class="payment-method__card payment-method__card--active">
+                <img
+                  src="/src/images/payment/mastercard.png"
+                  alt="mastercard image"
+                  class="payment-method__card-img"
+                />
+                <div class="payment-method__card-details">
+                  <h4 class="payment-method__card-name">Mastercard</h4>
+                  <p class="payment-method__expires">Expires 06/2024</p>
+                  <div class="payment-method__flex">
+                    <p class="payment-method__set-default">Set as default</p>
+                    <a href="#" class="payment-method__edit-button">Edit</a>
+                  </div>
+                </div>
+                <div class="payment-method__card-select"></div>
+                <!-- <img src="/src/images/payment/visa.png" alt="visa image"> -->
+              </div>
+              <div class="payment-method__card">
+                <img
+                  src="/src/images/payment/visa.png"
+                  alt="mastercard image"
+                  class="payment-method__card-img"
+                />
+                <div class="payment-method__card-details">
+                  <h4 class="payment-method__card-name">Mastercard</h4>
+                  <p class="payment-method__expires">Expires 06/2024</p>
+                  <div class="payment-method__flex">
+                    <p class="payment-method__set-default">Set as default</p>
+                    <a href="#" class="payment-method__edit-button">Edit</a>
+                  </div>
+                </div>
+                <div class="payment-method__card-select"></div>
+              </div>
+              <a href="#" class="payment-method__add-new"
+                >+ Add new payment method</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="mobile-side-bar-overlay" id="left-side-bar">
       <div class="mobile-side-bar-overlay__blur-area"></div>
       <div
