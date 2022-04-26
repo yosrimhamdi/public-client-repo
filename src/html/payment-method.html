@@ -133,29 +133,31 @@
             </div>
             <div>
               <div class="payment-method__flex">
-                <label
-                  for="r1"
-                  class="payment-method__label payment-method__label--disabled"
-                ></label>
-                <input
-                  type="radio"
-                  name=""
-                  id="r1"
-                  class="payment-method__radio"
-                />
+                <label for="r1" class="payment-method__label">
+                  <input
+                    type="radio"
+                    name="r1"
+                    id="r1"
+                    class="payment-method__radio"
+                  />
+                  <span class="payment-method__fake-radio"></span>
+                </label>
+
                 <div>
                   <h4 class="payment__headline">Send to my account Email</h4>
                   <p>ogonika@gmail.com</p>
                 </div>
               </div>
               <div class="payment-method__flex">
-                <label for="r2" class="payment-method__label"></label>
-                <input
-                  type="radio"
-                  name=""
-                  id="r2"
-                  class="payment-method__radio"
-                />
+                <label for="r2" class="payment-method__label">
+                  <input
+                    type="radio"
+                    name="r1"
+                    id="r2"
+                    class="payment-method__radio"
+                  />
+                  <span class="payment-method__fake-radio"></span>
+                </label>
                 <div>
                   <h4>Send to an alternative Email</h4>
                   <input
@@ -191,8 +193,12 @@
                     <a href="#" class="payment-method__edit-button">Edit</a>
                   </div>
                 </div>
-                <div class="payment-method__card-select"></div>
-                <!-- <img src="/src/images/payment/visa.png" alt="visa image"> -->
+                <label
+                  class="payment-method__label payment-method__label--ml-auto"
+                >
+                  <input type="radio" name="r2" class="payment-method__radio" />
+                  <span class="payment-method__fake-radio-type-2"></span>
+                </label>
               </div>
               <div class="payment-method__card">
                 <img
@@ -208,7 +214,12 @@
                     <a href="#" class="payment-method__edit-button">Edit</a>
                   </div>
                 </div>
-                <div class="payment-method__card-select"></div>
+                <label
+                  class="payment-method__label payment-method__label--ml-auto"
+                >
+                  <input type="radio" name="r2" class="payment-method__radio" />
+                  <span class="payment-method__fake-radio-type-2"></span>
+                </label>
               </div>
               <a href="#" class="payment-method__add-new"
                 >+ Add new payment method</a
