@@ -4,7 +4,7 @@
 @forward './base/global'
 @forward './base/variables'
 @forward './components/dashboard/card'
-@forward './components/dashboard/table'
+@forward './components/common/table'
 @forward './components/dashboard/button'
 @forward './components/dashboard/footer'
 @forward './components/common/drop-down'
@@ -22,26 +22,6 @@
         @include breakpoint('small')
             display: flex
             margin-bottom: 2em
-
-    &__table
-        @include mixins.white-shadowed-box
-        margin-bottom: 1em
-        overflow-x: auto
-
-        @include breakpoint('laptop')
-            margin-bottom: 2em
-
-    &__table-header
-        display: flex
-        align-items: center
-        justify-content: space-between
-        margin-bottom: 2em
-
-        > div
-            display: flex
-
-    &__table-summary-text
-        margin-right: 2em
 
     &__charts
         margin-bottom: 2em

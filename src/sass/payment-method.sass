@@ -13,12 +13,14 @@
 @forward './components/common/dashboard-header'
 @forward './components/common/dashboard-button'
 @forward './components/common/dashboard'
+@forward './components/common/table'
 
 .payment-method
     @include mixins.dashboard-container
 
-    &__content
+    &__payment-content
         @include mixins.white-shadowed-box
+        margin-bottom: 2em
 
     &__flex
         display: flex
@@ -123,3 +125,80 @@
         color: inherit
         text-align: right
         font-weight: 500
+
+    &__table
+        display: none
+
+        @include breakpoint('medium')
+            display: block
+
+    &__paid-status
+        color: #22B573
+        background-color: #EAFFF3
+        text-align: center
+        display: inline-block
+        padding: .4em 2em
+        border-radius: 20px
+
+    &__users-container
+        display: flex
+        transform: translateX(calc(14px * 4))
+
+        @include breakpoint('medium')
+            transform: translateX(0)
+
+        img
+            border-radius: 50%
+            display: block
+            width: 40px
+
+        img:nth-child(2)
+            transform: translateX(calc(-14px * 1))
+
+        img:nth-child(3)
+            transform: translateX(calc(-14px * 2))
+
+        img:nth-child(4)
+            transform: translateX(calc(-14px * 3))
+
+        img:nth-child(5)
+            transform: translateX(calc(-14px * 4))
+
+    &__download-icon
+        color: #323232
+        font-size: 1.3rem
+
+    &__mobile-table-row
+        @include mixins.white-shadowed-box
+        overflow: hidden
+        margin-bottom: 1em
+
+        @include breakpoint('medium')
+            display: none
+
+    &__t
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 1em
+
+        &--grey-bg
+            background-color: #F8F7F7
+            padding: 1em .7em
+            border-radius: 9px
+
+        &--rlp
+            padding: 0 .7em
+
+    &__view-all-button
+        @include breakpoint('medium')
+            display: none
+
+        display: block
+        width: 100%
+        background-color: var(--main-red)
+        color: white
+        border: none
+        padding: 1em 0
+        font-size: 1rem
+        font-weight: 600

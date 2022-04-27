@@ -1,0 +1,53 @@
+@use '../../utils/mixins'
+@use '../../utils/breakpoint' as *
+
+.table
+    @include mixins.white-shadowed-box
+    margin-bottom: 1em
+    overflow-x: auto
+
+    @include breakpoint('laptop')
+        margin-bottom: 2em
+
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 2em
+
+        > div
+            display: flex
+
+    &__description
+        margin-right: 2em
+
+    &__table-content
+        width: 100%
+        text-align: left
+
+    &__headers-row
+        background-color: #F8F7F7
+
+        th
+            padding: 1em 2em
+
+        th:first-child, th:last-child
+            border-radius: 10px
+
+    &__icons-cell
+        display: flex
+
+        i:first-child
+            margin-right: 5px
+
+table, th, td
+    border-collapse: collapse
+
+tr td
+    color: #929292
+
+td
+    padding: 1em 2em
+
+tr td i
+    cursor: pointer
